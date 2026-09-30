@@ -1,0 +1,13 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "badge") (type "KiCad") (uri "${KIPRJMOD}/lib/badge.pretty") (options "") (descr "Project footprints: ESP32-C3-MINI-1 (Espressif), TYPE-C-31-M-14 (jenschr), NFC loop feed"))
+	(lib (name "Capacitor_SMD") (type "KiCad") (uri "${KIPRJMOD}/lib/pinned-footprints/Capacitor_SMD.pretty") (options "") (descr "Pinned source used by generator"))
+	(lib (name "Resistor_SMD") (type "KiCad") (uri "${KIPRJMOD}/lib/pinned-footprints/Resistor_SMD.pretty") (options "") (descr "Pinned source used by generator"))
+	(lib (name "Package_TO_SOT_SMD") (type "KiCad") (uri "${KIPRJMOD}/lib/pinned-footprints/Package_TO_SOT_SMD.pretty") (options "") (descr "Pinned source used by generator"))
+	(lib (name "Inductor_SMD") (type "KiCad") (uri "${KIPRJMOD}/lib/pinned-footprints/Inductor_SMD.pretty") (options "") (descr "Pinned source used by generator"))
+	(lib (name "LED_SMD") (type "KiCad") (uri "${KIPRJMOD}/lib/pinned-footprints/LED_SMD.pretty") (options "") (descr "Pinned source used by generator"))
+	(lib (name "Diode_SMD") (type "KiCad") (uri "${KIPRJMOD}/lib/pinned-footprints/Diode_SMD.pretty") (options "") (descr "Pinned source used by generator"))
+	(lib (name "Button_Switch_SMD") (type "KiCad") (uri "${KIPRJMOD}/lib/pinned-footprints/Button_Switch_SMD.pretty") (options "") (descr "Pinned source used by generator"))
+	(lib (name "TestPoint") (type "KiCad") (uri "${KIPRJMOD}/lib/pinned-footprints/TestPoint.pretty") (options "") (descr "Pinned source used by generator"))
+	(lib (name "Connector_JST") (type "KiCad") (uri "${KIPRJMOD}/lib/pinned-footprints/Connector_JST.pretty") (options "") (descr ""))
+)

@@ -1,0 +1,5 @@
+# SPDX-License-Identifier: MIT
+# System packages also required: g++, libzbar, and NotoSansCJK fonts (see README).
+Pillow==12.3.0
+reportlab==4.4.9
+pyserial==3.5

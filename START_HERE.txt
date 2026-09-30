@@ -1,0 +1,10 @@
+P36 SOURCE REVIEW CANDIDATE / 源码评审候选
+
+先读 docs/portrait/START_HERE.md
+当前 PH 插头预留与 SW3、FPC 预留与 C118-C121 的五项装配阻断未闭合。禁止生产、下单或强行装配。
+ERC 0错误/9条逐项审阅警告；DRC/未连/parity 0。软件host测试和真实编译通过，实体屏/WiFi/ADC/电池/机械/RF未验证。
+NFC/门禁功能尚未设计完成。无可烧录固件；panel-3in6e-native.bin仅是120000B样帧。
+FreeCAD打开 hardware/portrait/enclosure/output/portrait_assembly_revisionB.FCStd；KiCad打开 hardware/portrait/pcb/badge.kicad_pro（含4子sheet）。
+唯一有意省略的最终producer输出为portrait_review_overview.png：旧图文字误导门禁已实现。它仍保留在本地且provenance SHA已核；其冻结源保留供追溯，不代表功能实现。
+已安装工具链与缓存、历史A/旧报告/备份、mock服务器凭据、host可执行文件、router JAR、生产Gerber均不打包。
+详细证据与每个文件SHA见FROZEN-INPUTS.json、PACKAGE-MANIFEST.json和SHA256SUMS.txt。

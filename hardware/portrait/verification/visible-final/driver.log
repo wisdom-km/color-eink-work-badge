@@ -1,0 +1,4 @@
+{'init': 48, 'turn_on': 10, 'sleep': 2}
+{"passed_cases":386,"golden_bytes_per_refresh":120061,"frame_bytes":120000,"all_returns_rail_off":true}
+{"passed_cases":387,"golden_bytes_per_refresh":120061,"frame_bytes":120000,"all_returns_rail_off":true}
+{"adapter_cases":5,"full_spi_bytes_verified":120061,"gpio_map_verified":true,"rail_cut_before_spi_release":true}

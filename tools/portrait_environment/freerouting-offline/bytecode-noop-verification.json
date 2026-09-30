@@ -1,0 +1,65 @@
+{
+  "verified_noop_methods": [
+    {
+      "signature": "public static org.eclipse.jetty.server.Server initializeAPI(app.freerouting.settings.ApiServerSettings)",
+      "instructions": [
+        "aconst_null",
+        "areturn"
+      ],
+      "passed": true
+    },
+    {
+      "signature": "public static org.eclipse.jetty.server.Server initializeMCP(app.freerouting.settings.McpServerSettings)",
+      "instructions": [
+        "aconst_null",
+        "areturn"
+      ],
+      "passed": true
+    },
+    {
+      "signature": "private static java.net.http.HttpClient createDefaultHttpClient()",
+      "instructions": [
+        "aconst_null",
+        "areturn"
+      ],
+      "passed": true
+    },
+    {
+      "signature": "public void run()",
+      "instructions": [
+        "return"
+      ],
+      "passed": true
+    },
+    {
+      "signature": "private void sendPayloadAsync(java.lang.String, app.freerouting.analytics.dto.Payload) throws java.io.IOException",
+      "instructions": [
+        "return"
+      ],
+      "passed": true
+    },
+    {
+      "signature": "private void sendPayloadAsync(java.lang.String, app.freerouting.analytics.dto.Payload) throws java.io.IOException",
+      "instructions": [
+        "return"
+      ],
+      "passed": true
+    },
+    {
+      "signature": "private static com.google.cloud.bigquery.BigQuery createBigQueryService(byte[])",
+      "instructions": [
+        "aconst_null",
+        "areturn"
+      ],
+      "passed": true
+    },
+    {
+      "signature": "private void sendPayloadAsync(app.freerouting.analytics.dto.Payload)",
+      "instructions": [
+        "return"
+      ],
+      "passed": true
+    }
+  ],
+  "candidate_executed": false
+}

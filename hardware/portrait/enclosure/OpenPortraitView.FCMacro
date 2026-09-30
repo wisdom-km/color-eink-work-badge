@@ -1,0 +1,38 @@
+# Run in the FreeCAD GUI with portrait_assembly.FCStd active.
+# Supported ViewObject/ActiveView APIs; does not edit global preferences.
+# Headless FreeCAD lacks ViewObject: official manual explains this limitation.
+# https://www.freecad.org/manual/a-freecad-manual.pdf
+import FreeCAD as App
+import FreeCADGui as Gui
+from pathlib import Path
+
+doc = App.ActiveDocument
+if doc is None or doc.getObject('FrontFrame') is None or doc.getObject('BackCover') is None:
+    raise RuntimeError('First open the final portrait_assembly.FCStd and make it active')
+for obj in doc.Objects:
+    if not hasattr(obj, 'Shape') or obj.Shape.isNull():
+        continue
+    view = obj.ViewObject
+    view.Visibility = True
+    view.DisplayMode = 'Flat Lines'
+    view.LineWidth = 1.0
+    view.LineColor = (0.18, 0.22, 0.25)
+    view.Transparency = 0
+    if obj.Name in ('FrontFrame','BackCover'):
+        view.ShapeColor = (0.34, 0.39, 0.43)
+        view.Transparency = 45 if obj.Name == 'FrontFrame' else 65
+    elif 'Display' in obj.Name:
+        view.ShapeColor = (0.93, 0.92, 0.86)
+    elif 'PCB_' in obj.Name:
+        view.ShapeColor = (0.10, 0.32, 0.24)
+    elif 'Battery' in obj.Name:
+        view.ShapeColor = (0.68, 0.72, 0.75)
+    else:
+        view.ShapeColor = (0.32, 0.35, 0.39)
+Gui.Selection.clearSelection()
+doc.recompute()
+Gui.activeDocument().activeView().viewAxonometric()
+Gui.activeDocument().activeView().fitAll()
+Gui.updateGui()
+doc.save()
+App.Console.PrintMessage('Saved visible, styled P1.1 assembly; all envelope limitations remain in object properties.\n')

@@ -1,0 +1,54 @@
+{
+  "status": "REVIEW_REQUIRED_ASSEMBLY",
+  "manufacturing_release_blocked": true,
+  "retained_courtyard_pair_intersections": [
+    {
+      "a": "TP2",
+      "b": "TP3",
+      "mm3": 0.0002499999999999871
+    }
+  ],
+  "test_pad_refinement": {
+    "pad_bbox_overlap_mm2": 0,
+    "source": "KiCad10 actual copper pad bounding boxes; no fitted testpoint pins",
+    "original_courtyard_shapes_retained": true
+  },
+  "blocking_reserved_conflicts": [
+    {
+      "space": "ph_plug_keepout",
+      "ref": "SW3",
+      "mm3": 1.837499999999998
+    },
+    {
+      "space": "flex_keepout",
+      "ref": "C118",
+      "mm3": 1.1657999999999917
+    },
+    {
+      "space": "flex_keepout",
+      "ref": "C119",
+      "mm3": 2.3315999999999817
+    },
+    {
+      "space": "flex_keepout",
+      "ref": "C120",
+      "mm3": 2.331599999999988
+    },
+    {
+      "space": "flex_keepout",
+      "ref": "C121",
+      "mm3": 1.3977999999999953
+    }
+  ],
+  "geometry_changed_to_hide_conflicts": false,
+  "required_actions": [
+    "PH/SW3: obtain exact mounted PHR2/lead exit and switch body geometry, prove clearance or revise mechanical mating path/PCB through a new electrical revision.",
+    "FPC/C118..C121: original full-block reserve retained; prove source-backed folded route and connector lock access or revise layout through a new electrical revision.",
+    "Do not order or force assembly based on clear outer shell or zero local material interference."
+  ],
+  "design_revision": "P1.1-revisionB-C1",
+  "base_design_sha256": "246526bb521aa6fb61c5ce5a5d4cb6d1ee3e19fa65eb45b927a839afe90a92e1",
+  "c1_config_sha256": "433f15dac0475c9dc68186ad55fccac4f016285cd36053ff6cd484e28d314366",
+  "config_sha256": "ec550765e87552f12afebfcd135ec84486af411a60c300db437a49eab52747bd",
+  "board_sha256": "a6e52a432d860a8ce0d489fdaac9a9f9a56ae2c96e7ca05ce998e5b3b5a1cd40"
+}

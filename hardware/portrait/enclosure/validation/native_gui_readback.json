@@ -1,0 +1,765 @@
+{
+  "status": "PASS_GUI_SAVED_REOPENED_BREP_ONLY",
+  "native_file": "portrait_assembly_revisionB.FCStd",
+  "native_sha256": "3053e10afc42487024400de0c00f0b5511998150f525d9d4428fe0596807f907",
+  "reopened": true,
+  "parts": {
+    "FrontFrame": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 16695.676315695313,
+      "visible": true
+    },
+    "BackCover": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 10081.221587588287,
+      "visible": true
+    },
+    "Display_Local_Max_Envelope": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4298.5599999999995,
+      "visible": true
+    },
+    "PCB_0p8_Envelope": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4218.911096491497,
+      "visible": false
+    },
+    "PCB_KiCad_Core_In_Mechanical_Frame": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 3736.148906804931,
+      "visible": true
+    },
+    "Battery_Adafruit1578_Envelope": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 6596.8,
+      "visible": true
+    },
+    "USB_HRO_Body_Envelope": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 203.52446400000014,
+      "visible": true
+    },
+    "Lead_Clearance_Reserve": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 663.0,
+      "visible": false
+    },
+    "PH_Plug_Clearance_Reserve": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 306.24,
+      "visible": false
+    },
+    "Display_Global_1p2_Audit": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 5819.519999999999,
+      "visible": false
+    },
+    "AA_NoPress_Audit": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 5998.439999999999,
+      "visible": false
+    },
+    "ScreenPSA_Left": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 8.19,
+      "visible": true
+    },
+    "FrontFoam_Left": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 31.500000000000014,
+      "visible": true
+    },
+    "FrontPSA_Left": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 3.7800000000000034,
+      "visible": true
+    },
+    "ScreenPSA_Right": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 8.189999999999987,
+      "visible": true
+    },
+    "FrontFoam_Right": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 31.499999999999964,
+      "visible": true
+    },
+    "FrontPSA_Right": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 3.779999999999998,
+      "visible": true
+    },
+    "ScreenPSA_Top": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 5.85,
+      "visible": true
+    },
+    "FrontFoam_Top": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 22.500000000000007,
+      "visible": true
+    },
+    "FrontPSA_Top": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2.7000000000000024,
+      "visible": true
+    },
+    "RearPostPSA_1": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 0.19999999999999973,
+      "visible": true
+    },
+    "RearPET_1": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 0.6000000000000001,
+      "visible": true
+    },
+    "RearFoamPSA_1": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 0.20000000000000018,
+      "visible": true
+    },
+    "RearFoam_1": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2.4,
+      "visible": true
+    },
+    "RearPostPSA_2": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 0.19999999999999973,
+      "visible": true
+    },
+    "RearPET_2": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 0.6000000000000001,
+      "visible": true
+    },
+    "RearFoamPSA_2": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 0.20000000000000018,
+      "visible": true
+    },
+    "RearFoam_2": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2.4,
+      "visible": true
+    },
+    "RearPostPSA_3": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 0.19999999999999973,
+      "visible": true
+    },
+    "RearPET_3": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 0.6000000000000001,
+      "visible": true
+    },
+    "RearFoamPSA_3": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 0.20000000000000018,
+      "visible": true
+    },
+    "RearFoam_3": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2.4,
+      "visible": true
+    },
+    "RearPostPSA_4": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 0.19999999999999973,
+      "visible": true
+    },
+    "RearPET_4": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 0.6000000000000001,
+      "visible": true
+    },
+    "RearFoamPSA_4": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 0.20000000000000018,
+      "visible": true
+    },
+    "RearFoam_4": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2.4,
+      "visible": true
+    },
+    "Envelope_C1": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4.545100000000001,
+      "visible": true
+    },
+    "Envelope_C100": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 45.337499999999984,
+      "visible": true
+    },
+    "Envelope_C101": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.1790350000000016,
+      "visible": true
+    },
+    "Envelope_C110": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.095199999999965,
+      "visible": true
+    },
+    "Envelope_C111": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.09519999999997,
+      "visible": true
+    },
+    "Envelope_C112": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.095199999999998,
+      "visible": true
+    },
+    "Envelope_C113": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.095199999999998,
+      "visible": true
+    },
+    "Envelope_C114": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.095199999999986,
+      "visible": true
+    },
+    "Envelope_C115": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.095199999999961,
+      "visible": true
+    },
+    "Envelope_C116": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.095199999999965,
+      "visible": true
+    },
+    "Envelope_C117": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.09519999999997,
+      "visible": true
+    },
+    "Envelope_C118": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.095199999999975,
+      "visible": true
+    },
+    "Envelope_C119": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.095199999999965,
+      "visible": true
+    },
+    "Envelope_C120": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.095199999999993,
+      "visible": true
+    },
+    "Envelope_C121": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.095199999999993,
+      "visible": true
+    },
+    "Envelope_C122": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.09520000000002,
+      "visible": true
+    },
+    "Envelope_C123": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.095199999999993,
+      "visible": true
+    },
+    "Envelope_C124": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.095200000000037,
+      "visible": true
+    },
+    "Envelope_C125": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.095199999999993,
+      "visible": true
+    },
+    "Envelope_C126": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.095200000000037,
+      "visible": true
+    },
+    "Envelope_C127": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.095200000000037,
+      "visible": true
+    },
+    "Envelope_C128": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.095200000000037,
+      "visible": true
+    },
+    "Envelope_C129": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.095200000000037,
+      "visible": true
+    },
+    "Envelope_C130": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.095199999999965,
+      "visible": true
+    },
+    "Envelope_C131": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.095199999999965,
+      "visible": true
+    },
+    "Envelope_C2": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4.54509999999998,
+      "visible": true
+    },
+    "Envelope_C3": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4.545100000000022,
+      "visible": true
+    },
+    "Envelope_C30": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.095200000000037,
+      "visible": true
+    },
+    "Envelope_C32": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.1790350000000016,
+      "visible": true
+    },
+    "Envelope_C4": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4.545100000000022,
+      "visible": true
+    },
+    "Envelope_C5": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.1790350000000016,
+      "visible": true
+    },
+    "Envelope_C6": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4.545099999999991,
+      "visible": true
+    },
+    "Envelope_C7": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.1790349999999967,
+      "visible": true
+    },
+    "Envelope_C8": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.1790349999999967,
+      "visible": true
+    },
+    "Envelope_D1": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 16.74375000000001,
+      "visible": true
+    },
+    "Envelope_D10": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 67.57425000000019,
+      "visible": true
+    },
+    "Envelope_D2": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 16.74375000000001,
+      "visible": true
+    },
+    "Envelope_D3": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 16.74375000000001,
+      "visible": true
+    },
+    "Envelope_D4": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4.54509999999998,
+      "visible": true
+    },
+    "Envelope_D5": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4.545100000000022,
+      "visible": true
+    },
+    "Envelope_D6": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 16.74375000000001,
+      "visible": true
+    },
+    "Envelope_FB1": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4.545100000000022,
+      "visible": true
+    },
+    "Envelope_FB2": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4.545100000000022,
+      "visible": true
+    },
+    "Envelope_J1": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 147.51274999999984,
+      "visible": true
+    },
+    "Envelope_J2": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 549.9124999999999,
+      "visible": true
+    },
+    "Envelope_L1": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 44.4307500000001,
+      "visible": true
+    },
+    "Envelope_L2": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 44.43075000000013,
+      "visible": true
+    },
+    "Envelope_Q1": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 20.23424999999994,
+      "visible": true
+    },
+    "Envelope_Q10": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 20.23424999999996,
+      "visible": true
+    },
+    "Envelope_Q2": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 20.23424999999996,
+      "visible": true
+    },
+    "Envelope_Q20": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 20.234249999999996,
+      "visible": true
+    },
+    "Envelope_R1": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.2290850000000095,
+      "visible": true
+    },
+    "Envelope_R10": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.2290849999999918,
+      "visible": true
+    },
+    "Envelope_R100": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4.545099999999996,
+      "visible": true
+    },
+    "Envelope_R101": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 10.639199999999942,
+      "visible": true
+    },
+    "Envelope_R102": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4.545100000000011,
+      "visible": true
+    },
+    "Envelope_R103": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 10.63919999999993,
+      "visible": true
+    },
+    "Envelope_R104": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4.5450999999999695,
+      "visible": true
+    },
+    "Envelope_R2": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.2290850000000006,
+      "visible": true
+    },
+    "Envelope_R20": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.2290849999999918,
+      "visible": true
+    },
+    "Envelope_R21": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.2290849999999958,
+      "visible": true
+    },
+    "Envelope_R22": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.2290849999999915,
+      "visible": true
+    },
+    "Envelope_R23": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.2290849999999915,
+      "visible": true
+    },
+    "Envelope_R3": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.2290850000000093,
+      "visible": true
+    },
+    "Envelope_R4": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.2290849999999918,
+      "visible": true
+    },
+    "Envelope_R5": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.2290849999999918,
+      "visible": true
+    },
+    "Envelope_R6": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.2290849999999918,
+      "visible": true
+    },
+    "Envelope_R7": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.2290850000000004,
+      "visible": true
+    },
+    "Envelope_R8": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.2290849999999918,
+      "visible": true
+    },
+    "Envelope_R9": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1.2290849999999918,
+      "visible": true
+    },
+    "Envelope_SW1": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 60.375,
+      "visible": true
+    },
+    "Envelope_SW2": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 60.375,
+      "visible": true
+    },
+    "Envelope_SW3": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 60.375,
+      "visible": true
+    },
+    "Envelope_TP2": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 0.42024999999999946,
+      "visible": true
+    },
+    "Envelope_TP3": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 0.42025000000000085,
+      "visible": true
+    },
+    "Envelope_TP4": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 0.42024999999999946,
+      "visible": true
+    },
+    "Envelope_U1": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 605.1045000000001,
+      "visible": true
+    },
+    "Envelope_U3": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 21.476249999999958,
+      "visible": true
+    },
+    "Envelope_U4": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 21.476250000000043,
+      "visible": true
+    },
+    "Envelope_U5": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 21.476249999999958,
+      "visible": true
+    }
+  },
+  "headless_native_sha256": "1c4e0d7016398d41421712b1bdacfae0f08a9499b1930ed9b5c48e3cb5112672",
+  "input_before": {
+    "hardware/portrait/enclosure/OpenC1RevisionB.FCMacro": "7ab86db14cc05515430120d6531b7dfe44358186e58d18c08b3ee98db5a67cdf",
+    "hardware/portrait/enclosure/OpenPortraitView.FCMacro": "747131d387de4ff9f72c22726c395af3c240267aa15811d25a7d7a15f7be88e0",
+    "hardware/portrait/enclosure/UpdatePortraitComponents.FCMacro": "82454744e1bc5c8079f3ef51762922a542a4f7b29c9a0c7753b6cee437a7464d",
+    "hardware/portrait/enclosure/activate_c1.py": "2612499d344d315f2e92a87c579e710522481e34306aeddd76b8f934780aaa27",
+    "hardware/portrait/enclosure/build_enclosure.py": "23527b4f4f330f01a0675e4308cc26c5e71604e0bf4bbdcbd6d03c8cd4e6361f",
+    "hardware/portrait/enclosure/c1_config.py": "433f15dac0475c9dc68186ad55fccac4f016285cd36053ff6cd484e28d314366",
+    "hardware/portrait/enclosure/c1_export_native.py": "127892e6f5d258996de5f936ca054c85f1458418bbd5a360f75dde3953180a4d",
+    "hardware/portrait/enclosure/c1_geometry.py": "450fe2a19a913983142f40fbbc0ed1fc41ba326aa488fbb52dcad9d3fd08025a",
+    "hardware/portrait/enclosure/c1_pipeline.py": "eaeab6c1d21231513a5e085b501198c4cc3a3ea5708a187e4cc81725dd477d97",
+    "hardware/portrait/enclosure/c1_validate.py": "5c210e8a479ea6d08b8a98310f63bb993b9c611f7a6617e90c831dc2bb8dd53a",
+    "hardware/portrait/enclosure/cad_helpers.py": "bb7376690a05aaf4f6cd2f0579fd1111804fb3f2644eedb461001f41c0f2326a",
+    "hardware/portrait/enclosure/capture_contact_inputs.py": "7f17851e1ca0919f9c7e52747425c3c135f09324e114054eec5314c16613431b",
+    "hardware/portrait/enclosure/export_freecad.py": "43467dea4e554302903c090f7355e2769a2749c91600e9907677e531f5eefb23",
+    "hardware/portrait/enclosure/export_layout_preview.py": "f5d9a853b74ac2a57f6a2a2e8b5b5639b4f647edcebb85b03fe2bc7a2829bf20",
+    "hardware/portrait/enclosure/inspect_internal.py": "17f039b84883c15c8aa911636e13f65982a4497a3ff5ad54bd36e2866e9c2caa",
+    "hardware/portrait/enclosure/make_usb_envelope.py": "aca6c206bd1fcbc895eb0790e52f353679c79c94627bfca5420a8b34a402cac8",
+    "hardware/portrait/enclosure/prepare_c1_snapshot.py": "220f04c2f2580cd9d2361b11cac0c6937ad73af0dbaf05f8c21e26f22266f506",
+    "hardware/portrait/enclosure/record_c1_review.py": "cae83f67ba945df8e15bf9dcdfc43958ccbaac804caea3562fccd42ebb70111b",
+    "hardware/portrait/enclosure/render_mesh.py": "deb172f1527ec760312bc715c99dfe8e518d771e7f9e94671dc03fe4fca857f7",
+    "hardware/portrait/enclosure/render_review.py": "29bf9f8d76ea6beea6ab92169d8e149a0d2bb815b76985386599518cde6e22ef",
+    "hardware/portrait/enclosure/run_c1_stage.py": "f638b761aa018a0e65d1c27bd5d37d8b85b3b088c6ef1cbdc9c4fe77e1888ad4",
+    "hardware/portrait/enclosure/smoke_test.py": "3944fb5471fcdde23c97dcf1b21daa23b0066253415a2ce7e692c5d281c3c14e",
+    "hardware/portrait/enclosure/snapshot_pcb.py": "1fb7f88d8b979672ab14f58fab798ec645944167850b375d66f47d0c3be8de5c",
+    "hardware/portrait/enclosure/validate_access_spaces.py": "018b4c55b59eac96f6b9eb1a5f88409a4e66ab9052fc1bfb58f7117e058b0df8",
+    "hardware/portrait/enclosure/validate_exports.py": "c39d08b5a0dc18215ce27b9c04164c8364037f677720d6ffba569921a5586e2e",
+    "hardware/portrait/enclosure/validate_populated.py": "17f039b84883c15c8aa911636e13f65982a4497a3ff5ad54bd36e2866e9c2caa"
+  },
+  "input_after": {
+    "hardware/portrait/enclosure/OpenC1RevisionB.FCMacro": "7ab86db14cc05515430120d6531b7dfe44358186e58d18c08b3ee98db5a67cdf",
+    "hardware/portrait/enclosure/OpenPortraitView.FCMacro": "747131d387de4ff9f72c22726c395af3c240267aa15811d25a7d7a15f7be88e0",
+    "hardware/portrait/enclosure/UpdatePortraitComponents.FCMacro": "82454744e1bc5c8079f3ef51762922a542a4f7b29c9a0c7753b6cee437a7464d",
+    "hardware/portrait/enclosure/activate_c1.py": "2612499d344d315f2e92a87c579e710522481e34306aeddd76b8f934780aaa27",
+    "hardware/portrait/enclosure/build_enclosure.py": "23527b4f4f330f01a0675e4308cc26c5e71604e0bf4bbdcbd6d03c8cd4e6361f",
+    "hardware/portrait/enclosure/c1_config.py": "433f15dac0475c9dc68186ad55fccac4f016285cd36053ff6cd484e28d314366",
+    "hardware/portrait/enclosure/c1_export_native.py": "127892e6f5d258996de5f936ca054c85f1458418bbd5a360f75dde3953180a4d",
+    "hardware/portrait/enclosure/c1_geometry.py": "450fe2a19a913983142f40fbbc0ed1fc41ba326aa488fbb52dcad9d3fd08025a",
+    "hardware/portrait/enclosure/c1_pipeline.py": "eaeab6c1d21231513a5e085b501198c4cc3a3ea5708a187e4cc81725dd477d97",
+    "hardware/portrait/enclosure/c1_validate.py": "5c210e8a479ea6d08b8a98310f63bb993b9c611f7a6617e90c831dc2bb8dd53a",
+    "hardware/portrait/enclosure/cad_helpers.py": "bb7376690a05aaf4f6cd2f0579fd1111804fb3f2644eedb461001f41c0f2326a",
+    "hardware/portrait/enclosure/capture_contact_inputs.py": "7f17851e1ca0919f9c7e52747425c3c135f09324e114054eec5314c16613431b",
+    "hardware/portrait/enclosure/export_freecad.py": "43467dea4e554302903c090f7355e2769a2749c91600e9907677e531f5eefb23",
+    "hardware/portrait/enclosure/export_layout_preview.py": "f5d9a853b74ac2a57f6a2a2e8b5b5639b4f647edcebb85b03fe2bc7a2829bf20",
+    "hardware/portrait/enclosure/inspect_internal.py": "17f039b84883c15c8aa911636e13f65982a4497a3ff5ad54bd36e2866e9c2caa",
+    "hardware/portrait/enclosure/make_usb_envelope.py": "aca6c206bd1fcbc895eb0790e52f353679c79c94627bfca5420a8b34a402cac8",
+    "hardware/portrait/enclosure/prepare_c1_snapshot.py": "220f04c2f2580cd9d2361b11cac0c6937ad73af0dbaf05f8c21e26f22266f506",
+    "hardware/portrait/enclosure/record_c1_review.py": "cae83f67ba945df8e15bf9dcdfc43958ccbaac804caea3562fccd42ebb70111b",
+    "hardware/portrait/enclosure/render_mesh.py": "deb172f1527ec760312bc715c99dfe8e518d771e7f9e94671dc03fe4fca857f7",
+    "hardware/portrait/enclosure/render_review.py": "29bf9f8d76ea6beea6ab92169d8e149a0d2bb815b76985386599518cde6e22ef",
+    "hardware/portrait/enclosure/run_c1_stage.py": "f638b761aa018a0e65d1c27bd5d37d8b85b3b088c6ef1cbdc9c4fe77e1888ad4",
+    "hardware/portrait/enclosure/smoke_test.py": "3944fb5471fcdde23c97dcf1b21daa23b0066253415a2ce7e692c5d281c3c14e",
+    "hardware/portrait/enclosure/snapshot_pcb.py": "1fb7f88d8b979672ab14f58fab798ec645944167850b375d66f47d0c3be8de5c",
+    "hardware/portrait/enclosure/validate_access_spaces.py": "018b4c55b59eac96f6b9eb1a5f88409a4e66ab9052fc1bfb58f7117e058b0df8",
+    "hardware/portrait/enclosure/validate_exports.py": "c39d08b5a0dc18215ce27b9c04164c8364037f677720d6ffba569921a5586e2e",
+    "hardware/portrait/enclosure/validate_populated.py": "17f039b84883c15c8aa911636e13f65982a4497a3ff5ad54bd36e2866e9c2caa"
+  },
+  "finished_utc": "2026-09-30T15:02:00.250151+00:00",
+  "limits": [
+    "Visible saved GUI styles and BREP readback; no physical prototype qualification."
+  ]
+}

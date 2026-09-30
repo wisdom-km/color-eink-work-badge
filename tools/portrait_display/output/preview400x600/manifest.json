@@ -1,0 +1,93 @@
+{
+  "status": "SOFTWARE PREVIEW; NOT A MEASURED PHYSICAL DISPLAY",
+  "width": 400,
+  "height": 600,
+  "bits_per_pixel": 4,
+  "frame_bytes": 120000,
+  "palette_rgb": [
+    [
+      20,
+      24,
+      32
+    ],
+    [
+      255,
+      255,
+      255
+    ],
+    [
+      198,
+      35,
+      45
+    ],
+    [
+      244,
+      201,
+      38
+    ],
+    [
+      31,
+      78,
+      164
+    ],
+    [
+      28,
+      125,
+      75
+    ]
+  ],
+  "packing": "MSB-first continuous row-major indexed pixels, no per-row padding",
+  "controller_palette_mapping": "3.6E codes: black=0, white=1, yellow=2, red=3, blue=5, green=6",
+  "panel_measurement": false,
+  "rf_credential": false,
+  "native_panel_frame": {
+    "filename": "panel-3in6e-native.bin",
+    "bytes": 120000,
+    "crc32_ieee": "d16b5951",
+    "sha256": "63f8866496807a8ac2bfb17c85b1eccc89a09060e00ff8270de44f4bb1e01ce9",
+    "codes": {
+      "black": 0,
+      "white": 1,
+      "yellow": 2,
+      "red": 3,
+      "blue": 5,
+      "green": 6
+    },
+    "orientation": "400x600 native portrait; no rotation applied",
+    "cpp_frame_validation_and_crc": true,
+    "hardware_verified": false
+  },
+  "qr": {
+    "payload": "https://example.invalid/badge-demo",
+    "module_pixels": 3,
+    "quiet_zone_modules": 4,
+    "version": 3,
+    "error_correction": "M",
+    "bounds": [
+      262,
+      422,
+      111,
+      111
+    ],
+    "independent_decoder": "libzbar",
+    "portrait_and_rotated_decode": true
+  },
+  "fonts": {
+    "NotoSansCJK-Regular.ttc": "b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+    "NotoSansCJK-Bold.ttc": "faa5f3656a78b2e2d450d27fe8382c778bc2b6bb5ea29c986664a6a435056ceb"
+  },
+  "python_dependencies": {
+    "Pillow": "12.3.0",
+    "reportlab": "4.4.9"
+  },
+  "cpp_rotation_matches_independent_pillow_oracle": true,
+  "cpp_roundtrip_identical": true,
+  "sha256": {
+    "portrait.png": "c90c05c70885a1bba8f1e65c3b0ed50aff5c181efdf0c2551cf7d488837d76ee",
+    "portrait-2x.png": "273225985ea163c682275509a968e77126e5df1bcdb392da3c6414a12ae2ee5c",
+    "portrait-indexed.bin": "2c6c0b8b92dbf6811a00d31b3a252c107d28086eb8b1f4065f958ecd43694353",
+    "landscape-cw90.png": "610d463cb4d10f6df3b09bfa2ef65bec1a18d928a8ad3eed1e8611a36cc22062",
+    "landscape-cw90-indexed.bin": "c147337e10d65cd07ec1e0bcd7a9e0a336e2f0a445cf8e78f0ddf92a93f5546f",
+    "roundtrip-indexed.bin": "2c6c0b8b92dbf6811a00d31b3a252c107d28086eb8b1f4065f958ecd43694353"
+  }
+}

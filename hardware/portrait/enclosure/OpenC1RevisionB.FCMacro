@@ -1,0 +1,46 @@
+# C1 GUI save, visible styling, actual close/reopen and BREP readback.
+from pathlib import Path
+import json,hashlib,datetime
+import FreeCAD as App, FreeCADGui as Gui
+H=Path('/workspace/scratch/200245c5fbc3/chroma-badge/hardware/portrait/enclosure');R=H.parents[2];O=H/'output';V=H/'validation'
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+path=O/'portrait_assembly_revisionB.FCStd';A=O/'portrait_assembly.FCStd';oldA=sha(A)
+plan=json.loads((V/'mechanical_expectation.json').read_text())
+proof=json.loads((V/'freecad_readback.json').read_text())
+assert proof['status']=='PASS_NATIVE_BREP_READBACK_ONLY' and sha(path)==proof['native_sha256']
+inputs={p:sha(R/p) for p in plan['source_sha256']}
+assert inputs==plan['source_sha256']
+start=sha(path)
+for doc in list(App.listDocuments().values()):
+ if Path(doc.FileName or '.')==path:App.closeDocument(doc.Name)
+d=App.openDocument(str(path));assert set(o.Name for o in d.Objects)==set(plan['expected_shape_names'])
+for ob in d.Objects:
+ cat=ob.ShapeCategory
+ ob.ViewObject.Visibility=cat not in ('audit','space_reserve')
+ ob.ViewObject.DisplayMode='Flat Lines'
+ ob.ViewObject.LineColor=(.12,.17,.20)
+ ob.ViewObject.ShapeColor=(.35,.42,.48)
+ if cat=='structure':ob.ViewObject.ShapeColor=(.23,.29,.34);ob.ViewObject.Transparency=60
+ elif cat=='materials':ob.ViewObject.ShapeColor=(.91,.68,.29);ob.ViewObject.Transparency=15
+ elif ob.Name=='PCB_KiCad_Core_In_Mechanical_Frame':ob.ViewObject.ShapeColor=(.12,.42,.27)
+ elif ob.Name=='Display_Local_Max_Envelope':ob.ViewObject.ShapeColor=(.92,.91,.85)
+ elif ob.Name=='Battery_Adafruit1578_Envelope':ob.ViewObject.ShapeColor=(.69,.73,.78)
+ elif ob.Name=='USB_HRO_Body_Envelope':ob.ViewObject.ShapeColor=(.63,.65,.67)
+ elif cat=='component_proxy':ob.ViewObject.ShapeColor=(.22,.27,.31)
+d.recompute();Gui.activeDocument().activeView().viewAxonometric();Gui.activeDocument().activeView().fitAll();Gui.updateGui();d.save()
+App.closeDocument(d.Name);d=App.openDocument(str(path));Gui.activeDocument().activeView().viewAxonometric();Gui.activeDocument().activeView().fitAll();Gui.updateGui()
+parts={ob.Name:{'valid':ob.Shape.isValid(),'solids':len(ob.Shape.Solids),'volume_mm3':ob.Shape.Volume,'visible':ob.ViewObject.Visibility} for ob in d.Objects}
+assert set(parts)==set(plan['expected_shape_names'])
+assert all(p['valid'] and p['solids']==1 and abs(p['volume_mm3']-proof['parts'][n]['volume_mm3'])<1e-5 for n,p in parts.items())
+Gui.activeDocument().activeView().saveImage(str(O/'portrait_native_C1_iso.png'),1500,1500,'Current')
+Gui.activeDocument().activeView().viewTop();Gui.activeDocument().activeView().fitAll();Gui.updateGui();Gui.activeDocument().activeView().saveImage(str(O/'portrait_native_C1_front.png'),1500,1500,'Current')
+d.getObject('BackCover').ViewObject.Visibility=False;Gui.activeDocument().activeView().viewBottom();Gui.activeDocument().activeView().fitAll();Gui.updateGui();Gui.activeDocument().activeView().saveImage(str(O/'portrait_native_C1_internal.png'),1500,1500,'Current')
+d.getObject('BackCover').ViewObject.Visibility=True;Gui.activeDocument().activeView().viewAxonometric();Gui.activeDocument().activeView().fitAll();Gui.updateGui();d.save()
+# Reopen the FINAL saved bytes, rather than reporting the earlier headless file.
+App.closeDocument(d.Name);d=App.openDocument(str(path));Gui.activeDocument().activeView().viewAxonometric();Gui.activeDocument().activeView().fitAll();Gui.updateGui()
+parts={ob.Name:{'valid':ob.Shape.isValid(),'solids':len(ob.Shape.Solids),'volume_mm3':ob.Shape.Volume,'visible':ob.ViewObject.Visibility} for ob in d.Objects}
+assert set(parts)==set(plan['expected_shape_names']) and all(p['valid'] and p['solids']==1 for p in parts.values())
+assert sha(A)==oldA and inputs=={p:sha(R/p) for p in inputs}
+r={'status':'PASS_GUI_SAVED_REOPENED_BREP_ONLY','native_file':path.name,'native_sha256':sha(path),'reopened':True,'parts':parts,'headless_native_sha256':start,'input_before':inputs,'input_after':{p:sha(R/p) for p in inputs},'finished_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'limits':['Visible saved GUI styles and BREP readback; no physical prototype qualification.']}
+(V/'native_gui_readback.json').write_text(json.dumps(r,indent=2)+'\n')
+print('C1 GUI SAVED AND REOPENED',len(parts),'objects; A unchanged; physical gates open')

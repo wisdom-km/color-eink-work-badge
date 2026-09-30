@@ -1,0 +1,166 @@
+{
+  "status": "PASS_ENVELOPE_GEOMETRY_ONLY",
+  "source_config": "c1_config.configure(read-only hardware/pcb/scripts/design.py::PORTRAIT)",
+  "config_sha256": "ec550765e87552f12afebfcd135ec84486af411a60c300db437a49eab52747bd",
+  "cadquery": "2.7.0",
+  "parts": {
+    "front_frame": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 16695.676315694964,
+      "bbox_mm": [
+        66.0,
+        109.0,
+        9.7
+      ],
+      "bbox_min_mm": [
+        -4.000000000000001,
+        -100.0,
+        -6.2
+      ],
+      "bbox_max_mm": [
+        62.0,
+        9.0,
+        3.499999999999999
+      ]
+    },
+    "back_cover": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 10081.221587588256,
+      "bbox_mm": [
+        66.0,
+        109.0,
+        6.750000000000002
+      ],
+      "bbox_min_mm": [
+        -4.000000000000001,
+        -100.0,
+        -7.600000000000001
+      ],
+      "bbox_max_mm": [
+        62.0,
+        9.0,
+        -0.8499999999999996
+      ]
+    }
+  },
+  "interference_mm3": {
+    "front_frame vs back_cover": 0.0,
+    "front_frame vs panel": 0.0,
+    "front_frame vs pcb_placeholder": 0.0,
+    "front_frame vs battery_envelope": 0.0,
+    "front_frame vs flex_keepout": 0.0,
+    "front_frame vs component_budget": 0.0,
+    "front_frame vs usb_outline": 0.0,
+    "front_frame vs wire_keepout": 0.0,
+    "front_frame vs ph_plug_keepout": 0.0,
+    "back_cover vs panel": 0.0,
+    "back_cover vs pcb_placeholder": 0.0,
+    "back_cover vs battery_envelope": 0.0,
+    "back_cover vs flex_keepout": 0.0,
+    "back_cover vs component_budget": 0.0,
+    "back_cover vs usb_outline": 0.0,
+    "back_cover vs wire_keepout": 0.0,
+    "back_cover vs ph_plug_keepout": 0.0,
+    "front_frame vs nut_0": 0.0,
+    "front_frame vs nut_1": 0.0,
+    "front_frame vs nut_2": 0.0,
+    "front_frame vs nut_3": 0.0
+  },
+  "failures": {},
+  "dimensions_mm": {
+    "main": [
+      66.0,
+      109.0,
+      11.1
+    ],
+    "external_card_carrier_enabled": false
+  },
+  "clearance_budget_mm": {
+    "pcb_edge": 0.35,
+    "legacy_2p4_height_reference_to_cover": 3.8000000000000003,
+    "battery_envelope_to_cover": 0.5,
+    "panel_nominal_surface_to_bezel": 0.5899999999999999,
+    "nut_slot_width_total": 0.20000000000000018,
+    "nut_slot_height_total": 0.19999999999999996,
+    "front_soft_stop_to_nominal_screen": 0.18000000000000016
+  },
+  "pcb_support_contact_rectangles_front_view_mm": [
+    [
+      1,
+      1,
+      3,
+      3
+    ],
+    [
+      55,
+      18,
+      57,
+      20
+    ],
+    [
+      1,
+      89.64,
+      3,
+      91.64
+    ],
+    [
+      41.6,
+      90.14,
+      43.6,
+      92.14
+    ]
+  ],
+  "screw_centers_front_view_mm": [
+    [
+      -0.2999999999999998,
+      -4.5
+    ],
+    [
+      58.3,
+      -4.5
+    ],
+    [
+      6.0,
+      96.5
+    ],
+    [
+      37.0,
+      96.5
+    ]
+  ],
+  "limitations": [
+    "Manufacturing blocked until measured front gaps are positive and within0.10..0.25mm; nominal clearances are not a worst-case guarantee.",
+    "Measure local PCB bearing thickness and post/shoulder separation; select rear PET shims for20..30 percent foam compression.",
+    "Measure PCB lateral play and panel placement; nominal58.20 guide width is not a measured tolerance guarantee.",
+    "Screen glass/PS/FPL edge-pressure and adhesive compatibility are not approved by the panel manufacturer.",
+    "Inspect PCB flatness after reflow before bonding glass; never use case screws to force a warped PCB or glass flat.",
+    "UPDATE rest clearance does not prove operation: measure gap0.10..0.20, actual stroke/stop and safe overtravel; no preload or stuck wake.",
+    "FPC fold length/bend radius, original100..102mm leads/PH mating, exact USB cable, thermal, RF, impact and fatigue require first article.",
+    "No universal door-access compatibility or manufacturing-release claim."
+  ],
+  "design_revision": "P1.1-revisionB-C1",
+  "base_design_sha256": "246526bb521aa6fb61c5ce5a5d4cb6d1ee3e19fa65eb45b927a839afe90a92e1",
+  "c1_config_sha256": "433f15dac0475c9dc68186ad55fccac4f016285cd36053ff6cd484e28d314366",
+  "board_sha256": "a6e52a432d860a8ce0d489fdaac9a9f9a56ae2c96e7ca05ce998e5b3b5a1cd40",
+  "raw_to_mechanical_transform": {
+    "translation_mm": [
+      0,
+      0,
+      0.045
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source": "validation/stackup_gui_observed.txt: bottom copper0.035 + bottom mask0.010; raw STEP retained"
+  },
+  "rear_support_contact": "Solid post stops at Z-0.85; two adhesive layers/PET/compressed foam end at Z0; no direct post-to-PCB contact."
+}

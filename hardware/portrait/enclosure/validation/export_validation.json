@@ -1,0 +1,67 @@
+{
+  "status": "PASS_EXPORT_TOPOLOGY_ONLY",
+  "parts": {
+    "front_frame": {
+      "step_readback": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 16695.676315695313,
+        "bbox_mm": [
+          66.0,
+          109.0,
+          9.7
+        ],
+        "bbox_min_mm": [
+          -4.0,
+          -100.0,
+          -6.2
+        ],
+        "bbox_max_mm": [
+          62.0,
+          9.0,
+          3.5
+        ]
+      },
+      "step_volume_delta_mm3": 3.4924596548080444e-10,
+      "stl_triangles": 6676,
+      "stl_unpaired_edges": 0,
+      "stl_degenerate_triangles": 0,
+      "stl_inconsistent_directed_edges": 0
+    },
+    "back_cover": {
+      "step_readback": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 10081.221587588287,
+        "bbox_mm": [
+          66.0,
+          109.0,
+          6.75
+        ],
+        "bbox_min_mm": [
+          -4.0,
+          -100.0,
+          -7.6
+        ],
+        "bbox_max_mm": [
+          62.0,
+          9.0,
+          -0.8499999999999996
+        ]
+      },
+      "step_volume_delta_mm3": 3.092281986027956e-11,
+      "stl_triangles": 13090,
+      "stl_unpaired_edges": 0,
+      "stl_degenerate_triangles": 0,
+      "stl_inconsistent_directed_edges": 0
+    }
+  },
+  "card_insertion_sweep_interference_mm3": {
+    "status": "NOT_APPLICABLE_EXTERNAL_CARD_CARRIER_CANCELLED"
+  },
+  "limitations": [
+    "STL topology is not print-process qualification",
+    "Nominal clearances do not replace physical tolerance/warpage checks",
+    "No finished populated PCB in these assemblies"
+  ]
+}

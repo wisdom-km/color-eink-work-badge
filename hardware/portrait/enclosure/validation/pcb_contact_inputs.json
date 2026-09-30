@@ -1,0 +1,8294 @@
+{
+  "board_sha256": "a6e52a432d860a8ce0d489fdaac9a9f9a56ae2c96e7ca05ce998e5b3b5a1cd40",
+  "engine": "10.0.6",
+  "script_sha256": "7f17851e1ca0919f9c7e52747425c3c135f09324e114054eec5314c16613431b",
+  "pads": [
+    {
+      "ref": "C120",
+      "number": "1",
+      "bbox": [
+        36.275,
+        77.55,
+        37.725,
+        78.55
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        36.275,
+        77.55,
+        37.725,
+        78.55
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C120",
+      "number": "2",
+      "bbox": [
+        36.275,
+        79.45,
+        37.725,
+        80.45
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        36.275,
+        79.45,
+        37.725,
+        80.45
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "L1",
+      "number": "1",
+      "bbox": [
+        9.95,
+        67.15,
+        11.05,
+        70.85
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        9.95,
+        67.15,
+        11.05,
+        70.85
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "L1",
+      "number": "2",
+      "bbox": [
+        6.95,
+        67.15,
+        8.05,
+        70.85
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        6.95,
+        67.15,
+        8.05,
+        70.85
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J3",
+      "number": "",
+      "bbox": [
+        53.425,
+        85.89,
+        54.075,
+        86.54
+      ],
+      "mask_expansion_mm": 0.01,
+      "mask_bbox": [
+        53.415,
+        85.88,
+        54.085,
+        86.55000000000001
+      ],
+      "front_mask": true,
+      "back_mask": true,
+      "drill_mm": [
+        0.65,
+        0.65
+      ]
+    },
+    {
+      "ref": "J3",
+      "number": "",
+      "bbox": [
+        45.925,
+        85.89,
+        46.575,
+        86.54
+      ],
+      "mask_expansion_mm": 0.01,
+      "mask_bbox": [
+        45.915,
+        85.88,
+        46.585,
+        86.55000000000001
+      ],
+      "front_mask": true,
+      "back_mask": true,
+      "drill_mm": [
+        0.65,
+        0.65
+      ]
+    },
+    {
+      "ref": "J3",
+      "number": "A1",
+      "bbox": [
+        53.25,
+        84.44,
+        53.5,
+        85.565
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        53.25,
+        84.44,
+        53.5,
+        85.565
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J3",
+      "number": "A4",
+      "bbox": [
+        52.45,
+        84.44,
+        52.7,
+        85.565
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        52.45,
+        84.44,
+        52.7,
+        85.565
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J3",
+      "number": "A5",
+      "bbox": [
+        51.125,
+        84.44,
+        51.375,
+        85.565
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        51.125,
+        84.44,
+        51.375,
+        85.565
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J3",
+      "number": "A6",
+      "bbox": [
+        50.125,
+        84.44,
+        50.375,
+        85.565
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        50.125,
+        84.44,
+        50.375,
+        85.565
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J3",
+      "number": "A7",
+      "bbox": [
+        49.625,
+        84.44,
+        49.875,
+        85.565
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        49.625,
+        84.44,
+        49.875,
+        85.565
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J3",
+      "number": "A8",
+      "bbox": [
+        48.625,
+        84.44,
+        48.875,
+        85.565
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        48.625,
+        84.44,
+        48.875,
+        85.565
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J3",
+      "number": "A9",
+      "bbox": [
+        47.3,
+        84.44,
+        47.55,
+        85.565
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        47.3,
+        84.44,
+        47.55,
+        85.565
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J3",
+      "number": "A12",
+      "bbox": [
+        46.5,
+        84.44,
+        46.75,
+        85.565
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        46.5,
+        84.44,
+        46.75,
+        85.565
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J3",
+      "number": "B1",
+      "bbox": [
+        46.75,
+        84.44,
+        47.05,
+        85.565
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        46.75,
+        84.44,
+        47.05,
+        85.565
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J3",
+      "number": "B4",
+      "bbox": [
+        47.55,
+        84.44,
+        47.85,
+        85.565
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        47.55,
+        84.44,
+        47.85,
+        85.565
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J3",
+      "number": "B5",
+      "bbox": [
+        48.125,
+        84.44,
+        48.375,
+        85.565
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        48.125,
+        84.44,
+        48.375,
+        85.565
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J3",
+      "number": "B6",
+      "bbox": [
+        49.125,
+        84.44,
+        49.375,
+        85.565
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        49.125,
+        84.44,
+        49.375,
+        85.565
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J3",
+      "number": "B7",
+      "bbox": [
+        50.625,
+        84.44,
+        50.875,
+        85.565
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        50.625,
+        84.44,
+        50.875,
+        85.565
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J3",
+      "number": "B8",
+      "bbox": [
+        51.625,
+        84.44,
+        51.875,
+        85.565
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        51.625,
+        84.44,
+        51.875,
+        85.565
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J3",
+      "number": "B9",
+      "bbox": [
+        52.15,
+        84.44,
+        52.45,
+        85.565
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        52.15,
+        84.44,
+        52.45,
+        85.565
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J3",
+      "number": "B12",
+      "bbox": [
+        52.95,
+        84.44,
+        53.25,
+        85.565
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        52.95,
+        84.44,
+        53.25,
+        85.565
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J3",
+      "number": "S1",
+      "bbox": [
+        55.08,
+        89.84,
+        56.08,
+        92.04
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        55.08,
+        89.84,
+        56.08,
+        92.04
+      ],
+      "front_mask": true,
+      "back_mask": true,
+      "drill_mm": [
+        0.5,
+        1.65
+      ]
+    },
+    {
+      "ref": "J3",
+      "number": "S1",
+      "bbox": [
+        55.08,
+        85.2,
+        56.08,
+        87.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        55.08,
+        85.2,
+        56.08,
+        87.4
+      ],
+      "front_mask": true,
+      "back_mask": true,
+      "drill_mm": [
+        0.5,
+        1.65
+      ]
+    },
+    {
+      "ref": "J3",
+      "number": "S1",
+      "bbox": [
+        43.92,
+        89.84,
+        44.92,
+        92.04
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        43.92,
+        89.84,
+        44.92,
+        92.04
+      ],
+      "front_mask": true,
+      "back_mask": true,
+      "drill_mm": [
+        0.5,
+        1.65
+      ]
+    },
+    {
+      "ref": "J3",
+      "number": "S1",
+      "bbox": [
+        43.92,
+        85.2,
+        44.92,
+        87.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        43.92,
+        85.2,
+        44.92,
+        87.4
+      ],
+      "front_mask": true,
+      "back_mask": true,
+      "drill_mm": [
+        0.5,
+        1.65
+      ]
+    },
+    {
+      "ref": "C110",
+      "number": "1",
+      "bbox": [
+        4.275,
+        73.55,
+        5.725,
+        74.55
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        4.275,
+        73.55,
+        5.725,
+        74.55
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C110",
+      "number": "2",
+      "bbox": [
+        4.275,
+        75.45,
+        5.725,
+        76.45
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        4.275,
+        75.45,
+        5.725,
+        76.45
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C2",
+      "number": "1",
+      "bbox": [
+        43.325,
+        69.525,
+        44.225,
+        70.475
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        43.325,
+        69.525,
+        44.225,
+        70.475
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C2",
+      "number": "2",
+      "bbox": [
+        41.775,
+        69.525,
+        42.675,
+        70.475
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        41.775,
+        69.525,
+        42.675,
+        70.475
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C112",
+      "number": "1",
+      "bbox": [
+        18.45,
+        62.275,
+        19.45,
+        63.725
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        18.45,
+        62.275,
+        19.45,
+        63.725
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C112",
+      "number": "2",
+      "bbox": [
+        16.55,
+        62.275,
+        17.55,
+        63.725
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        16.55,
+        62.275,
+        17.55,
+        63.725
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "Q2",
+      "number": "1",
+      "bbox": [
+        29.2,
+        63.75,
+        30.675,
+        64.35
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        29.2,
+        63.75,
+        30.675,
+        64.35
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "Q2",
+      "number": "2",
+      "bbox": [
+        29.2,
+        65.65,
+        30.675,
+        66.25
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        29.2,
+        65.65,
+        30.675,
+        66.25
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "Q2",
+      "number": "3",
+      "bbox": [
+        27.325,
+        64.7,
+        28.8,
+        65.3
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        27.325,
+        64.7,
+        28.8,
+        65.3
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "1",
+      "bbox": [
+        50.5,
+        16.5,
+        51.3,
+        16.9
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        50.5,
+        16.5,
+        51.3,
+        16.9
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "2",
+      "bbox": [
+        50.5,
+        17.3,
+        51.3,
+        17.7
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        50.5,
+        17.3,
+        51.3,
+        17.7
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "3",
+      "bbox": [
+        50.5,
+        18.1,
+        51.3,
+        18.5
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        50.5,
+        18.1,
+        51.3,
+        18.5
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "4",
+      "bbox": [
+        50.5,
+        18.9,
+        51.3,
+        19.3
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        50.5,
+        18.9,
+        51.3,
+        19.3
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "5",
+      "bbox": [
+        50.5,
+        19.7,
+        51.3,
+        20.1
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        50.5,
+        19.7,
+        51.3,
+        20.1
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "6",
+      "bbox": [
+        50.5,
+        20.5,
+        51.3,
+        20.9
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        50.5,
+        20.5,
+        51.3,
+        20.9
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "7",
+      "bbox": [
+        50.5,
+        21.3,
+        51.3,
+        21.7
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        50.5,
+        21.3,
+        51.3,
+        21.7
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "8",
+      "bbox": [
+        50.5,
+        22.1,
+        51.3,
+        22.5
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        50.5,
+        22.1,
+        51.3,
+        22.5
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "9",
+      "bbox": [
+        50.5,
+        22.9,
+        51.3,
+        23.3
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        50.5,
+        22.9,
+        51.3,
+        23.3
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "10",
+      "bbox": [
+        50.5,
+        23.7,
+        51.3,
+        24.1
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        50.5,
+        23.7,
+        51.3,
+        24.1
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "11",
+      "bbox": [
+        50.5,
+        24.5,
+        51.3,
+        24.9
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        50.5,
+        24.5,
+        51.3,
+        24.9
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "12",
+      "bbox": [
+        49.6,
+        25.2,
+        50.0,
+        26.0
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        49.6,
+        25.2,
+        50.0,
+        26.0
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "13",
+      "bbox": [
+        48.8,
+        25.2,
+        49.2,
+        26.0
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        48.8,
+        25.2,
+        49.2,
+        26.0
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "14",
+      "bbox": [
+        48.0,
+        25.2,
+        48.4,
+        26.0
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        48.0,
+        25.2,
+        48.4,
+        26.0
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "15",
+      "bbox": [
+        47.2,
+        25.2,
+        47.6,
+        26.0
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        47.2,
+        25.2,
+        47.6,
+        26.0
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "16",
+      "bbox": [
+        46.4,
+        25.2,
+        46.8,
+        26.0
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        46.4,
+        25.2,
+        46.8,
+        26.0
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "17",
+      "bbox": [
+        45.6,
+        25.2,
+        46.0,
+        26.0
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        45.6,
+        25.2,
+        46.0,
+        26.0
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "18",
+      "bbox": [
+        44.8,
+        25.2,
+        45.2,
+        26.0
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        44.8,
+        25.2,
+        45.2,
+        26.0
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "19",
+      "bbox": [
+        44.0,
+        25.2,
+        44.4,
+        26.0
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        44.0,
+        25.2,
+        44.4,
+        26.0
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "20",
+      "bbox": [
+        43.2,
+        25.2,
+        43.6,
+        26.0
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        43.2,
+        25.2,
+        43.6,
+        26.0
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "21",
+      "bbox": [
+        42.4,
+        25.2,
+        42.8,
+        26.0
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        42.4,
+        25.2,
+        42.8,
+        26.0
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "22",
+      "bbox": [
+        41.6,
+        25.2,
+        42.0,
+        26.0
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        41.6,
+        25.2,
+        42.0,
+        26.0
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "23",
+      "bbox": [
+        40.8,
+        25.2,
+        41.2,
+        26.0
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        40.8,
+        25.2,
+        41.2,
+        26.0
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "24",
+      "bbox": [
+        40.0,
+        25.2,
+        40.4,
+        26.0
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        40.0,
+        25.2,
+        40.4,
+        26.0
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "25",
+      "bbox": [
+        38.7,
+        24.5,
+        39.5,
+        24.9
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        38.7,
+        24.5,
+        39.5,
+        24.9
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "26",
+      "bbox": [
+        38.7,
+        23.7,
+        39.5,
+        24.1
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        38.7,
+        23.7,
+        39.5,
+        24.1
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "27",
+      "bbox": [
+        38.7,
+        22.9,
+        39.5,
+        23.3
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        38.7,
+        22.9,
+        39.5,
+        23.3
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "28",
+      "bbox": [
+        38.7,
+        22.1,
+        39.5,
+        22.5
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        38.7,
+        22.1,
+        39.5,
+        22.5
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "29",
+      "bbox": [
+        38.7,
+        21.3,
+        39.5,
+        21.7
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        38.7,
+        21.3,
+        39.5,
+        21.7
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "30",
+      "bbox": [
+        38.7,
+        20.5,
+        39.5,
+        20.9
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        38.7,
+        20.5,
+        39.5,
+        20.9
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "31",
+      "bbox": [
+        38.7,
+        19.7,
+        39.5,
+        20.1
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        38.7,
+        19.7,
+        39.5,
+        20.1
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "32",
+      "bbox": [
+        38.7,
+        18.9,
+        39.5,
+        19.3
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        38.7,
+        18.9,
+        39.5,
+        19.3
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "33",
+      "bbox": [
+        38.7,
+        18.1,
+        39.5,
+        18.5
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        38.7,
+        18.1,
+        39.5,
+        18.5
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "34",
+      "bbox": [
+        38.7,
+        17.3,
+        39.5,
+        17.7
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        38.7,
+        17.3,
+        39.5,
+        17.7
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "35",
+      "bbox": [
+        38.7,
+        16.5,
+        39.5,
+        16.9
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        38.7,
+        16.5,
+        39.5,
+        16.9
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "36",
+      "bbox": [
+        40.0,
+        15.4,
+        40.4,
+        16.2
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        40.0,
+        15.4,
+        40.4,
+        16.2
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "37",
+      "bbox": [
+        40.8,
+        15.4,
+        41.2,
+        16.2
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        40.8,
+        15.4,
+        41.2,
+        16.2
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "38",
+      "bbox": [
+        41.6,
+        15.4,
+        42.0,
+        16.2
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        41.6,
+        15.4,
+        42.0,
+        16.2
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "39",
+      "bbox": [
+        42.4,
+        15.4,
+        42.8,
+        16.2
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        42.4,
+        15.4,
+        42.8,
+        16.2
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "40",
+      "bbox": [
+        43.2,
+        15.4,
+        43.6,
+        16.2
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        43.2,
+        15.4,
+        43.6,
+        16.2
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "41",
+      "bbox": [
+        44.0,
+        15.4,
+        44.4,
+        16.2
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        44.0,
+        15.4,
+        44.4,
+        16.2
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "42",
+      "bbox": [
+        44.8,
+        15.4,
+        45.2,
+        16.2
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        44.8,
+        15.4,
+        45.2,
+        16.2
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "43",
+      "bbox": [
+        45.6,
+        15.4,
+        46.0,
+        16.2
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        45.6,
+        15.4,
+        46.0,
+        16.2
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "44",
+      "bbox": [
+        46.4,
+        15.4,
+        46.8,
+        16.2
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        46.4,
+        15.4,
+        46.8,
+        16.2
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "45",
+      "bbox": [
+        47.2,
+        15.4,
+        47.6,
+        16.2
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        47.2,
+        15.4,
+        47.6,
+        16.2
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "46",
+      "bbox": [
+        48.0,
+        15.4,
+        48.4,
+        16.2
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        48.0,
+        15.4,
+        48.4,
+        16.2
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "47",
+      "bbox": [
+        48.8,
+        15.4,
+        49.2,
+        16.2
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        48.8,
+        15.4,
+        49.2,
+        16.2
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "48",
+      "bbox": [
+        49.6,
+        15.4,
+        50.0,
+        16.2
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        49.6,
+        15.4,
+        50.0,
+        16.2
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "49",
+      "bbox": [
+        46.25,
+        21.95,
+        47.7,
+        23.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        46.25,
+        21.95,
+        47.7,
+        23.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "49",
+      "bbox": [
+        46.25,
+        19.975,
+        47.7,
+        21.425
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        46.25,
+        19.975,
+        47.7,
+        21.425
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "49",
+      "bbox": [
+        46.25,
+        18.0,
+        47.7,
+        19.45
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        46.25,
+        18.0,
+        47.7,
+        19.45
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "49",
+      "bbox": [
+        44.275,
+        21.95,
+        45.725,
+        23.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        44.275,
+        21.95,
+        45.725,
+        23.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "49",
+      "bbox": [
+        44.275,
+        19.975,
+        45.725,
+        21.425
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        44.275,
+        19.975,
+        45.725,
+        21.425
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "49",
+      "bbox": [
+        44.275,
+        18.0,
+        45.725,
+        19.45
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        44.275,
+        18.0,
+        45.725,
+        19.45
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "49",
+      "bbox": [
+        42.3,
+        21.95,
+        43.75,
+        23.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        42.3,
+        21.95,
+        43.75,
+        23.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "49",
+      "bbox": [
+        42.3,
+        19.975,
+        43.75,
+        21.425
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        42.3,
+        19.975,
+        43.75,
+        21.425
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "49",
+      "bbox": [
+        42.3,
+        18.0,
+        43.75,
+        19.45
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        42.3,
+        18.0,
+        43.75,
+        19.45
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "50",
+      "bbox": [
+        38.7,
+        15.4,
+        39.4,
+        16.1
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        38.7,
+        15.4,
+        39.4,
+        16.1
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "51",
+      "bbox": [
+        38.7,
+        25.3,
+        39.4,
+        26.0
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        38.7,
+        25.3,
+        39.4,
+        26.0
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "52",
+      "bbox": [
+        50.6,
+        25.3,
+        51.3,
+        26.0
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        50.6,
+        25.3,
+        51.3,
+        26.0
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U1",
+      "number": "53",
+      "bbox": [
+        50.6,
+        15.4,
+        51.3,
+        16.1
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        50.6,
+        15.4,
+        51.3,
+        16.1
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "TP4",
+      "number": "1",
+      "bbox": [
+        2.5,
+        58.5,
+        3.5,
+        59.5
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        2.5,
+        58.5,
+        3.5,
+        59.5
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U4",
+      "number": "1",
+      "bbox": [
+        45.475,
+        56.75,
+        46.8,
+        57.35
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        45.475,
+        56.75,
+        46.8,
+        57.35
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U4",
+      "number": "2",
+      "bbox": [
+        45.475,
+        57.7,
+        46.8,
+        58.3
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        45.475,
+        57.7,
+        46.8,
+        58.3
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U4",
+      "number": "3",
+      "bbox": [
+        45.475,
+        58.65,
+        46.8,
+        59.25
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        45.475,
+        58.65,
+        46.8,
+        59.25
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U4",
+      "number": "4",
+      "bbox": [
+        43.2,
+        58.65,
+        44.525,
+        59.25
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        43.2,
+        58.65,
+        44.525,
+        59.25
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U4",
+      "number": "5",
+      "bbox": [
+        43.2,
+        56.75,
+        44.525,
+        57.35
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        43.2,
+        56.75,
+        44.525,
+        57.35
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R6",
+      "number": "1",
+      "bbox": [
+        38.24,
+        45.68,
+        38.78,
+        46.32
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        38.24,
+        45.68,
+        38.78,
+        46.32
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R6",
+      "number": "2",
+      "bbox": [
+        37.22,
+        45.68,
+        37.76,
+        46.32
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        37.22,
+        45.68,
+        37.76,
+        46.32
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R10",
+      "number": "1",
+      "bbox": [
+        54.18,
+        29.22,
+        54.82,
+        29.76
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        54.18,
+        29.22,
+        54.82,
+        29.76
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R10",
+      "number": "2",
+      "bbox": [
+        54.18,
+        30.24,
+        54.82,
+        30.78
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        54.18,
+        30.24,
+        54.82,
+        30.78
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C122",
+      "number": "1",
+      "bbox": [
+        32.275,
+        60.55,
+        33.725,
+        61.55
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        32.275,
+        60.55,
+        33.725,
+        61.55
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C122",
+      "number": "2",
+      "bbox": [
+        32.275,
+        62.45,
+        33.725,
+        63.45
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        32.275,
+        62.45,
+        33.725,
+        63.45
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C117",
+      "number": "1",
+      "bbox": [
+        8.275,
+        77.55,
+        9.725,
+        78.55
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        8.275,
+        77.55,
+        9.725,
+        78.55
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C117",
+      "number": "2",
+      "bbox": [
+        8.275,
+        79.45,
+        9.725,
+        80.45
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        8.275,
+        79.45,
+        9.725,
+        80.45
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C118",
+      "number": "1",
+      "bbox": [
+        12.275,
+        77.55,
+        13.725,
+        78.55
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        12.275,
+        77.55,
+        13.725,
+        78.55
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C118",
+      "number": "2",
+      "bbox": [
+        12.275,
+        79.45,
+        13.725,
+        80.45
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        12.275,
+        79.45,
+        13.725,
+        80.45
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "D1",
+      "number": "1",
+      "bbox": [
+        18.4,
+        65.9,
+        19.6,
+        66.8
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        18.4,
+        65.9,
+        19.6,
+        66.8
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "D1",
+      "number": "2",
+      "bbox": [
+        18.4,
+        69.2,
+        19.6,
+        70.1
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        18.4,
+        69.2,
+        19.6,
+        70.1
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "D10",
+      "number": "1",
+      "bbox": [
+        47.75,
+        72.1,
+        50.25,
+        73.9
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        47.75,
+        72.1,
+        50.25,
+        73.9
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "D10",
+      "number": "2",
+      "bbox": [
+        43.75,
+        72.1,
+        46.25,
+        73.9
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        43.75,
+        72.1,
+        46.25,
+        73.9
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C129",
+      "number": "1",
+      "bbox": [
+        47.275,
+        31.55,
+        48.725,
+        32.55
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        47.275,
+        31.55,
+        48.725,
+        32.55
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C129",
+      "number": "2",
+      "bbox": [
+        47.275,
+        33.45,
+        48.725,
+        34.45
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        47.275,
+        33.45,
+        48.725,
+        34.45
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C116",
+      "number": "1",
+      "bbox": [
+        4.275,
+        77.55,
+        5.725,
+        78.55
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        4.275,
+        77.55,
+        5.725,
+        78.55
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C116",
+      "number": "2",
+      "bbox": [
+        4.275,
+        79.45,
+        5.725,
+        80.45
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        4.275,
+        79.45,
+        5.725,
+        80.45
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C3",
+      "number": "1",
+      "bbox": [
+        40.525,
+        56.775,
+        41.475,
+        57.675
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        40.525,
+        56.775,
+        41.475,
+        57.675
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C3",
+      "number": "2",
+      "bbox": [
+        40.525,
+        58.325,
+        41.475,
+        59.225
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        40.525,
+        58.325,
+        41.475,
+        59.225
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "D5",
+      "number": "1",
+      "bbox": [
+        53.35,
+        41.525,
+        54.225,
+        42.475
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        53.35,
+        41.525,
+        54.225,
+        42.475
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "D5",
+      "number": "2",
+      "bbox": [
+        51.775,
+        41.525,
+        52.65,
+        42.475
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        51.775,
+        41.525,
+        52.65,
+        42.475
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R2",
+      "number": "1",
+      "bbox": [
+        55.18,
+        83.07,
+        55.82,
+        83.61
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        55.18,
+        83.07,
+        55.82,
+        83.61
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R2",
+      "number": "2",
+      "bbox": [
+        55.18,
+        84.09,
+        55.82,
+        84.63
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        55.18,
+        84.09,
+        55.82,
+        84.63
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C123",
+      "number": "1",
+      "bbox": [
+        44.275,
+        77.55,
+        45.725,
+        78.55
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        44.275,
+        77.55,
+        45.725,
+        78.55
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C123",
+      "number": "2",
+      "bbox": [
+        44.275,
+        79.45,
+        45.725,
+        80.45
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        44.275,
+        79.45,
+        45.725,
+        80.45
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R104",
+      "number": "1",
+      "bbox": [
+        23.425,
+        71.525,
+        24.225,
+        72.475
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        23.425,
+        71.525,
+        24.225,
+        72.475
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R104",
+      "number": "2",
+      "bbox": [
+        21.775,
+        71.525,
+        22.575,
+        72.475
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        21.775,
+        71.525,
+        22.575,
+        72.475
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C100",
+      "number": "1",
+      "bbox": [
+        20.9,
+        56.15,
+        22.05,
+        58.85
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        20.9,
+        56.15,
+        22.05,
+        58.85
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C100",
+      "number": "2",
+      "bbox": [
+        17.95,
+        56.15,
+        19.1,
+        58.85
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        17.95,
+        56.15,
+        19.1,
+        58.85
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "SW3",
+      "number": "1",
+      "bbox": [
+        4.55,
+        44.6,
+        5.6,
+        45.25
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        4.55,
+        44.6,
+        5.6,
+        45.25
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "SW3",
+      "number": "1",
+      "bbox": [
+        0.4,
+        44.6,
+        1.45,
+        45.25
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        0.4,
+        44.6,
+        1.45,
+        45.25
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "SW3",
+      "number": "2",
+      "bbox": [
+        4.55,
+        46.75,
+        5.6,
+        47.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        4.55,
+        46.75,
+        5.6,
+        47.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "SW3",
+      "number": "2",
+      "bbox": [
+        0.4,
+        46.75,
+        1.45,
+        47.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        0.4,
+        46.75,
+        1.45,
+        47.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "TP2",
+      "number": "1",
+      "bbox": [
+        4.5,
+        61.5,
+        5.5,
+        62.5
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        4.5,
+        61.5,
+        5.5,
+        62.5
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R20",
+      "number": "1",
+      "bbox": [
+        35.68,
+        63.22,
+        36.32,
+        63.76
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        35.68,
+        63.22,
+        36.32,
+        63.76
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R20",
+      "number": "2",
+      "bbox": [
+        35.68,
+        64.24,
+        36.32,
+        64.78
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        35.68,
+        64.24,
+        36.32,
+        64.78
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C30",
+      "number": "1",
+      "bbox": [
+        37.275,
+        56.55,
+        38.725,
+        57.55
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        37.275,
+        56.55,
+        38.725,
+        57.55
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C30",
+      "number": "2",
+      "bbox": [
+        37.275,
+        58.45,
+        38.725,
+        59.45
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        37.275,
+        58.45,
+        38.725,
+        59.45
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C6",
+      "number": "1",
+      "bbox": [
+        35.325,
+        20.775,
+        36.275,
+        21.675
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        35.325,
+        20.775,
+        36.275,
+        21.675
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C6",
+      "number": "2",
+      "bbox": [
+        35.325,
+        22.325,
+        36.275,
+        23.225
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        35.325,
+        22.325,
+        36.275,
+        23.225
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R9",
+      "number": "1",
+      "bbox": [
+        52.68,
+        38.22,
+        53.32,
+        38.76
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        52.68,
+        38.22,
+        53.32,
+        38.76
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R9",
+      "number": "2",
+      "bbox": [
+        52.68,
+        39.24,
+        53.32,
+        39.78
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        52.68,
+        39.24,
+        53.32,
+        39.78
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "Q20",
+      "number": "1",
+      "bbox": [
+        50.2,
+        46.75,
+        51.675,
+        47.35
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        50.2,
+        46.75,
+        51.675,
+        47.35
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "Q20",
+      "number": "2",
+      "bbox": [
+        50.2,
+        48.65,
+        51.675,
+        49.25
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        50.2,
+        48.65,
+        51.675,
+        49.25
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "Q20",
+      "number": "3",
+      "bbox": [
+        48.325,
+        47.7,
+        49.8,
+        48.3
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        48.325,
+        47.7,
+        49.8,
+        48.3
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "D2",
+      "number": "1",
+      "bbox": [
+        18.4,
+        70.9,
+        19.6,
+        71.8
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        18.4,
+        70.9,
+        19.6,
+        71.8
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "D2",
+      "number": "2",
+      "bbox": [
+        18.4,
+        74.2,
+        19.6,
+        75.1
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        18.4,
+        74.2,
+        19.6,
+        75.1
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "Q1",
+      "number": "1",
+      "bbox": [
+        14.2,
+        66.75,
+        15.675,
+        67.35
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        14.2,
+        66.75,
+        15.675,
+        67.35
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "Q1",
+      "number": "2",
+      "bbox": [
+        14.2,
+        68.65,
+        15.675,
+        69.25
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        14.2,
+        68.65,
+        15.675,
+        69.25
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "Q1",
+      "number": "3",
+      "bbox": [
+        12.325,
+        67.7,
+        13.8,
+        68.3
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        12.325,
+        67.7,
+        13.8,
+        68.3
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R22",
+      "number": "1",
+      "bbox": [
+        53.68,
+        49.22,
+        54.32,
+        49.76
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        53.68,
+        49.22,
+        54.32,
+        49.76
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R22",
+      "number": "2",
+      "bbox": [
+        53.68,
+        50.24,
+        54.32,
+        50.78
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        53.68,
+        50.24,
+        54.32,
+        50.78
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R102",
+      "number": "1",
+      "bbox": [
+        29.425,
+        61.025,
+        30.225,
+        61.975
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        29.425,
+        61.025,
+        30.225,
+        61.975
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R102",
+      "number": "2",
+      "bbox": [
+        27.775,
+        61.025,
+        28.575,
+        61.975
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        27.775,
+        61.025,
+        28.575,
+        61.975
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R3",
+      "number": "1",
+      "bbox": [
+        43.74,
+        65.68,
+        44.28,
+        66.32
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        43.74,
+        65.68,
+        44.28,
+        66.32
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R3",
+      "number": "2",
+      "bbox": [
+        42.72,
+        65.68,
+        43.26,
+        66.32
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        42.72,
+        65.68,
+        43.26,
+        66.32
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R8",
+      "number": "1",
+      "bbox": [
+        54.18,
+        26.22,
+        54.82,
+        26.76
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        54.18,
+        26.22,
+        54.82,
+        26.76
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R8",
+      "number": "2",
+      "bbox": [
+        54.18,
+        27.24,
+        54.82,
+        27.78
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        54.18,
+        27.24,
+        54.82,
+        27.78
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "FB1",
+      "number": "1",
+      "bbox": [
+        46.35,
+        40.525,
+        47.225,
+        41.475
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        46.35,
+        40.525,
+        47.225,
+        41.475
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "FB1",
+      "number": "2",
+      "bbox": [
+        44.775,
+        40.525,
+        45.65,
+        41.475
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        44.775,
+        40.525,
+        45.65,
+        41.475
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "L2",
+      "number": "1",
+      "bbox": [
+        33.95,
+        68.15,
+        35.05,
+        71.85
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        33.95,
+        68.15,
+        35.05,
+        71.85
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "L2",
+      "number": "2",
+      "bbox": [
+        30.95,
+        68.15,
+        32.05,
+        71.85
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        30.95,
+        68.15,
+        32.05,
+        71.85
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U5",
+      "number": "1",
+      "bbox": [
+        49.475,
+        78.75,
+        50.8,
+        79.35
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        49.475,
+        78.75,
+        50.8,
+        79.35
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U5",
+      "number": "2",
+      "bbox": [
+        49.475,
+        79.7,
+        50.8,
+        80.3
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        49.475,
+        79.7,
+        50.8,
+        80.3
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U5",
+      "number": "3",
+      "bbox": [
+        49.475,
+        80.65,
+        50.8,
+        81.25
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        49.475,
+        80.65,
+        50.8,
+        81.25
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U5",
+      "number": "4",
+      "bbox": [
+        47.2,
+        80.65,
+        48.525,
+        81.25
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        47.2,
+        80.65,
+        48.525,
+        81.25
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U5",
+      "number": "5",
+      "bbox": [
+        47.2,
+        79.7,
+        48.525,
+        80.3
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        47.2,
+        79.7,
+        48.525,
+        80.3
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U5",
+      "number": "6",
+      "bbox": [
+        47.2,
+        78.75,
+        48.525,
+        79.35
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        47.2,
+        78.75,
+        48.525,
+        79.35
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C5",
+      "number": "1",
+      "bbox": [
+        42.2,
+        45.69,
+        42.76,
+        46.31
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        42.2,
+        45.69,
+        42.76,
+        46.31
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C5",
+      "number": "2",
+      "bbox": [
+        41.24,
+        45.69,
+        41.8,
+        46.31
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        41.24,
+        45.69,
+        41.8,
+        46.31
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R5",
+      "number": "1",
+      "bbox": [
+        34.24,
+        45.68,
+        34.78,
+        46.32
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        34.24,
+        45.68,
+        34.78,
+        46.32
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R5",
+      "number": "2",
+      "bbox": [
+        33.22,
+        45.68,
+        33.76,
+        46.32
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        33.22,
+        45.68,
+        33.76,
+        46.32
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "FB2",
+      "number": "1",
+      "bbox": [
+        41.35,
+        40.525,
+        42.225,
+        41.475
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        41.35,
+        40.525,
+        42.225,
+        41.475
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "FB2",
+      "number": "2",
+      "bbox": [
+        39.775,
+        40.525,
+        40.65,
+        41.475
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        39.775,
+        40.525,
+        40.65,
+        41.475
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R1",
+      "number": "1",
+      "bbox": [
+        43.88,
+        83.07,
+        44.52,
+        83.61
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        43.88,
+        83.07,
+        44.52,
+        83.61
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R1",
+      "number": "2",
+      "bbox": [
+        43.88,
+        84.09,
+        44.52,
+        84.63
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        43.88,
+        84.09,
+        44.52,
+        84.63
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C111",
+      "number": "1",
+      "bbox": [
+        7.275,
+        73.55,
+        8.725,
+        74.55
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        7.275,
+        73.55,
+        8.725,
+        74.55
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C111",
+      "number": "2",
+      "bbox": [
+        7.275,
+        75.45,
+        8.725,
+        76.45
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        7.275,
+        75.45,
+        8.725,
+        76.45
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C126",
+      "number": "1",
+      "bbox": [
+        35.275,
+        31.55,
+        36.725,
+        32.55
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        35.275,
+        31.55,
+        36.725,
+        32.55
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C126",
+      "number": "2",
+      "bbox": [
+        35.275,
+        33.45,
+        36.725,
+        34.45
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        35.275,
+        33.45,
+        36.725,
+        34.45
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "D6",
+      "number": "1",
+      "bbox": [
+        28.4,
+        70.9,
+        29.6,
+        71.8
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        28.4,
+        70.9,
+        29.6,
+        71.8
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "D6",
+      "number": "2",
+      "bbox": [
+        28.4,
+        74.2,
+        29.6,
+        75.1
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        28.4,
+        74.2,
+        29.6,
+        75.1
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C121",
+      "number": "1",
+      "bbox": [
+        40.275,
+        77.55,
+        41.725,
+        78.55
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        40.275,
+        77.55,
+        41.725,
+        78.55
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C121",
+      "number": "2",
+      "bbox": [
+        40.275,
+        79.45,
+        41.725,
+        80.45
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        40.275,
+        79.45,
+        41.725,
+        80.45
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C131",
+      "number": "1",
+      "bbox": [
+        4.275,
+        66.05,
+        5.725,
+        67.05
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        4.275,
+        66.05,
+        5.725,
+        67.05
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C131",
+      "number": "2",
+      "bbox": [
+        4.275,
+        67.95,
+        5.725,
+        68.95
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        4.275,
+        67.95,
+        5.725,
+        68.95
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C115",
+      "number": "1",
+      "bbox": [
+        23.45,
+        76.275,
+        24.45,
+        77.725
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        23.45,
+        76.275,
+        24.45,
+        77.725
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C115",
+      "number": "2",
+      "bbox": [
+        21.55,
+        76.275,
+        22.55,
+        77.725
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        21.55,
+        76.275,
+        22.55,
+        77.725
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C1",
+      "number": "1",
+      "bbox": [
+        52.525,
+        76.775,
+        53.475,
+        77.675
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        52.525,
+        76.775,
+        53.475,
+        77.675
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C1",
+      "number": "2",
+      "bbox": [
+        52.525,
+        78.325,
+        53.475,
+        79.225
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        52.525,
+        78.325,
+        53.475,
+        79.225
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "Q10",
+      "number": "1",
+      "bbox": [
+        39.2,
+        62.75,
+        40.675,
+        63.35
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        39.2,
+        62.75,
+        40.675,
+        63.35
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "Q10",
+      "number": "2",
+      "bbox": [
+        39.2,
+        64.65,
+        40.675,
+        65.25
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        39.2,
+        64.65,
+        40.675,
+        65.25
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "Q10",
+      "number": "3",
+      "bbox": [
+        37.325,
+        63.7,
+        38.8,
+        64.3
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        37.325,
+        63.7,
+        38.8,
+        64.3
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C124",
+      "number": "1",
+      "bbox": [
+        35.275,
+        36.55,
+        36.725,
+        37.55
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        35.275,
+        36.55,
+        36.725,
+        37.55
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C124",
+      "number": "2",
+      "bbox": [
+        35.275,
+        38.45,
+        36.725,
+        39.45
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        35.275,
+        38.45,
+        36.725,
+        39.45
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R23",
+      "number": "1",
+      "bbox": [
+        53.68,
+        52.22,
+        54.32,
+        52.76
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        53.68,
+        52.22,
+        54.32,
+        52.76
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R23",
+      "number": "2",
+      "bbox": [
+        53.68,
+        53.24,
+        54.32,
+        53.78
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        53.68,
+        53.24,
+        54.32,
+        53.78
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "TP3",
+      "number": "1",
+      "bbox": [
+        2.5,
+        63.5,
+        3.5,
+        64.5
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        2.5,
+        63.5,
+        3.5,
+        64.5
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R101",
+      "number": "1",
+      "bbox": [
+        14.4,
+        70.3,
+        15.425,
+        71.7
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        14.4,
+        70.3,
+        15.425,
+        71.7
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R101",
+      "number": "2",
+      "bbox": [
+        12.575,
+        70.3,
+        13.6,
+        71.7
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        12.575,
+        70.3,
+        13.6,
+        71.7
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J2",
+      "number": "1",
+      "bbox": [
+        7.5,
+        55.1,
+        8.5,
+        58.6
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        7.5,
+        55.1,
+        8.5,
+        58.6
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J2",
+      "number": "2",
+      "bbox": [
+        9.5,
+        55.1,
+        10.5,
+        58.6
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        9.5,
+        55.1,
+        10.5,
+        58.6
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J2",
+      "number": "MP",
+      "bbox": [
+        4.9,
+        49.4,
+        6.4,
+        52.8
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        4.9,
+        49.4,
+        6.4,
+        52.8
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J2",
+      "number": "MP",
+      "bbox": [
+        11.6,
+        49.4,
+        13.1,
+        52.8
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        11.6,
+        49.4,
+        13.1,
+        52.8
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C130",
+      "number": "1",
+      "bbox": [
+        4.275,
+        69.55,
+        5.725,
+        70.55
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        4.275,
+        69.55,
+        5.725,
+        70.55
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C130",
+      "number": "2",
+      "bbox": [
+        4.275,
+        71.45,
+        5.725,
+        72.45
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        4.275,
+        71.45,
+        5.725,
+        72.45
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C32",
+      "number": "1",
+      "bbox": [
+        50.2,
+        52.69,
+        50.76,
+        53.31
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        50.2,
+        52.69,
+        50.76,
+        53.31
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C32",
+      "number": "2",
+      "bbox": [
+        49.24,
+        52.69,
+        49.8,
+        53.31
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        49.24,
+        52.69,
+        49.8,
+        53.31
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C8",
+      "number": "1",
+      "bbox": [
+        35.49,
+        28.74,
+        36.11,
+        29.3
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        35.49,
+        28.74,
+        36.11,
+        29.3
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C8",
+      "number": "2",
+      "bbox": [
+        35.49,
+        29.7,
+        36.11,
+        30.26
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        35.49,
+        29.7,
+        36.11,
+        30.26
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C7",
+      "number": "1",
+      "bbox": [
+        35.49,
+        23.74,
+        36.11,
+        24.3
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        35.49,
+        23.74,
+        36.11,
+        24.3
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C7",
+      "number": "2",
+      "bbox": [
+        35.49,
+        24.7,
+        36.11,
+        25.26
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        35.49,
+        24.7,
+        36.11,
+        25.26
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C127",
+      "number": "1",
+      "bbox": [
+        39.275,
+        31.55,
+        40.725,
+        32.55
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        39.275,
+        31.55,
+        40.725,
+        32.55
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C127",
+      "number": "2",
+      "bbox": [
+        39.275,
+        33.45,
+        40.725,
+        34.45
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        39.275,
+        33.45,
+        40.725,
+        34.45
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R21",
+      "number": "1",
+      "bbox": [
+        14.18,
+        59.32,
+        14.82,
+        59.86
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        14.18,
+        59.32,
+        14.82,
+        59.86
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R21",
+      "number": "2",
+      "bbox": [
+        14.18,
+        60.34,
+        14.82,
+        60.88
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        14.18,
+        60.34,
+        14.82,
+        60.88
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "SW2",
+      "number": "1",
+      "bbox": [
+        9.05,
+        82.1,
+        10.1,
+        82.75
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        9.05,
+        82.1,
+        10.1,
+        82.75
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "SW2",
+      "number": "1",
+      "bbox": [
+        4.9,
+        82.1,
+        5.95,
+        82.75
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        4.9,
+        82.1,
+        5.95,
+        82.75
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "SW2",
+      "number": "2",
+      "bbox": [
+        9.05,
+        84.25,
+        10.1,
+        84.9
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        9.05,
+        84.25,
+        10.1,
+        84.9
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "SW2",
+      "number": "2",
+      "bbox": [
+        4.9,
+        84.25,
+        5.95,
+        84.9
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        4.9,
+        84.25,
+        5.95,
+        84.9
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R103",
+      "number": "1",
+      "bbox": [
+        33.4,
+        73.3,
+        34.425,
+        74.7
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        33.4,
+        73.3,
+        34.425,
+        74.7
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R103",
+      "number": "2",
+      "bbox": [
+        31.575,
+        73.3,
+        32.6,
+        74.7
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        31.575,
+        73.3,
+        32.6,
+        74.7
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C113",
+      "number": "1",
+      "bbox": [
+        23.45,
+        62.275,
+        24.45,
+        63.725
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        23.45,
+        62.275,
+        24.45,
+        63.725
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C113",
+      "number": "2",
+      "bbox": [
+        21.55,
+        62.275,
+        22.55,
+        63.725
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        21.55,
+        62.275,
+        22.55,
+        63.725
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C4",
+      "number": "1",
+      "bbox": [
+        48.525,
+        56.775,
+        49.475,
+        57.675
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        48.525,
+        56.775,
+        49.475,
+        57.675
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C4",
+      "number": "2",
+      "bbox": [
+        48.525,
+        58.325,
+        49.475,
+        59.225
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        48.525,
+        58.325,
+        49.475,
+        59.225
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C119",
+      "number": "1",
+      "bbox": [
+        16.275,
+        77.55,
+        17.725,
+        78.55
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        16.275,
+        77.55,
+        17.725,
+        78.55
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C119",
+      "number": "2",
+      "bbox": [
+        16.275,
+        79.45,
+        17.725,
+        80.45
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        16.275,
+        79.45,
+        17.725,
+        80.45
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C114",
+      "number": "1",
+      "bbox": [
+        9.45,
+        62.275,
+        10.45,
+        63.725
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        9.45,
+        62.275,
+        10.45,
+        63.725
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C114",
+      "number": "2",
+      "bbox": [
+        7.55,
+        62.275,
+        8.55,
+        63.725
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        7.55,
+        62.275,
+        8.55,
+        63.725
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R4",
+      "number": "1",
+      "bbox": [
+        52.68,
+        82.22,
+        53.32,
+        82.76
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        52.68,
+        82.22,
+        53.32,
+        82.76
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R4",
+      "number": "2",
+      "bbox": [
+        52.68,
+        83.24,
+        53.32,
+        83.78
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        52.68,
+        83.24,
+        53.32,
+        83.78
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "SW1",
+      "number": "1",
+      "bbox": [
+        7.55,
+        86.6,
+        8.6,
+        87.25
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        7.55,
+        86.6,
+        8.6,
+        87.25
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "SW1",
+      "number": "1",
+      "bbox": [
+        3.4,
+        86.6,
+        4.45,
+        87.25
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        3.4,
+        86.6,
+        4.45,
+        87.25
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "SW1",
+      "number": "2",
+      "bbox": [
+        7.55,
+        88.75,
+        8.6,
+        89.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        7.55,
+        88.75,
+        8.6,
+        89.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "SW1",
+      "number": "2",
+      "bbox": [
+        3.4,
+        88.75,
+        4.45,
+        89.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        3.4,
+        88.75,
+        4.45,
+        89.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "",
+      "bbox": [
+        40.14,
+        85.1,
+        40.54,
+        85.9
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        40.14,
+        85.1,
+        40.54,
+        85.9
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "",
+      "bbox": [
+        13.64,
+        85.1,
+        14.04,
+        85.9
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        13.64,
+        85.1,
+        14.04,
+        85.9
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "1",
+      "bbox": [
+        14.69,
+        82.6,
+        14.99,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        14.69,
+        82.6,
+        14.99,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "2",
+      "bbox": [
+        15.19,
+        82.6,
+        15.49,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        15.19,
+        82.6,
+        15.49,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "3",
+      "bbox": [
+        15.69,
+        82.6,
+        15.99,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        15.69,
+        82.6,
+        15.99,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "4",
+      "bbox": [
+        16.19,
+        82.6,
+        16.49,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        16.19,
+        82.6,
+        16.49,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "5",
+      "bbox": [
+        16.69,
+        82.6,
+        16.99,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        16.69,
+        82.6,
+        16.99,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "6",
+      "bbox": [
+        17.19,
+        82.6,
+        17.49,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        17.19,
+        82.6,
+        17.49,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "7",
+      "bbox": [
+        17.69,
+        82.6,
+        17.99,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        17.69,
+        82.6,
+        17.99,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "8",
+      "bbox": [
+        18.19,
+        82.6,
+        18.49,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        18.19,
+        82.6,
+        18.49,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "9",
+      "bbox": [
+        18.69,
+        82.6,
+        18.99,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        18.69,
+        82.6,
+        18.99,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "10",
+      "bbox": [
+        19.19,
+        82.6,
+        19.49,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        19.19,
+        82.6,
+        19.49,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "11",
+      "bbox": [
+        19.69,
+        82.6,
+        19.99,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        19.69,
+        82.6,
+        19.99,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "12",
+      "bbox": [
+        20.19,
+        82.6,
+        20.49,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        20.19,
+        82.6,
+        20.49,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "13",
+      "bbox": [
+        20.69,
+        82.6,
+        20.99,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        20.69,
+        82.6,
+        20.99,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "14",
+      "bbox": [
+        21.19,
+        82.6,
+        21.49,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        21.19,
+        82.6,
+        21.49,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "15",
+      "bbox": [
+        21.69,
+        82.6,
+        21.99,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        21.69,
+        82.6,
+        21.99,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "16",
+      "bbox": [
+        22.19,
+        82.6,
+        22.49,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        22.19,
+        82.6,
+        22.49,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "17",
+      "bbox": [
+        22.69,
+        82.6,
+        22.99,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        22.69,
+        82.6,
+        22.99,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "18",
+      "bbox": [
+        23.19,
+        82.6,
+        23.49,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        23.19,
+        82.6,
+        23.49,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "19",
+      "bbox": [
+        23.69,
+        82.6,
+        23.99,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        23.69,
+        82.6,
+        23.99,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "20",
+      "bbox": [
+        24.19,
+        82.6,
+        24.49,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        24.19,
+        82.6,
+        24.49,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "21",
+      "bbox": [
+        24.69,
+        82.6,
+        24.99,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        24.69,
+        82.6,
+        24.99,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "22",
+      "bbox": [
+        25.19,
+        82.6,
+        25.49,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        25.19,
+        82.6,
+        25.49,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "23",
+      "bbox": [
+        25.69,
+        82.6,
+        25.99,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        25.69,
+        82.6,
+        25.99,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "24",
+      "bbox": [
+        26.19,
+        82.6,
+        26.49,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        26.19,
+        82.6,
+        26.49,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "25",
+      "bbox": [
+        26.69,
+        82.6,
+        26.99,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        26.69,
+        82.6,
+        26.99,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "26",
+      "bbox": [
+        27.19,
+        82.6,
+        27.49,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        27.19,
+        82.6,
+        27.49,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "27",
+      "bbox": [
+        27.69,
+        82.6,
+        27.99,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        27.69,
+        82.6,
+        27.99,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "28",
+      "bbox": [
+        28.19,
+        82.6,
+        28.49,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        28.19,
+        82.6,
+        28.49,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "29",
+      "bbox": [
+        28.69,
+        82.6,
+        28.99,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        28.69,
+        82.6,
+        28.99,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "30",
+      "bbox": [
+        29.19,
+        82.6,
+        29.49,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        29.19,
+        82.6,
+        29.49,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "31",
+      "bbox": [
+        29.69,
+        82.6,
+        29.99,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        29.69,
+        82.6,
+        29.99,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "32",
+      "bbox": [
+        30.19,
+        82.6,
+        30.49,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        30.19,
+        82.6,
+        30.49,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "33",
+      "bbox": [
+        30.69,
+        82.6,
+        30.99,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        30.69,
+        82.6,
+        30.99,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "34",
+      "bbox": [
+        31.19,
+        82.6,
+        31.49,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        31.19,
+        82.6,
+        31.49,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "35",
+      "bbox": [
+        31.69,
+        82.6,
+        31.99,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        31.69,
+        82.6,
+        31.99,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "36",
+      "bbox": [
+        32.19,
+        82.6,
+        32.49,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        32.19,
+        82.6,
+        32.49,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "37",
+      "bbox": [
+        32.69,
+        82.6,
+        32.99,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        32.69,
+        82.6,
+        32.99,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "38",
+      "bbox": [
+        33.19,
+        82.6,
+        33.49,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        33.19,
+        82.6,
+        33.49,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "39",
+      "bbox": [
+        33.69,
+        82.6,
+        33.99,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        33.69,
+        82.6,
+        33.99,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "40",
+      "bbox": [
+        34.19,
+        82.6,
+        34.49,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        34.19,
+        82.6,
+        34.49,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "41",
+      "bbox": [
+        34.69,
+        82.6,
+        34.99,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        34.69,
+        82.6,
+        34.99,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "42",
+      "bbox": [
+        35.19,
+        82.6,
+        35.49,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        35.19,
+        82.6,
+        35.49,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "43",
+      "bbox": [
+        35.69,
+        82.6,
+        35.99,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        35.69,
+        82.6,
+        35.99,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "44",
+      "bbox": [
+        36.19,
+        82.6,
+        36.49,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        36.19,
+        82.6,
+        36.49,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "45",
+      "bbox": [
+        36.69,
+        82.6,
+        36.99,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        36.69,
+        82.6,
+        36.99,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "46",
+      "bbox": [
+        37.19,
+        82.6,
+        37.49,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        37.19,
+        82.6,
+        37.49,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "47",
+      "bbox": [
+        37.69,
+        82.6,
+        37.99,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        37.69,
+        82.6,
+        37.99,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "48",
+      "bbox": [
+        38.19,
+        82.6,
+        38.49,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        38.19,
+        82.6,
+        38.49,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "49",
+      "bbox": [
+        38.69,
+        82.6,
+        38.99,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        38.69,
+        82.6,
+        38.99,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "J1",
+      "number": "50",
+      "bbox": [
+        39.19,
+        82.6,
+        39.49,
+        83.4
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        39.19,
+        82.6,
+        39.49,
+        83.4
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R7",
+      "number": "1",
+      "bbox": [
+        35.48,
+        26.22,
+        36.12,
+        26.76
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        35.48,
+        26.22,
+        36.12,
+        26.76
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R7",
+      "number": "2",
+      "bbox": [
+        35.48,
+        27.24,
+        36.12,
+        27.78
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        35.48,
+        27.24,
+        36.12,
+        27.78
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C101",
+      "number": "1",
+      "bbox": [
+        49.69,
+        43.24,
+        50.31,
+        43.8
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        49.69,
+        43.24,
+        50.31,
+        43.8
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C101",
+      "number": "2",
+      "bbox": [
+        49.69,
+        44.2,
+        50.31,
+        44.76
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        49.69,
+        44.2,
+        50.31,
+        44.76
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C128",
+      "number": "1",
+      "bbox": [
+        43.275,
+        31.55,
+        44.725,
+        32.55
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        43.275,
+        31.55,
+        44.725,
+        32.55
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C128",
+      "number": "2",
+      "bbox": [
+        43.275,
+        33.45,
+        44.725,
+        34.45
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        43.275,
+        33.45,
+        44.725,
+        34.45
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C125",
+      "number": "1",
+      "bbox": [
+        36.275,
+        72.55,
+        37.725,
+        73.55
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        36.275,
+        72.55,
+        37.725,
+        73.55
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "C125",
+      "number": "2",
+      "bbox": [
+        36.275,
+        74.45,
+        37.725,
+        75.45
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        36.275,
+        74.45,
+        37.725,
+        75.45
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "D4",
+      "number": "1",
+      "bbox": [
+        55.85,
+        80.525,
+        56.725,
+        81.475
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        55.85,
+        80.525,
+        56.725,
+        81.475
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "D4",
+      "number": "2",
+      "bbox": [
+        54.275,
+        80.525,
+        55.15,
+        81.475
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        54.275,
+        80.525,
+        55.15,
+        81.475
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "D3",
+      "number": "1",
+      "bbox": [
+        23.4,
+        65.9,
+        24.6,
+        66.8
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        23.4,
+        65.9,
+        24.6,
+        66.8
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "D3",
+      "number": "2",
+      "bbox": [
+        23.4,
+        69.2,
+        24.6,
+        70.1
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        23.4,
+        69.2,
+        24.6,
+        70.1
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R100",
+      "number": "1",
+      "bbox": [
+        14.425,
+        63.525,
+        15.225,
+        64.475
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        14.425,
+        63.525,
+        15.225,
+        64.475
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "R100",
+      "number": "2",
+      "bbox": [
+        12.775,
+        63.525,
+        13.575,
+        64.475
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        12.775,
+        63.525,
+        13.575,
+        64.475
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U3",
+      "number": "1",
+      "bbox": [
+        47.475,
+        64.75,
+        48.8,
+        65.35
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        47.475,
+        64.75,
+        48.8,
+        65.35
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U3",
+      "number": "2",
+      "bbox": [
+        47.475,
+        65.7,
+        48.8,
+        66.3
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        47.475,
+        65.7,
+        48.8,
+        66.3
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U3",
+      "number": "3",
+      "bbox": [
+        47.475,
+        66.65,
+        48.8,
+        67.25
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        47.475,
+        66.65,
+        48.8,
+        67.25
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U3",
+      "number": "4",
+      "bbox": [
+        45.2,
+        66.65,
+        46.525,
+        67.25
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        45.2,
+        66.65,
+        46.525,
+        67.25
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "ref": "U3",
+      "number": "5",
+      "bbox": [
+        45.2,
+        64.75,
+        46.525,
+        65.35
+      ],
+      "mask_expansion_mm": 0.0,
+      "mask_bbox": [
+        45.2,
+        64.75,
+        46.525,
+        65.35
+      ],
+      "front_mask": false,
+      "back_mask": true,
+      "drill_mm": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "vias": [
+    {
+      "bbox": [
+        50.7,
+        81.7,
+        51.300001,
+        82.300001
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        18.6638,
+        79.4171,
+        19.263801,
+        80.017101
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        18.6638,
+        76.7,
+        19.263801,
+        77.300001
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        10.6876,
+        62.7,
+        11.287601,
+        63.300001
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        11.2889,
+        68.7,
+        11.888901,
+        69.300001
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        51.8125,
+        82.9838,
+        52.412501,
+        83.583801
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        54.5452,
+        49.5393,
+        55.145201,
+        50.139301
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        36.6395,
+        62.7731,
+        37.239501,
+        63.373101
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        36.9684,
+        76.2214,
+        37.568401,
+        76.821401
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        50.7567,
+        83.6681,
+        51.356701,
+        84.268101
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        43.0344,
+        83.7133,
+        43.634401,
+        84.313301
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        48.6853,
+        80.8592,
+        49.285301,
+        81.459201
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        48.6853,
+        78.3593,
+        49.285301,
+        78.959301
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        41.5419,
+        21.1658,
+        42.141901,
+        21.765801
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        37.9328,
+        23.3595,
+        38.532801,
+        23.959501
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        47.6278,
+        81.4024,
+        48.227801,
+        82.002401
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        53.626,
+        83.3112,
+        54.226001,
+        83.911201
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        48.3702,
+        83.4681,
+        48.970201,
+        84.068101
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        37.8893,
+        53.9656,
+        38.489301,
+        54.565601
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        39.0455,
+        63.7,
+        39.645501,
+        64.300001
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        28.4384,
+        63.4383,
+        29.038401,
+        64.038301
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        18.5411,
+        81.8468,
+        19.141101,
+        82.446801
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        49.7967,
+        49.4908,
+        50.396701,
+        50.090801
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        5.4146,
+        60.9854,
+        6.014601,
+        61.585401
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        17.8476,
+        59.0734,
+        18.447601,
+        59.673401
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        48.4837,
+        51.4,
+        49.083701,
+        52.000001
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        10.5348,
+        45.5723,
+        11.134801,
+        46.172301
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        16.1318,
+        51.3374,
+        16.731801,
+        51.937401
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        47.9298,
+        18.1998,
+        48.529801,
+        18.799801
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        51.8372,
+        30.2768,
+        52.437201,
+        30.876801
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        34.5679,
+        21.8812,
+        35.167901,
+        22.481201
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        51.8372,
+        38.5393,
+        52.437201,
+        39.139301
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        51.0328,
+        45.9906,
+        51.632801,
+        46.590601
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        51.696,
+        20.9022,
+        52.296001,
+        21.502201
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        52.9557,
+        30.1653,
+        53.555701,
+        30.765301
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        44.1327,
+        81.4072,
+        44.732701,
+        82.007201
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        49.7463,
+        20.2873,
+        50.346301,
+        20.887301
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        32.3687,
+        31.8513,
+        32.968701,
+        32.451301
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        47.8639,
+        21.8284,
+        48.463901,
+        22.428401
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        39.9055,
+        26.1713,
+        40.505501,
+        26.771301
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        8.7584,
+        86.5394,
+        9.358401,
+        87.139401
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        34.0262,
+        44.8638,
+        34.626201,
+        45.463801
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        49.5,
+        26.1646,
+        50.100001,
+        26.764601
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        17.2489,
+        59.9869,
+        17.848901,
+        60.586901
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        13.7495,
+        53.3729,
+        14.349501,
+        53.972901
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        44.7889,
+        27.0532,
+        45.388901,
+        27.653201
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        31.9767,
+        84.7169,
+        32.576701,
+        85.316901
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        44.79,
+        26.2547,
+        45.390001,
+        26.854701
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        51.0008,
+        47.5108,
+        51.600801,
+        48.110801
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        43.1,
+        26.1584,
+        43.700001,
+        26.758401
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        31.4292,
+        80.3674,
+        32.029201,
+        80.967401
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        42.0996,
+        26.1521,
+        42.699601,
+        26.752101
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        32.3031,
+        80.2852,
+        32.903101,
+        80.885201
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        53.8825,
+        40.743,
+        54.482501,
+        41.343001
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        46.5734,
+        24.1099,
+        47.173401,
+        24.709901
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        40.7,
+        26.1676,
+        41.300001,
+        26.767601
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        52.8064,
+        26.589,
+        53.406401,
+        27.189001
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        10.2587,
+        81.918,
+        10.858701,
+        82.518001
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        35.5586,
+        30.7825,
+        36.158601,
+        31.382501
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        37.2606,
+        21.0836,
+        37.860601,
+        21.683601
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        31.3686,
+        79.611,
+        31.968601,
+        80.211001
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        36.4825,
+        21.0503,
+        37.082501,
+        21.650301
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        29.8706,
+        79.4007,
+        30.470601,
+        80.000701
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        48.5377,
+        71.244,
+        49.137701,
+        71.844001
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        48.0884,
+        61.06,
+        48.688401,
+        61.660001
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        9.5781,
+        78.6281,
+        10.178101,
+        79.228101
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        18.4038,
+        81.0673,
+        19.003801,
+        81.667301
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        24.231,
+        70.994,
+        24.831001,
+        71.594001
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        24.231,
+        64.4671,
+        24.831001,
+        65.067101
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        20.6518,
+        80.5053,
+        21.251801,
+        81.105301
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        22.1248,
+        66.8375,
+        22.724801,
+        67.437501
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        46.3424,
+        31.378,
+        46.942401,
+        31.978001
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        41.2509,
+        80.6233,
+        41.850901,
+        81.223301
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        5.5735,
+        78.6235,
+        6.173501,
+        79.223501
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        21.6848,
+        83.5979,
+        22.284801,
+        84.197901
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        42.2161,
+        75.968,
+        42.816101,
+        76.568001
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        34.7566,
+        79.8317,
+        35.356601,
+        80.431701
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        37.9545,
+        81.3159,
+        38.554501,
+        81.915901
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        35.2095,
+        75.0756,
+        35.809501,
+        75.675601
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        20.8717,
+        81.2573,
+        21.471701,
+        81.857301
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        21.4408,
+        75.1706,
+        22.040801,
+        75.770601
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        16.54,
+        81.8392,
+        17.140001,
+        82.439201
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        13.8783,
+        65.9908,
+        14.478301,
+        66.590801
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        13.8265,
+        73.2968,
+        14.426501,
+        73.896801
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        16.0406,
+        83.6087,
+        16.640601,
+        84.208701
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        34.55,
+        74.05,
+        35.150001,
+        74.650001
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        34.25,
+        76.7,
+        34.850001,
+        77.300001
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        22.05,
+        70.0,
+        22.650001,
+        70.600001
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        27.05,
+        75.0,
+        27.650001,
+        75.600001
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        19.35,
+        81.1,
+        19.950001,
+        81.700001
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        19.95,
+        69.7,
+        20.550001,
+        70.300001
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        33.1566,
+        83.6018,
+        33.756601,
+        84.201801
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        39.9125,
+        41.6877,
+        40.512501,
+        42.287701
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        11.9072,
+        81.1715,
+        12.507201,
+        81.771501
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        11.9072,
+        78.6879,
+        12.507201,
+        79.287901
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        32.37,
+        35.0152,
+        32.970001,
+        35.615201
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        35.3199,
+        83.5718,
+        35.919901,
+        84.171801
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        35.0652,
+        81.7925,
+        35.665201,
+        82.392501
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        32.362,
+        35.8077,
+        32.962001,
+        36.407701
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        19.9791,
+        81.8403,
+        20.579101,
+        82.440301
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        22.7537,
+        75.4719,
+        23.353701,
+        76.071901
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        25.7937,
+        83.6004,
+        26.393701,
+        84.200401
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        6.2528,
+        66.6248,
+        6.852801,
+        67.224801
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        33.1854,
+        39.2646,
+        33.785401,
+        39.864601
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        34.2363,
+        81.7933,
+        34.836301,
+        82.393301
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        25.04,
+        83.5585,
+        25.640001,
+        84.158501
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        22.9736,
+        80.826,
+        23.573601,
+        81.426001
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        37.8791,
+        80.1971,
+        38.479101,
+        80.797101
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        38.5167,
+        31.75,
+        39.116701,
+        32.350001
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        38.9138,
+        80.1577,
+        39.513801,
+        80.757701
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        41.1176,
+        36.2324,
+        41.717601,
+        36.832401
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        43.7,
+        30.7878,
+        44.300001,
+        31.387801
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        37.408,
+        81.8327,
+        38.008001,
+        82.432701
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        47.8359,
+        67.5369,
+        48.435901,
+        68.136901
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    },
+    {
+      "bbox": [
+        47.8359,
+        63.9974,
+        48.435901,
+        64.597401
+      ],
+      "drill_mm": 0.3,
+      "policy": "Conservatively exclude every via annulus, whether tented or not"
+    }
+  ],
+  "footprint_count": 81,
+  "limits": [
+    "Bounding rectangles are conservative projections, not actual mask polygon tessellation.",
+    "No local bearing-height or mask wear qualification is inferred."
+  ]
+}

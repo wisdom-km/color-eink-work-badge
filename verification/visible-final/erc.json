@@ -1,0 +1,179 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-30T06:42:34",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/0f1a3f2e-badc-4e00-9a11-000000000001",
+            "violations": []
+        },
+        {
+            "path": "/01  USB-C + MCU/",
+            "uuid_path": "/0f1a3f2e-badc-4e00-9a11-000000000001/40a21f3b-3aaa-5b9d-b7a5-6bd029542d99",
+            "violations": [
+                {
+                    "description": "Global label only appears once in the schematic",
+                    "items": [
+                        {
+                            "description": "Global Label 'CC1'",
+                            "pos": {
+                                "x": 0.5969,
+                                "y": 0.5461
+                            },
+                            "uuid": "c6afefa7-93c1-5232-9349-5f6336b31094"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "single_global_label"
+                },
+                {
+                    "description": "Global label only appears once in the schematic",
+                    "items": [
+                        {
+                            "description": "Global Label 'CC2'",
+                            "pos": {
+                                "x": 0.5969,
+                                "y": 0.5715
+                            },
+                            "uuid": "d3ca73a2-c6ff-56ce-9a7b-1b1151957fec"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "single_global_label"
+                }
+            ]
+        },
+        {
+            "path": "/02  BATTERY + POWER/",
+            "uuid_path": "/0f1a3f2e-badc-4e00-9a11-000000000001/206f4f28-e0be-50a8-b3f9-9d2a1a9d194e",
+            "violations": [
+                {
+                    "description": "Global label only appears once in the schematic",
+                    "items": [
+                        {
+                            "description": "Global Label 'PROG'",
+                            "pos": {
+                                "x": 0.4953,
+                                "y": 2.1971
+                            },
+                            "uuid": "058f72de-3e34-5603-948e-73ab94698646"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "single_global_label"
+                },
+                {
+                    "description": "Global label only appears once in the schematic",
+                    "items": [
+                        {
+                            "description": "Global Label 'LED_CHRG_A'",
+                            "pos": {
+                                "x": 1.4478,
+                                "y": 2.0066
+                            },
+                            "uuid": "6b46a195-f617-5254-8f7b-d2134bd4cbb2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "single_global_label"
+                },
+                {
+                    "description": "Global label only appears once in the schematic",
+                    "items": [
+                        {
+                            "description": "Global Label 'CHRG_STAT'",
+                            "pos": {
+                                "x": 1.4478,
+                                "y": 2.0828
+                            },
+                            "uuid": "50ef9047-f3b9-57d7-8f6b-996806a18b9e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "single_global_label"
+                }
+            ]
+        },
+        {
+            "path": "/03  DUAL BOOST/",
+            "uuid_path": "/0f1a3f2e-badc-4e00-9a11-000000000001/54dc751a-4cf3-57bc-99d4-dd29b1889d2c",
+            "violations": [
+                {
+                    "description": "Global label only appears once in the schematic",
+                    "items": [
+                        {
+                            "description": "Global Label 'SW_H'",
+                            "pos": {
+                                "x": 1.1938,
+                                "y": 0.7874
+                            },
+                            "uuid": "053ab6c8-6920-5faa-acad-76fa617c2b85"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "single_global_label"
+                },
+                {
+                    "description": "Global label only appears once in the schematic",
+                    "items": [
+                        {
+                            "description": "Global Label 'PUMP_H'",
+                            "pos": {
+                                "x": 1.1938,
+                                "y": 0.8636
+                            },
+                            "uuid": "86f460a3-32d1-5f8f-902b-5cfd16cf11c1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "single_global_label"
+                },
+                {
+                    "description": "Global label only appears once in the schematic",
+                    "items": [
+                        {
+                            "description": "Global Label 'SW_C'",
+                            "pos": {
+                                "x": 1.2065,
+                                "y": 2.1971
+                            },
+                            "uuid": "e7ae69b7-6ef2-5bb2-afcb-86c476f95257"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "single_global_label"
+                }
+            ]
+        },
+        {
+            "path": "/04  DISPLAY + FILTERS/",
+            "uuid_path": "/0f1a3f2e-badc-4e00-9a11-000000000001/ec1117e4-0d37-5ed0-bb46-3f0c76ea5361",
+            "violations": [
+                {
+                    "description": "Global label only appears once in the schematic",
+                    "items": [
+                        {
+                            "description": "Global Label 'EPD_SUPPLY'",
+                            "pos": {
+                                "x": 1.905,
+                                "y": 0.6985
+                            },
+                            "uuid": "d1e49db5-d798-5ec9-8f49-38d6ad528d93"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "single_global_label"
+                }
+            ]
+        }
+    ],
+    "source": "badge.kicad_sch"
+}

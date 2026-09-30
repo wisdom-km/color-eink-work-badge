@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer"><title>Chroma · 手机更新</title>
+<style>
+:root{color-scheme:light;--ink:#142032;--muted:#586579;--line:#dce2ea;--blue:#2556a8;--paper:#fff;--bg:#f4f6f9}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.45}header{max-width:1100px;margin:auto;padding:30px 24px 20px;display:flex;justify-content:space-between;gap:12px;align-items:center}.brand{font-weight:800;letter-spacing:.04em;font-size:21px}.tag{color:var(--muted);font-size:12px;border:1px solid var(--line);border-radius:20px;padding:4px 10px}main{max-width:1100px;margin:auto;padding:0 24px 32px;display:grid;grid-template-columns:minmax(270px,1fr) minmax(300px,1fr);gap:24px}.panel{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:26px}.preview-shell{background:#e8edf3;padding:28px;border-radius:12px;display:grid;place-items:center}canvas{width:min(100%,320px);height:auto;aspect-ratio:2/3;background:#fff;border-radius:2px;box-shadow:0 8px 28px #15253b18;image-rendering:pixelated}.caption{font-size:12px;color:var(--muted);margin:14px 0 0}h1{font-size:26px;line-height:1.3;margin:0 0 8px}h2{font-size:15px;margin:26px 0 10px}p{margin:8px 0}.intro{color:var(--muted);font-size:14px}.field{display:block;margin-top:18px;font-weight:650;font-size:13px}.field input,.field select{display:block;width:100%;margin-top:7px;border:1px solid var(--line);border-radius:9px;padding:10px;background:#fff;color:var(--ink)}input[type=file]{font-size:13px}.row{display:flex;gap:10px}.row>*{flex:1}.button{border:0;border-radius:10px;padding:12px 18px;background:var(--blue);color:#fff;font-weight:700}.secondary{background:#eef2f8;color:var(--ink)}.subtle{font-size:13px;color:var(--muted)}.actions{display:flex;gap:10px;margin-top:20px}.actions .button{flex:1}.status{padding:12px 14px;background:#eff3f8;border-radius:10px;margin-top:18px;font-size:13px;white-space:pre-wrap;overflow-wrap:anywhere}.status.error{background:#fff0ee;color:#92291d}.status.good{background:#eaf5ef;color:#20663f}progress{display:block;width:100%;height:8px;margin-top:16px;accent-color:var(--blue)}.palette{display:flex;gap:6px;margin-top:12px}.palette span{height:16px;width:16px;border-radius:50%;border:1px solid #0002}.mock{display:none;padding:10px 24px;background:#fff0cb;color:#604709;text-align:center;font-size:13px}.token{font-family:monospace;letter-spacing:.03em}details{font-size:12px;color:var(--muted);margin-top:20px}summary{cursor:pointer}.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}@media(max-width:720px){header{padding:20px 18px}main{grid-template-columns:1fr;padding:0 16px 24px;gap:16px}.panel{padding:20px}.preview-panel{order:2}.control-panel{order:1}h1{font-size:24px}.preview-shell{padding:20px}canvas{max-width:260px}.tag{font-size:11px}}
+</style></head>
+<body>
+<div id="mock" class="mock">浏览器演练：此页面连接软件模拟器，不连接工牌或无线硬件</div>
+<header><div class="brand">CHROMA <span style="font-weight:400">/ 手机更新</span></div><span class="tag">P1 · 本地诊断</span></header>
+<main>
+<section class="panel preview-panel" aria-label="六色显示预览"><div class="preview-shell"><canvas id="preview" width="400" height="600" aria-label="400乘600六色图片预览"></canvas></div><div class="palette" aria-label="黑白黄红蓝绿六色"><span style="background:#141820"></span><span style="background:#fff"></span><span style="background:#f4c926"></span><span style="background:#c6232d"></span><span style="background:#1f4ea4"></span><span style="background:#1c7d4b"></span></div><p class="caption">400 × 600 · 六色 · 120 KB<br>这是软件排版预览，实屏色彩与刷新效果需实测</p></section>
+<section class="panel control-panel"><h1>把图片放到工牌上</h1><p class="intro">图片在手机浏览器中转换，再通过工牌热点发送。无需家庭 Wi-Fi 密码，不上传云端。</p>
+<label class="field">1 · 选择 PNG / JPEG 图片<input id="file" type="file" accept="image/png,image/jpeg"></label>
+<div class="row"><label class="field">画面适配<select id="fit"><option value="contain">完整显示，留白</option><option value="cover">填满画面，居中裁切</option></select></label><label class="field">转换方式<select id="mode"><option value="text">文字清晰</option><option value="photo">照片细节（抖色）</option></select></label></div>
+<p id="file-info" class="subtle">建议使用竖版图片，姓名与二维码保持黑白高对比</p>
+<label class="field">2 · 临时连接码<input id="token" class="token" type="password" maxlength="32" autocomplete="off" spellcheck="false" placeholder="输入屏上两行拼接后的32位连接码"></label>
+<p class="subtle">长按 UPDATE 键 2 秒进入配网。屏上连接码分两行，请拼接输入且不带空格；本版本不生成配网二维码。热点限时有效，显示配网信息会替换当前画面。</p>
+<div class="actions"><button id="connect" class="button secondary">检查连接</button><button id="download" class="button secondary" disabled>下载 USB 文件</button></div>
+<div class="actions"><button id="send" class="button" disabled>发送并刷新工牌</button><button id="cancel" class="button secondary" hidden>取消上传</button></div>
+<progress id="progress" max="120000" value="0" hidden></progress><div id="status" class="status" role="status" aria-live="polite">先选择图片，再检查工牌连接</div>
+<details><summary>更新与安全说明</summary><p>只有整帧的长度、六色色码和 CRC 都通过校验后，显式刷新请求才会启动屏幕。上传中断不会启动新刷新；刷新一旦开始就无法安全取消。</p><p>这是单缓冲诊断程序，不保存上一帧 RAM 或 Flash 历史。重启后需重新上传。若刷新超时或掉电，屏面状态可能不完整，请检查工牌后重试。</p><p>此页面没有门禁卡、NFC凭证或第三方账号功能。请在匹配的新屏硬件上验证供电后使用。</p></details>
+</section></main>
+<script src="core.js"></script><script src="app.js"></script>
+</body></html>

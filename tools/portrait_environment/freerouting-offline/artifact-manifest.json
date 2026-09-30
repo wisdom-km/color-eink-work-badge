@@ -1,0 +1,26 @@
+{
+  "build_method": "javac25 overlay on pinned official fat JAR, not a successful Gradle build",
+  "base_sha256": "251101c3eeac22d7e7dfcf6796603279e5d1000283eb82d8f093780f7afc6aa9",
+  "patch_sha256": "3479100a887c50a1aa600d5b51863fca45a4b1cb38dbac6584c3d828a8c699ee",
+  "candidate_sha256": "66700cdc5ae5586a39d05b6e2c112eef162f06e166698016145a32ae8c20def6",
+  "candidate_path": "/workspace/scratch/200245c5fbc3/toolchain/freerouting-2.4.1-local-only1.jar",
+  "overlaid_classes": [
+    "app/freerouting/Freerouting.class",
+    "app/freerouting/analytics/BigQueryClient.class",
+    "app/freerouting/analytics/FRAnalytics.class",
+    "app/freerouting/analytics/FreeroutingAnalyticsClient.class",
+    "app/freerouting/analytics/SegmentClient.class",
+    "app/freerouting/util/VersionChecker.class"
+  ],
+  "removed_original_classes": [
+    "app/freerouting/Freerouting.class",
+    "app/freerouting/analytics/BigQueryClient.class",
+    "app/freerouting/analytics/FRAnalytics.class",
+    "app/freerouting/analytics/FreeroutingAnalyticsClient.class",
+    "app/freerouting/analytics/SegmentClient.class",
+    "app/freerouting/util/VersionChecker.class"
+  ],
+  "unmodified_archive_entries": 32458,
+  "candidate_executed": false,
+  "user_pcb_executed": false
+}

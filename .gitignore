@@ -1,0 +1,3 @@
+# KiCad editor locks and generated footprint cache
+~*.lck
+fp-info-cache

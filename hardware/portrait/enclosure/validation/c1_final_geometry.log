@@ -1,0 +1,8 @@
+populated_proxy_validation.json REVIEW_REQUIRED_RESERVED_SPACE_CONFLICTS
+clamping_validation.json PASS_NOMINAL_C1_GEOMETRY_ONLY
+pcb_contact_audit.json PASS_CONSERVATIVE_CONTACT_PROJECTIONS_ONLY
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/cadquery/utils.py:82: FutureWarning: save will be removed in the next release.
+  warn(f"{f.__name__} will be removed in the next release.", FutureWarning)
+internal_envelope_validation.json REVIEW_REQUIRED_INTERNAL_ASSEMBLY
+assembly_review_gates.json REVIEW_REQUIRED_ASSEMBLY
+C1 CHECKS EXECUTED: REVIEW_REQUIRED_ASSEMBLY; retained PH/FPC blockers; no manufacturing release

@@ -1,0 +1,82 @@
+Reference,Value,Footprint,Description,DNP
+J3,USB-C 16P 沉板 (TYPE-C-31-M-14),badge:TYPE-C-31-M-14,"HRO TYPE-C-31-M-14, 16P USB 2.0 mid-mount receptacle",False
+R1,5.1k,Resistor_SMD:R_0402_1005Metric,5.1k 0402 1%,False
+R2,5.1k,Resistor_SMD:R_0402_1005Metric,5.1k 0402 1%,False
+C1,4.7u,Capacitor_SMD:C_0603_1608Metric,4.7uF 10V X5R 0603,False
+U3,MCP73831T-2ACI/OT,Package_TO_SOT_SMD:SOT-23-5,Microchip MCP73831 4.2V charger; 10k PROG nominal100mA; protected single-cell LiPo only,False
+R3,10k,Resistor_SMD:R_0402_1005Metric,"MCP73831 RPROG10k -> nominal100mA, verify actual cell rating",False
+R4,1k,Resistor_SMD:R_0402_1005Metric,1k 0402 1%,False
+D4,RED,LED_SMD:LED_0603_1608Metric,"LED 0603 red, charging indicator",False
+C2,4.7u,Capacitor_SMD:C_0603_1608Metric,4.7uF 10V X5R 0603,False
+J2,JST PH2.0 battery,Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal,JST S2B-PH-SM4-TB; Adafruit1578 keyedPHR2 mate: contact1GND/contact2VBAT; verify incoming lot keyedface+voltage beforepower; retain original lead,False
+U4,XC6220B331MR-G,Package_TO_SOT_SMD:SOT-23-5,LDO 3.3V Iq 8uA 1A SOT-25 VIN/GND/CE/NC/VOUT. Torex 3.0-3.5V pair: CIN=10uF CL=4.7uF near U4.,False
+C3,10u,Capacitor_SMD:C_0603_1608Metric,"10uF 6.3V X5R 0603 LDO CIN (Torex table, 3.3V with CL=4.7uF)",False
+C4,4.7u,Capacitor_SMD:C_0603_1608Metric,4.7uF 10V X5R 0603 LDO CL near VOUT (Torex 3.00-3.50V + CIN=10uF),False
+R5,1M,Resistor_SMD:R_0402_1005Metric,1M 0402 1%,False
+R6,1M,Resistor_SMD:R_0402_1005Metric,1M 0402 1%,False
+C5,100n,Capacitor_SMD:C_0402_1005Metric,100n 0402,False
+TP4,VBAT,TestPoint:TestPoint_Pad_D1.0mm,test pad,False
+TP2,3V3,TestPoint:TestPoint_Pad_D1.0mm,test pad,False
+TP3,GND,TestPoint:TestPoint_Pad_D1.0mm,test pad,False
+U1,ESP32-C3-MINI-1-N4X,badge:ESP32-C3-MINI-1,Espressif current C3 MINI1 N4X; module antenna clearance and RF on-body test required,False
+C6,10u,Capacitor_SMD:C_0603_1608Metric,10uF 6.3V X5R 0603,False
+C7,100n,Capacitor_SMD:C_0402_1005Metric,100n 0402,False
+R7,10k,Resistor_SMD:R_0402_1005Metric,10k 0402 1%,False
+C8,1u,Capacitor_SMD:C_0402_1005Metric,1u 0402,False
+R8,10k,Resistor_SMD:R_0402_1005Metric,10k 0402 1%,False
+R10,10k,Resistor_SMD:R_0402_1005Metric,10k 0402 1%,False
+R9,1k,Resistor_SMD:R_0402_1005Metric,1k 0402 1%,False
+D5,GREEN,LED_SMD:LED_0603_1608Metric,"LED 0603 green, status",False
+SW1,RESET,Button_Switch_SMD:SW_SPST_PTS810,C&K PTS810; nominalheight2.5mm(+.2/-.1); travel.15+/-.1mm; actuator/flexure must be tested,False
+SW2,BOOT/USER,Button_Switch_SMD:SW_SPST_PTS810,C&K PTS810; nominalheight2.5mm(+.2/-.1); travel.15+/-.1mm; actuator/flexure must be tested,False
+Q10,AO3401A,Package_TO_SOT_SMD:SOT-23,"P-MOS battery load-share, sourceVSYS/drainVBAT; body diode VBAT->VSYS; AN1149 topology",False
+R20,100k,Resistor_SMD:R_0402_1005Metric,100k 0402 1%,False
+D10,SS14,Diode_SMD:D_SMA,USB to VSYS Schottky40V1A; evaluate thermal and droop,False
+C30,22u,Capacitor_SMD:C_0805_2012Metric,22uF10V X5R0805,False
+J1,EPD50 FH34SRJ,badge:FH34SRJ-50S-0.5SH,Hirose FH34SRJ-50S-0.5SH(50); .5pitch50P dualcontact .3FPC; pending footprint drawing verification,False
+Q20,AO3401A,Package_TO_SOT_SMD:SOT-23,3V3 panel hard powergate; default10k gatepullup OFF; SPI pins hi-Z before poweroff,False
+C100,100u/6.3V,Capacitor_SMD:C_1210_3225Metric,100uF6.3V X5R1210; effectivecap/inrush verify,False
+C101,100n,Capacitor_SMD:C_0402_1005Metric,100n 0402,False
+FB1,BLM18PG121SN1D,Inductor_SMD:L_0603_1608Metric,Murata BLM18PG121SN1D from vendorboost reference,False
+L1,10uH,Inductor_SMD:L_Changjiang_FNR4018S,10uH shielded4x4x1.8; Isat>=1A target pending vendor peak-current test; no47uH substitute,False
+L2,10uH,Inductor_SMD:L_Changjiang_FNR4018S,10uH shielded4x4x1.8; Isat>=1A target pending vendor peak-current test; no47uH substitute,False
+Q1,AO3400A,Package_TO_SOT_SMD:SOT-23,N-MOS as vendorAO3400 stage,False
+Q2,SI2301CDS-T1-E3,Package_TO_SOT_SMD:SOT-23,Vishay P-MOS exactly vendor negative-boost stage,False
+R100,1M,Resistor_SMD:R_0603_1608Metric,1M; vendorstage; sense resistors0.2ohm>=0.25W,False
+R101,0.2R,Resistor_SMD:R_0805_2012Metric,0.2R; vendorstage; sense resistors0.2ohm>=0.25W,False
+R102,1M,Resistor_SMD:R_0603_1608Metric,1M; vendorstage; sense resistors0.2ohm>=0.25W,False
+R103,0.2R,Resistor_SMD:R_0805_2012Metric,0.2R; vendorstage; sense resistors0.2ohm>=0.25W,False
+R104,0R,Resistor_SMD:R_0603_1608Metric,0R; vendorstage; sense resistors0.2ohm>=0.25W,False
+D1,MBR0530,Diode_SMD:D_SOD-123,30V0.5A Schottky as vendor reference; pin1K pin2A,False
+D2,MBR0530,Diode_SMD:D_SOD-123,30V0.5A Schottky as vendor reference; pin1K pin2A,False
+D3,MBR0530,Diode_SMD:D_SOD-123,30V0.5A Schottky as vendor reference; pin1K pin2A,False
+D6,MBR0530,Diode_SMD:D_SOD-123,30V0.5A Schottky as vendor reference; pin1K pin2A,False
+C110,4.7u/25V,Capacitor_SMD:C_0805_2012Metric,4.7u/25V X7R/X5R0805; voltage-rated; DC-bias capacitance vendor verification required,False
+C111,470n/25V,Capacitor_SMD:C_0805_2012Metric,470n/25V X7R/X5R0805; voltage-rated; DC-bias capacitance vendor verification required,False
+C112,10u/25V,Capacitor_SMD:C_0805_2012Metric,10u/25V X7R/X5R0805; voltage-rated; DC-bias capacitance vendor verification required,False
+C113,10u/25V,Capacitor_SMD:C_0805_2012Metric,10u/25V X7R/X5R0805; voltage-rated; DC-bias capacitance vendor verification required,False
+C114,4.7u/25V,Capacitor_SMD:C_0805_2012Metric,4.7u/25V X7R/X5R0805; voltage-rated; DC-bias capacitance vendor verification required,False
+C115,10u/25V,Capacitor_SMD:C_0805_2012Metric,10u/25V X7R/X5R0805; voltage-rated; DC-bias capacitance vendor verification required,False
+C116,10u/25V,Capacitor_SMD:C_0805_2012Metric,10u/25V X7R/X5R0805; voltage-rated; DC-bias capacitance vendor verification required,False
+C117,10u/25V,Capacitor_SMD:C_0805_2012Metric,10u/25V X7R/X5R0805; voltage-rated; DC-bias capacitance vendor verification required,False
+C118,10u/25V,Capacitor_SMD:C_0805_2012Metric,10u/25V X7R/X5R0805; voltage-rated; DC-bias capacitance vendor verification required,False
+C119,10u/25V,Capacitor_SMD:C_0805_2012Metric,10u/25V X7R/X5R0805; voltage-rated; DC-bias capacitance vendor verification required,False
+C120,10u/25V,Capacitor_SMD:C_0805_2012Metric,10u/25V X7R/X5R0805; voltage-rated; DC-bias capacitance vendor verification required,False
+C121,10u/25V,Capacitor_SMD:C_0805_2012Metric,10u/25V X7R/X5R0805; voltage-rated; DC-bias capacitance vendor verification required,False
+C122,4.7u/25V,Capacitor_SMD:C_0805_2012Metric,4.7u/25V X7R/X5R0805; voltage-rated; DC-bias capacitance vendor verification required,False
+C123,2.2u/6.3V,Capacitor_SMD:C_0805_2012Metric,2.2u/6.3V X7R/X5R0805; voltage-rated; DC-bias capacitance vendor verification required,False
+C124,1u/50V,Capacitor_SMD:C_0805_2012Metric,1u/50V X7R/X5R0805; voltage-rated; DC-bias capacitance vendor verification required,False
+C125,10u/25V,Capacitor_SMD:C_0805_2012Metric,10u/25V X7R/X5R0805; voltage-rated; DC-bias capacitance vendor verification required,False
+C126,1u/50V,Capacitor_SMD:C_0805_2012Metric,1u/50V X7R/X5R0805; voltage-rated; DC-bias capacitance vendor verification required,False
+C127,1u/50V,Capacitor_SMD:C_0805_2012Metric,1u/50V X7R/X5R0805; voltage-rated; DC-bias capacitance vendor verification required,False
+C128,1u/50V,Capacitor_SMD:C_0805_2012Metric,1u/50V X7R/X5R0805; voltage-rated; DC-bias capacitance vendor verification required,False
+C129,470n/25V,Capacitor_SMD:C_0805_2012Metric,470n/25V X7R/X5R0805; voltage-rated; DC-bias capacitance vendor verification required,False
+C130,1u/50V,Capacitor_SMD:C_0805_2012Metric,1u/50V X7R/X5R0805; voltage-rated; DC-bias capacitance vendor verification required,False
+C131,1u/50V,Capacitor_SMD:C_0805_2012Metric,1u/50V X7R/X5R0805; voltage-rated; DC-bias capacitance vendor verification required,False
+U5,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,ST USBLC6-2SC6; DS4260pinmap; short GNDreturn; systemESDtest pending,False
+FB2,BLM18PG121SN1D,Inductor_SMD:L_0603_1608Metric,Separate logic ferrite branch as vendor reference; EPD_SUPPLY is gated3V3,False
+SW3,UPDATE,Button_Switch_SMD:SW_SPST_PTS810,C&K PTS810; nominalheight2.5mm(+.2/-.1); travel.15+/-.1mm; actuator/flexure must be tested,False
+R21,100k,Resistor_SMD:R_0402_1005Metric,External100kRTCwakepullup; sleep only afterrelease,False
+R22,1M,Resistor_SMD:R_0402_1005Metric,1M 0402 1%,False
+R23,330k,Resistor_SMD:R_0402_1005Metric,330k 0402 1%,False
+C32,100n,Capacitor_SMD:C_0402_1005Metric,100n 0402,False

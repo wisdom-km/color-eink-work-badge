@@ -1,0 +1,126 @@
+{
+  "status": "PASS_NOMINAL_C1_GEOMETRY_ONLY",
+  "material_shape_names": [
+    "ScreenPSA_Left",
+    "FrontFoam_Left",
+    "FrontPSA_Left",
+    "ScreenPSA_Right",
+    "FrontFoam_Right",
+    "FrontPSA_Right",
+    "ScreenPSA_Top",
+    "FrontFoam_Top",
+    "FrontPSA_Top",
+    "RearPostPSA_1",
+    "RearPET_1",
+    "RearFoamPSA_1",
+    "RearFoam_1",
+    "RearPostPSA_2",
+    "RearPET_2",
+    "RearFoamPSA_2",
+    "RearFoam_2",
+    "RearPostPSA_3",
+    "RearPET_3",
+    "RearFoamPSA_3",
+    "RearFoam_3",
+    "RearPostPSA_4",
+    "RearPET_4",
+    "RearFoamPSA_4",
+    "RearFoam_4"
+  ],
+  "aa_no_press_projection_hits": [],
+  "positive_intersections": [],
+  "front_pad_rows": [
+    {
+      "name": "Left",
+      "nominal_face_gap_mm": 0.18000000000000016,
+      "max_local_panel_gap_mm": 0.1100000000000001
+    },
+    {
+      "name": "Right",
+      "nominal_face_gap_mm": 0.18000000000000016,
+      "max_local_panel_gap_mm": 0.1100000000000001
+    },
+    {
+      "name": "Top",
+      "nominal_face_gap_mm": 0.18000000000000016,
+      "max_local_panel_gap_mm": 0.1100000000000001
+    }
+  ],
+  "rear_pad_rows": [
+    {
+      "name": "RearFoam_1",
+      "free_foam_t_mm": 0.79,
+      "installed_foam_t_mm": 0.6,
+      "compression_ratio": 0.2405063291139241,
+      "stack_bottom_z_mm": -0.85,
+      "stack_top_z_mm": 0
+    },
+    {
+      "name": "RearFoam_2",
+      "free_foam_t_mm": 0.79,
+      "installed_foam_t_mm": 0.6,
+      "compression_ratio": 0.2405063291139241,
+      "stack_bottom_z_mm": -0.85,
+      "stack_top_z_mm": 0
+    },
+    {
+      "name": "RearFoam_3",
+      "free_foam_t_mm": 0.79,
+      "installed_foam_t_mm": 0.6,
+      "compression_ratio": 0.2405063291139241,
+      "stack_bottom_z_mm": -0.85,
+      "stack_top_z_mm": 0
+    },
+    {
+      "name": "RearFoam_4",
+      "free_foam_t_mm": 0.79,
+      "installed_foam_t_mm": 0.6,
+      "compression_ratio": 0.2405063291139241,
+      "stack_bottom_z_mm": -0.85,
+      "stack_top_z_mm": 0
+    }
+  ],
+  "global_1p2_audit_overlap_mm3": {
+    "FrontFoam_Left": 15.119999999999985,
+    "FrontPSA_Left": 0.0,
+    "FrontFoam_Right": 15.11999999999996,
+    "FrontPSA_Right": 0.0,
+    "FrontFoam_Top": 10.799999999999981,
+    "FrontPSA_Top": 0.0
+  },
+  "global_audit_note": "Full1.2 audit retained. Positive overlap here is explicit conservative audit conflict; local0.85 upper-envelope model needs vendor holding-region approval.",
+  "lateral_capture": {
+    "nominal_guide_width_mm": 58.2,
+    "nominal_board_width_mm": 58,
+    "nominal_half_play_mm": 0.1,
+    "measured_half_play_mm": null,
+    "limit": "Measure edge excursion including yaw at all shoulder and glass corner stations; midpoint translation is insufficient."
+  },
+  "tolerance_stack": {
+    "example_front_gap_mm": -0.03999999999999991,
+    "verified_worst_case": false,
+    "local_bearing_height_measured": false
+  },
+  "measurement_acceptance": {
+    "front_gap_min_mm": 0.1,
+    "front_gap_max_mm": 0.25,
+    "rear_compression_min": 0.2,
+    "rear_compression_max": 0.3
+  },
+  "manufacturing_release_blocked": true,
+  "open_physical_gates": [
+    "Manufacturing blocked until measured front gaps are positive and within0.10..0.25mm; nominal clearances are not a worst-case guarantee.",
+    "Measure local PCB bearing thickness and post/shoulder separation; select rear PET shims for20..30 percent foam compression.",
+    "Measure PCB lateral play and panel placement; nominal58.20 guide width is not a measured tolerance guarantee.",
+    "Screen glass/PS/FPL edge-pressure and adhesive compatibility are not approved by the panel manufacturer.",
+    "Inspect PCB flatness after reflow before bonding glass; never use case screws to force a warped PCB or glass flat.",
+    "UPDATE rest clearance does not prove operation: measure gap0.10..0.20, actual stroke/stop and safe overtravel; no preload or stuck wake.",
+    "FPC fold length/bend radius, original100..102mm leads/PH mating, exact USB cable, thermal, RF, impact and fatigue require first article.",
+    "No universal door-access compatibility or manufacturing-release claim."
+  ],
+  "design_revision": "P1.1-revisionB-C1",
+  "base_design_sha256": "246526bb521aa6fb61c5ce5a5d4cb6d1ee3e19fa65eb45b927a839afe90a92e1",
+  "c1_config_sha256": "433f15dac0475c9dc68186ad55fccac4f016285cd36053ff6cd484e28d314366",
+  "config_sha256": "ec550765e87552f12afebfcd135ec84486af411a60c300db437a49eab52747bd",
+  "board_sha256": "a6e52a432d860a8ce0d489fdaac9a9f9a56ae2c96e7ca05ce998e5b3b5a1cd40"
+}

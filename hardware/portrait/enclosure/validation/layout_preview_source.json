@@ -1,0 +1,11 @@
+{
+  "board_sha256": "a6e52a432d860a8ce0d489fdaac9a9f9a56ae2c96e7ca05ce998e5b3b5a1cd40",
+  "method": "KiCad B.Cu/B.SilkS/Edge.Cuts mirrored, clipped to exact board Edge.Cuts bbox",
+  "rect_mm": [
+    -0.0118,
+    0.0,
+    57.9882,
+    92.64
+  ],
+  "not_a_photo": true
+}

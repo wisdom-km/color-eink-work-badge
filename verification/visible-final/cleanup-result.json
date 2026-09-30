@@ -1,0 +1,10 @@
+{
+  "board_before": "fa4446bebef2b3211d7aadf9aea0868279c5efdb3212abc343628df3a6942632",
+  "board_after": "a6e52a432d860a8ce0d489fdaac9a9f9a56ae2c96e7ca05ce998e5b3b5a1cd40",
+  "only_board_change": "SW1/SW2/SW3 Description; all other semantic data including paths and UUIDs identical",
+  "generator_changes": [
+    "TP in_bom follows source",
+    "deduplicate identical wire segments"
+  ],
+  "backup": "/workspace/scratch/200245c5fbc3/chroma-badge/verification/visible-final/cleanup-backup-20260930T133201_037444Z"
+}

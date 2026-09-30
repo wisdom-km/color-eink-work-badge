@@ -1,0 +1,13 @@
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/cadquery/utils.py:82: FutureWarning: save will be removed in the next release.
+  warn(f"{f.__name__} will be removed in the next release.", FutureWarning)
+{
+  "status": "PASS_ENVELOPE_GEOMETRY_ONLY",
+  "revision": "P1.1-revisionB-C1",
+  "native_expected_shapes": 116,
+  "reference_solids_checked": 36,
+  "dimensions_mm": [
+    66.0,
+    109.0,
+    11.1
+  ]
+}

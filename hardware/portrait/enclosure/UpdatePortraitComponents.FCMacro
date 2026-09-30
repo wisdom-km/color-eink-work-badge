@@ -1,0 +1,36 @@
+# Run after opening the GUI-styled portrait_assembly.FCStd.
+# Synchronizes per-reference component envelopes only; retains camera and shell UI.
+import json
+from pathlib import Path
+import FreeCAD as App
+import FreeCADGui as Gui
+import Part
+
+doc=App.ActiveDocument
+if doc is None or doc.getObject('FrontFrame') is None:
+    raise RuntimeError('Open portrait_assembly.FCStd first')
+coverage_path=Path(doc.FileName).parent.parent/'validation/pcb_model_coverage.json'
+coverage=json.loads(coverage_path.read_text())
+valid_refs={p['ref'] for p in coverage['parts'] if p['ref']!='J3'}
+for obj in list(doc.Objects):
+    if obj.Name.startswith('Envelope_') and obj.Name[len('Envelope_'):] not in valid_refs:
+        doc.removeObject(obj.Name)
+for p in coverage['parts']:
+    ref=p['ref']
+    if ref=='J3':continue
+    name='Envelope_'+ref;obj=doc.getObject(name)
+    if obj is None:
+        obj=doc.addObject('Part::Feature',name)
+        obj.ViewObject.ShapeColor=(.32,.35,.39)
+        obj.ViewObject.LineColor=(.18,.22,.25)
+        obj.ViewObject.DisplayMode='Flat Lines'
+    x0,y0,x1,y1=p['xy_envelope_front_rect_mm'];h=p['height_budget_mm']
+    obj.Shape=Part.makeBox(x1-x0,y1-y0,h,App.Vector(x0,-y1,-h))
+    obj.Label=ref+' (assumed height envelope)'
+    if 'HeightEvidence' not in obj.PropertiesList:obj.addProperty('App::PropertyString','HeightEvidence','Prototype')
+    obj.HeightEvidence=p['height_basis'];obj.setEditorMode('HeightEvidence',1)
+    if 'EvidenceStatus' not in obj.PropertiesList:obj.addProperty('App::PropertyString','EvidenceStatus','Prototype')
+    obj.EvidenceStatus='Assumed height/courtyard envelope, not manufacturer solid or physical validation';obj.setEditorMode('EvidenceStatus',1)
+    obj.ViewObject.Visibility=True
+Gui.Selection.clearSelection();doc.recompute();Gui.updateGui();doc.save()
+App.Console.PrintMessage('Updated '+str(len(valid_refs))+' component envelopes. Preserved shell display and camera. Source PCB SHA256 '+coverage['board_sha256']+'\n')

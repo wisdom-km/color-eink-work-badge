@@ -1,0 +1,18 @@
+{
+  "source_commit": "ae3d377740b6ffa744bed1bab26625fe0278fa90",
+  "static_review_passed": true,
+  "modified_java_files": [
+    "Freerouting.java",
+    "analytics/BigQueryClient.java",
+    "analytics/FRAnalytics.java",
+    "analytics/FreeroutingAnalyticsClient.java",
+    "analytics/SegmentClient.java",
+    "util/VersionChecker.java"
+  ],
+  "unchanged_engine_and_io_files": 277,
+  "network_sink_removal_checked": true,
+  "api_mcp_factories_return_null": true,
+  "cli_env_cannot_reenable_telemetry_or_servers": true,
+  "runtime_network_test_performed": false,
+  "user_pcb_executed": false
+}

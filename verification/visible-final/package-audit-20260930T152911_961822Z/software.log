@@ -1,0 +1,153 @@
++ cd /workspace/scratch/200245c5fbc3/chroma-badge
++ source tools/portrait_environment/env.sh
+++ export BADGE_TOOLCHAIN_ROOT=/workspace/scratch/200245c5fbc3/toolchain
+++ BADGE_TOOLCHAIN_ROOT=/workspace/scratch/200245c5fbc3/toolchain
+++ export HOME=/workspace/scratch/200245c5fbc3/toolchain/home
+++ HOME=/workspace/scratch/200245c5fbc3/toolchain/home
+++ export XDG_CACHE_HOME=/workspace/scratch/200245c5fbc3/toolchain/cache
+++ XDG_CACHE_HOME=/workspace/scratch/200245c5fbc3/toolchain/cache
+++ export XDG_CONFIG_HOME=/workspace/scratch/200245c5fbc3/toolchain/config
+++ XDG_CONFIG_HOME=/workspace/scratch/200245c5fbc3/toolchain/config
+++ export XDG_DATA_HOME=/workspace/scratch/200245c5fbc3/toolchain/data
+++ XDG_DATA_HOME=/workspace/scratch/200245c5fbc3/toolchain/data
+++ export XDG_STATE_HOME=/workspace/scratch/200245c5fbc3/toolchain/state
+++ XDG_STATE_HOME=/workspace/scratch/200245c5fbc3/toolchain/state
+++ export PLATFORMIO_CORE_DIR=/workspace/scratch/200245c5fbc3/toolchain/platformio-core
+++ PLATFORMIO_CORE_DIR=/workspace/scratch/200245c5fbc3/toolchain/platformio-core
+++ export PLATFORMIO_BUILD_DIR=/workspace/scratch/200245c5fbc3/toolchain/platformio-build
+++ PLATFORMIO_BUILD_DIR=/workspace/scratch/200245c5fbc3/toolchain/platformio-build
+++ export PATH=/workspace/scratch/200245c5fbc3/toolchain/bin:/workspace/scratch/200245c5fbc3/toolchain/platformio-venv/bin:/workspace/scratch/200245c5fbc3/toolchain/jdk-25.0.4.1+1-jre/bin:/workspace/scratch/200245c5fbc3/toolchain/bin:/workspace/scratch/200245c5fbc3/toolchain/platformio-venv/bin:/workspace/scratch/200245c5fbc3/toolchain/jdk-25.0.4.1+1-jre/bin:/workspace/scratch/200245c5fbc3/toolchain/bin:/workspace/scratch/200245c5fbc3/toolchain/platformio-venv/bin:/opt/codex/runtimes/codex-primary-runtime/dependencies/bin/override:/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin:/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin:/opt/codex/runtimes/codex-primary-runtime/dependencies/bin:/opt/codex/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/agent/.local/bin:/opt/codex/runtimes/codex-primary-runtime/dependencies/bin/fallback
+++ PATH=/workspace/scratch/200245c5fbc3/toolchain/bin:/workspace/scratch/200245c5fbc3/toolchain/platformio-venv/bin:/workspace/scratch/200245c5fbc3/toolchain/jdk-25.0.4.1+1-jre/bin:/workspace/scratch/200245c5fbc3/toolchain/bin:/workspace/scratch/200245c5fbc3/toolchain/platformio-venv/bin:/workspace/scratch/200245c5fbc3/toolchain/jdk-25.0.4.1+1-jre/bin:/workspace/scratch/200245c5fbc3/toolchain/bin:/workspace/scratch/200245c5fbc3/toolchain/platformio-venv/bin:/opt/codex/runtimes/codex-primary-runtime/dependencies/bin/override:/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin:/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin:/opt/codex/runtimes/codex-primary-runtime/dependencies/bin:/opt/codex/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/agent/.local/bin:/opt/codex/runtimes/codex-primary-runtime/dependencies/bin/fallback
+++ export PLATFORMIO_SETTING_ENABLE_TELEMETRY=No
+++ PLATFORMIO_SETTING_ENABLE_TELEMETRY=No
+++ export KICAD10_SYMBOL_DIR=/workspace/scratch/200245c5fbc3/toolchain/squashfs-root/share/kicad/symbols
+++ KICAD10_SYMBOL_DIR=/workspace/scratch/200245c5fbc3/toolchain/squashfs-root/share/kicad/symbols
+++ export KICAD10_FOOTPRINT_DIR=/workspace/scratch/200245c5fbc3/toolchain/squashfs-root/share/kicad/footprints
+++ KICAD10_FOOTPRINT_DIR=/workspace/scratch/200245c5fbc3/toolchain/squashfs-root/share/kicad/footprints
+++ export JAVA_HOME=/workspace/scratch/200245c5fbc3/toolchain/jdk-25.0.4.1+1-jre
+++ JAVA_HOME=/workspace/scratch/200245c5fbc3/toolchain/jdk-25.0.4.1+1-jre
+++ export PATH=/workspace/scratch/200245c5fbc3/toolchain/jdk-25.0.4.1+1-jre/bin:/workspace/scratch/200245c5fbc3/toolchain/bin:/workspace/scratch/200245c5fbc3/toolchain/platformio-venv/bin:/workspace/scratch/200245c5fbc3/toolchain/jdk-25.0.4.1+1-jre/bin:/workspace/scratch/200245c5fbc3/toolchain/bin:/workspace/scratch/200245c5fbc3/toolchain/platformio-venv/bin:/workspace/scratch/200245c5fbc3/toolchain/jdk-25.0.4.1+1-jre/bin:/workspace/scratch/200245c5fbc3/toolchain/bin:/workspace/scratch/200245c5fbc3/toolchain/platformio-venv/bin:/opt/codex/runtimes/codex-primary-runtime/dependencies/bin/override:/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin:/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin:/opt/codex/runtimes/codex-primary-runtime/dependencies/bin:/opt/codex/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/agent/.local/bin:/opt/codex/runtimes/codex-primary-runtime/dependencies/bin/fallback
+++ PATH=/workspace/scratch/200245c5fbc3/toolchain/jdk-25.0.4.1+1-jre/bin:/workspace/scratch/200245c5fbc3/toolchain/bin:/workspace/scratch/200245c5fbc3/toolchain/platformio-venv/bin:/workspace/scratch/200245c5fbc3/toolchain/jdk-25.0.4.1+1-jre/bin:/workspace/scratch/200245c5fbc3/toolchain/bin:/workspace/scratch/200245c5fbc3/toolchain/platformio-venv/bin:/workspace/scratch/200245c5fbc3/toolchain/jdk-25.0.4.1+1-jre/bin:/workspace/scratch/200245c5fbc3/toolchain/bin:/workspace/scratch/200245c5fbc3/toolchain/platformio-venv/bin:/opt/codex/runtimes/codex-primary-runtime/dependencies/bin/override:/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin:/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin:/opt/codex/runtimes/codex-primary-runtime/dependencies/bin:/opt/codex/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/agent/.local/bin:/opt/codex/runtimes/codex-primary-runtime/dependencies/bin/fallback
+++ export PLATFORMIO_LIBDEPS_DIR=/workspace/scratch/200245c5fbc3/toolchain/platformio-libdeps
+++ PLATFORMIO_LIBDEPS_DIR=/workspace/scratch/200245c5fbc3/toolchain/platformio-libdeps
++ OUT=hardware/portrait/verification/visible-final
++ mkdir -p hardware/portrait/verification/visible-final
++ export ASAN_OPTIONS=detect_leaks=0:halt_on_error=1
++ ASAN_OPTIONS=detect_leaks=0:halt_on_error=1
++ export UBSAN_OPTIONS=halt_on_error=1
++ UBSAN_OPTIONS=halt_on_error=1
++ node tools/portrait_display/phone/test_app.js
++ tee hardware/portrait/verification/visible-final/phone-dom.json
+{"passed":true,"mocked_dom_scenarios":8,"real_browser_rendering_tested":false,"native_only_transfer_bytes":120000,"svg_rejected_before_decode":true,"repeated_click_cancel_retry_tested":true}
++ node tools/portrait_display/phone/test_core.js tools/portrait_display/output/preview400x600/portrait.rgba tools/portrait_display/output/preview400x600/panel-3in6e-native.bin
++ tee hardware/portrait/verification/visible-final/phone-core.json
+{"passed":true,"palette_codes":[0,1,2,3,5,6],"frame_bytes":120000,"rgba_native_fixture_checked":true,"hardware_tested":false}
++ python3 tools/portrait_display/build_phone_page.py
+/workspace/scratch/200245c5fbc3/chroma-badge/firmware/portrait36/include/phone_page.h: 21392 UTF-8 bytes, no remote assets
++ python3 tools/portrait_display/run_tests.py --out hardware/portrait/verification/visible-final/frame
+{
+  "test_frame": {
+    "passed": true,
+    "pixel_checks": 48611672,
+    "rotation_cases": 141060,
+    "depths": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "hardware_validated": false
+  },
+  "test_transaction": {
+    "passed": true,
+    "interruption_boundaries": 470,
+    "all_byte_palette_cases": 256,
+    "single_bit_corruption_cases": 56,
+    "crc_known_vector": "cbf43926",
+    "flash_persistence_tested": false,
+    "physical_display_commit_tested": false
+  },
+  "toolchain": "g++ (Debian 14.2.0-19) 14.2.0",
+  "sanitizers": {
+    "address": true,
+    "undefined_behavior": true,
+    "leak": false,
+    "leak_limit": "LeakSanitizer is incompatible with ptrace in this environment"
+  },
+  "production_hardware_pass": false
+}
++ bash tools/portrait_display/run_usb_tests.sh
++ tee hardware/portrait/verification/visible-final/usb.log
+{"passed":true,"incomplete_receive_boundaries":469,"malformed_fuzz_bytes":100000,"native_frame_bytes":120000,"driver_spi_equals_uploaded_frame":true,"hardware_tested":false,"source_isolation":true,"physical_local_frame_api":true,"flash_persistence":false}
+{"passed":true,"incomplete_receive_boundaries":469,"malformed_fuzz_bytes":100000,"native_frame_bytes":120000,"driver_spi_equals_uploaded_frame":true,"hardware_tested":false,"source_isolation":true,"physical_local_frame_api":true,"flash_persistence":false}
+test_bad_responses (test_sender.SenderTests.test_bad_responses) ... ok
+test_display_failure_is_unknown (test_sender.SenderTests.test_display_failure_is_unknown) ... ok
+test_file_validation (test_sender.SenderTests.test_file_validation) ... ok
+test_invalid_memory_frame (test_sender.SenderTests.test_invalid_memory_frame) ... ok
+test_missing_display_ack_is_unknown (test_sender.SenderTests.test_missing_display_ack_is_unknown) ... ok
+test_no_device_response (test_sender.SenderTests.test_no_device_response) ... ok
+test_power_guard_never_started (test_sender.SenderTests.test_power_guard_never_started) ... ok
+test_rejection_never_sends_show (test_sender.SenderTests.test_rejection_never_sends_show) ... ok
+test_success_and_partial_writes (test_sender.SenderTests.test_success_and_partial_writes) ... ok
+test_wrong_frame_ack_never_sends_show (test_sender.SenderTests.test_wrong_frame_ack_never_sends_show) ... ok
+test_zero_write (test_sender.SenderTests.test_zero_write) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.146s
+
+OK
+{
+  "bytes": 120000,
+  "crc32_ieee": "d16b5951",
+  "sha256": "63f8866496807a8ac2bfb17c85b1eccc89a09060e00ff8270de44f4bb1e01ce9",
+  "dry_run": true,
+  "flash_persistence": false,
+  "physical_image_inspected": false
+}
++ bash tools/portrait_driver/run_tests.sh
++ tee hardware/portrait/verification/visible-final/driver.log
+{'init': 48, 'turn_on': 10, 'sleep': 2}
+{"passed_cases":386,"golden_bytes_per_refresh":120061,"frame_bytes":120000,"all_returns_rail_off":true}
+{"passed_cases":387,"golden_bytes_per_refresh":120061,"frame_bytes":120000,"all_returns_rail_off":true}
+{"adapter_cases":5,"full_spi_bytes_verified":120061,"gpio_map_verified":true,"rail_cut_before_spi_release":true}
++ CXX=(-std=c++17 -Wall -Wextra -Werror -fsanitize=address,undefined -fno-omit-frame-pointer -g -O1 -Ifirmware/portrait36/include -Ifirmware/include)
++ SRC=firmware/portrait36/src
++ COMMON=("$SRC/phone_http.cpp" "$SRC/phone_api.cpp" "$SRC/phone_setup_render.cpp" "$SRC/frame_session.cpp" "$SRC/epd_3in6e.cpp" firmware/src/portrait_frame.cpp)
++ g++ -std=c++17 -Wall -Wextra -Werror -fsanitize=address,undefined -fno-omit-frame-pointer -g -O1 -Ifirmware/portrait36/include -Ifirmware/include tools/portrait_driver/phone/test_phone.cpp firmware/portrait36/src/phone_http.cpp firmware/portrait36/src/phone_api.cpp firmware/portrait36/src/phone_setup_render.cpp firmware/portrait36/src/frame_session.cpp firmware/portrait36/src/epd_3in6e.cpp firmware/src/portrait_frame.cpp -o hardware/portrait/verification/visible-final/phone-protocol
++ hardware/portrait/verification/visible-final/phone-protocol
++ tee hardware/portrait/verification/visible-final/phone-protocol.json
+{"phone_host_cases":43,"header_limit":2048,"body_limit":4096,"parser_bytes":6400,"one_frame_bytes":120000,"no_hardware_or_network":true}
++ g++ -std=c++17 -Wall -Wextra -Werror -fsanitize=address,undefined -fno-omit-frame-pointer -g -O1 -Ifirmware/portrait36/include -Ifirmware/include -Itools/portrait_driver/phone/stubs tools/portrait_driver/phone/test_service.cpp firmware/portrait36/src/phone_http.cpp firmware/portrait36/src/phone_api.cpp firmware/portrait36/src/phone_setup_render.cpp firmware/portrait36/src/frame_session.cpp firmware/portrait36/src/epd_3in6e.cpp firmware/src/portrait_frame.cpp firmware/portrait36/src/phone_service.cpp firmware/portrait36/src/phone_power.cpp firmware/portrait36/src/phone_power_policy.cpp -o hardware/portrait/verification/visible-final/phone-service
++ hardware/portrait/verification/visible-final/phone-service
++ tee hardware/portrait/verification/visible-final/phone-service.json
+{"service_power_model_cases":23,"wake_gpio":1,"wake_mask":2,"usb_adc_gpio":4,"no_real_wifi_or_gpio":true}
++ pio run -d firmware/portrait36
++ tee hardware/portrait/verification/visible-final/pio.log
+Processing portrait36-c3 (platform: espressif32@7.1.3; board: esp32-c3-devkitm-1; framework: arduino)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/esp32-c3-devkitm-1.html
+PLATFORM: Espressif 32 (7.1.3) > Espressif ESP32-C3-DevKitM-1
+HARDWARE: ESP32C3 160MHz, 320KB RAM, 4MB Flash
+DEBUG: Current (cmsis-dap) External (cmsis-dap, esp-bridge, esp-builtin, esp-prog, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES: 
+ - framework-arduinoespressif32 @ 4.20017.260907+sha.dcc1105b 
+ - tool-esptoolpy @ 2.41100.260830 (4.11.0) 
+ - toolchain-riscv32-esp @ 8.4.0+2021r2-patch5
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 33 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- SPI @ 2.0.0
+|-- WiFi @ 2.0.0
+Building in release mode
+Retrieving maximum program size /workspace/scratch/200245c5fbc3/toolchain/platformio-build/portrait36-c3/firmware.elf
+Checking size /workspace/scratch/200245c5fbc3/toolchain/platformio-build/portrait36-c3/firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [=         ]  14.0% (used 45932 bytes from 327680 bytes)
+Flash: [======    ]  59.8% (used 784080 bytes from 1310720 bytes)
+========================= [SUCCESS] Took 1.26 seconds =========================
++ printf '%s
+' 'PASS: host software suites and firmware compile; physical panel/WiFi/battery/RF NOT tested'
+PASS: host software suites and firmware compile; physical panel/WiFi/battery/RF NOT tested

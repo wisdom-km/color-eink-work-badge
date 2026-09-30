@@ -1,0 +1,378 @@
+{
+  "erc_report_sha256": "e109d8362ac6a11d6ff3cc397c3fb2b913715d566fb7ee694c421b60ad38ed9e",
+  "netlist_sha256": "e6558917472a54ea76039535699ced297d2a14ebf566e3ac0d3b131319f66a30",
+  "board_sha256": "a6e52a432d860a8ce0d489fdaac9a9f9a56ae2c96e7ca05ce998e5b3b5a1cd40",
+  "input_sha256": {
+    "hardware/portrait/pcb/badge.kicad_pcb": "a6e52a432d860a8ce0d489fdaac9a9f9a56ae2c96e7ca05ce998e5b3b5a1cd40",
+    "hardware/portrait/pcb/badge.kicad_pro": "7a32a0e0fa6d0f360f7af51f9302a81547078255a3fb6c2164bc7d026933d97d",
+    "hardware/portrait/pcb/badge.kicad_sch": "99cff0273740ef559d74f7ef4073d0f0346185b78421e7b01c4632f2779a4eb2",
+    "hardware/portrait/pcb/boost.kicad_sch": "8d34b29e7ba6c8eab8027a3180486c4cef9e7aaac65860e9c95aef8f88a64be3",
+    "hardware/portrait/pcb/display.kicad_sch": "7d14625abcae8a1435d9cdd38250103055bd2908469f4a376913e8bbbc488456",
+    "hardware/portrait/pcb/lib/pinned-symbols/Connector.kicad_sym": "5eec61e611e0e9222171eb82ef2b136f8603610d5700bb68846a4fc50de76494",
+    "hardware/portrait/pcb/lib/pinned-symbols/Connector_Generic.kicad_sym": "e853c80c52b0e09194805a231ea8bae3cce8cbcb137927d0c4ca835b988044e6",
+    "hardware/portrait/pcb/power.kicad_sch": "6dc464440820b13b0444afea3471e9bf7fcdaf9e35937f1a1a6a7552a10052fb",
+    "hardware/portrait/pcb/scripts/design.py": "ee3bd453b69537f16e81ff6b6a36e5c6ded0155e1cb8af6e30a4e2963952039d",
+    "hardware/portrait/pcb/scripts/generate.py": "0305dc7647850e1b3187004e4f3455a0e41d39a1f591aca717260e0041ff2d54",
+    "hardware/portrait/pcb/scripts/readable_schematic.py": "e0d16e8dcf3c0c494291c71cbe316f308b1d8666edc20ddcf07901dd6968cdfb",
+    "hardware/portrait/pcb/usb_mcu.kicad_sch": "4be3489d2238eaadf112fb32818ffcb7c537d85f4dcd13f025da4d90c0855c6e"
+  },
+  "ignored_checks": [],
+  "warnings": [
+    {
+      "sheet_path": "/01  USB-C + MCU/",
+      "sheet_uuid_path": "/0f1a3f2e-badc-4e00-9a11-000000000001/40a21f3b-3aaa-5b9d-b7a5-6bd029542d99",
+      "violation": {
+        "description": "Global label only appears once in the schematic",
+        "items": [
+          {
+            "description": "Global Label 'CC1'",
+            "pos": {
+              "x": 0.5969,
+              "y": 0.5461
+            },
+            "uuid": "c6afefa7-93c1-5232-9349-5f6336b31094"
+          }
+        ],
+        "severity": "warning",
+        "type": "single_global_label"
+      },
+      "fingerprint_sha256": "c04cfd0962ef14a44284703828a6fd88699fde0ad1892d9a6f32965449752b61",
+      "net_name": "CC1",
+      "reason": "USB-C CC1 pulldown is wired to the connector; one global declaration preserves PCB net naming.",
+      "actual_netlist_nodes": [
+        {
+          "ref": "J3",
+          "pin": "A5",
+          "pinfunction": "CC1_A5",
+          "pintype": "bidirectional"
+        },
+        {
+          "ref": "R1",
+          "pin": "1",
+          "pintype": "passive"
+        }
+      ],
+      "finding_class": "Naming-only warning retained in the report; wired endpoints verified against design source"
+    },
+    {
+      "sheet_path": "/01  USB-C + MCU/",
+      "sheet_uuid_path": "/0f1a3f2e-badc-4e00-9a11-000000000001/40a21f3b-3aaa-5b9d-b7a5-6bd029542d99",
+      "violation": {
+        "description": "Global label only appears once in the schematic",
+        "items": [
+          {
+            "description": "Global Label 'CC2'",
+            "pos": {
+              "x": 0.5969,
+              "y": 0.5715
+            },
+            "uuid": "d3ca73a2-c6ff-56ce-9a7b-1b1151957fec"
+          }
+        ],
+        "severity": "warning",
+        "type": "single_global_label"
+      },
+      "fingerprint_sha256": "b7a0a0fb9419ea902440bf36c03d868e1a664ca6080a650e9301b75ea882bb97",
+      "net_name": "CC2",
+      "reason": "USB-C CC2 pulldown is wired to the connector; one global declaration preserves PCB net naming.",
+      "actual_netlist_nodes": [
+        {
+          "ref": "J3",
+          "pin": "B5",
+          "pinfunction": "CC2_B5",
+          "pintype": "bidirectional"
+        },
+        {
+          "ref": "R2",
+          "pin": "1",
+          "pintype": "passive"
+        }
+      ],
+      "finding_class": "Naming-only warning retained in the report; wired endpoints verified against design source"
+    },
+    {
+      "sheet_path": "/02  BATTERY + POWER/",
+      "sheet_uuid_path": "/0f1a3f2e-badc-4e00-9a11-000000000001/206f4f28-e0be-50a8-b3f9-9d2a1a9d194e",
+      "violation": {
+        "description": "Global label only appears once in the schematic",
+        "items": [
+          {
+            "description": "Global Label 'PROG'",
+            "pos": {
+              "x": 0.4953,
+              "y": 2.1971
+            },
+            "uuid": "058f72de-3e34-5603-948e-73ab94698646"
+          }
+        ],
+        "severity": "warning",
+        "type": "single_global_label"
+      },
+      "fingerprint_sha256": "dc6242ce8d2b0e52361dea7717e8e03d5a17caa7d3e046d6b37dac6fbd1a106e",
+      "net_name": "PROG",
+      "reason": "Charger programming pin and current-setting resistor are wired on the power sheet.",
+      "actual_netlist_nodes": [
+        {
+          "ref": "R3",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U3",
+          "pin": "5",
+          "pinfunction": "PROG_5",
+          "pintype": "input"
+        }
+      ],
+      "finding_class": "Naming-only warning retained in the report; wired endpoints verified against design source"
+    },
+    {
+      "sheet_path": "/02  BATTERY + POWER/",
+      "sheet_uuid_path": "/0f1a3f2e-badc-4e00-9a11-000000000001/206f4f28-e0be-50a8-b3f9-9d2a1a9d194e",
+      "violation": {
+        "description": "Global label only appears once in the schematic",
+        "items": [
+          {
+            "description": "Global Label 'LED_CHRG_A'",
+            "pos": {
+              "x": 1.4478,
+              "y": 2.0066
+            },
+            "uuid": "6b46a195-f617-5254-8f7b-d2134bd4cbb2"
+          }
+        ],
+        "severity": "warning",
+        "type": "single_global_label"
+      },
+      "fingerprint_sha256": "f7eac30428ab6839039506c5e35cca71302be600201a6e18aa550df733131907",
+      "net_name": "LED_CHRG_A",
+      "reason": "Charge-status LED anode and series resistor are wired locally.",
+      "actual_netlist_nodes": [
+        {
+          "ref": "D4",
+          "pin": "2",
+          "pinfunction": "A_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R4",
+          "pin": "2",
+          "pintype": "passive"
+        }
+      ],
+      "finding_class": "Naming-only warning retained in the report; wired endpoints verified against design source"
+    },
+    {
+      "sheet_path": "/02  BATTERY + POWER/",
+      "sheet_uuid_path": "/0f1a3f2e-badc-4e00-9a11-000000000001/206f4f28-e0be-50a8-b3f9-9d2a1a9d194e",
+      "violation": {
+        "description": "Global label only appears once in the schematic",
+        "items": [
+          {
+            "description": "Global Label 'CHRG_STAT'",
+            "pos": {
+              "x": 1.4478,
+              "y": 2.0828
+            },
+            "uuid": "50ef9047-f3b9-57d7-8f6b-996806a18b9e"
+          }
+        ],
+        "severity": "warning",
+        "type": "single_global_label"
+      },
+      "fingerprint_sha256": "79bd04c5d8b68d80fa3a226bb4f8ee0a1153c03b6b1efb18bb3aa43f95cdb420",
+      "net_name": "CHRG_STAT",
+      "reason": "Charger status pin and LED cathode are wired locally.",
+      "actual_netlist_nodes": [
+        {
+          "ref": "D4",
+          "pin": "1",
+          "pinfunction": "K_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U3",
+          "pin": "1",
+          "pinfunction": "STAT_1",
+          "pintype": "tri_state"
+        }
+      ],
+      "finding_class": "Naming-only warning retained in the report; wired endpoints verified against design source"
+    },
+    {
+      "sheet_path": "/03  DUAL BOOST/",
+      "sheet_uuid_path": "/0f1a3f2e-badc-4e00-9a11-000000000001/54dc751a-4cf3-57bc-99d4-dd29b1889d2c",
+      "violation": {
+        "description": "Global label only appears once in the schematic",
+        "items": [
+          {
+            "description": "Global Label 'SW_H'",
+            "pos": {
+              "x": 1.1938,
+              "y": 0.7874
+            },
+            "uuid": "053ab6c8-6920-5faa-acad-76fa617c2b85"
+          }
+        ],
+        "severity": "warning",
+        "type": "single_global_label"
+      },
+      "fingerprint_sha256": "c9a0cb96e829bae7a35f5cc67f07657ebb2a12c1275412777727e70dedb34444",
+      "net_name": "SW_H",
+      "reason": "Positive boost switching node joins the inductor, MOSFET, rectifier and pump capacitor.",
+      "actual_netlist_nodes": [
+        {
+          "ref": "C112",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D1",
+          "pin": "2",
+          "pinfunction": "A_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "L1",
+          "pin": "2",
+          "pinfunction": "2_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "Q1",
+          "pin": "3",
+          "pinfunction": "D_3",
+          "pintype": "passive"
+        }
+      ],
+      "finding_class": "Naming-only warning retained in the report; wired endpoints verified against design source"
+    },
+    {
+      "sheet_path": "/03  DUAL BOOST/",
+      "sheet_uuid_path": "/0f1a3f2e-badc-4e00-9a11-000000000001/54dc751a-4cf3-57bc-99d4-dd29b1889d2c",
+      "violation": {
+        "description": "Global label only appears once in the schematic",
+        "items": [
+          {
+            "description": "Global Label 'PUMP_H'",
+            "pos": {
+              "x": 1.1938,
+              "y": 0.8636
+            },
+            "uuid": "86f460a3-32d1-5f8f-902b-5cfd16cf11c1"
+          }
+        ],
+        "severity": "warning",
+        "type": "single_global_label"
+      },
+      "fingerprint_sha256": "de1582df0aed6dae6e9aaa29a79da89e37d6e96810c261c26527f4c1caa95755",
+      "net_name": "PUMP_H",
+      "reason": "Inverting charge-pump node connects the capacitor and two Schottky diodes.",
+      "actual_netlist_nodes": [
+        {
+          "ref": "C112",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D2",
+          "pin": "1",
+          "pinfunction": "K_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D3",
+          "pin": "2",
+          "pinfunction": "A_2",
+          "pintype": "passive"
+        }
+      ],
+      "finding_class": "Naming-only warning retained in the report; wired endpoints verified against design source"
+    },
+    {
+      "sheet_path": "/03  DUAL BOOST/",
+      "sheet_uuid_path": "/0f1a3f2e-badc-4e00-9a11-000000000001/54dc751a-4cf3-57bc-99d4-dd29b1889d2c",
+      "violation": {
+        "description": "Global label only appears once in the schematic",
+        "items": [
+          {
+            "description": "Global Label 'SW_C'",
+            "pos": {
+              "x": 1.2065,
+              "y": 2.1971
+            },
+            "uuid": "e7ae69b7-6ef2-5bb2-afcb-86c476f95257"
+          }
+        ],
+        "severity": "warning",
+        "type": "single_global_label"
+      },
+      "fingerprint_sha256": "73098385f7d5c68acbccd27cdcee3b29d03e7303a1a441fdb44d1883194659e0",
+      "net_name": "SW_C",
+      "reason": "Negative boost switching node joins the P-MOS drain, inductor and Schottky cathode.",
+      "actual_netlist_nodes": [
+        {
+          "ref": "D6",
+          "pin": "1",
+          "pinfunction": "K_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "L2",
+          "pin": "1",
+          "pinfunction": "1_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "Q2",
+          "pin": "3",
+          "pinfunction": "D_3",
+          "pintype": "passive"
+        }
+      ],
+      "finding_class": "Naming-only warning retained in the report; wired endpoints verified against design source"
+    },
+    {
+      "sheet_path": "/04  DISPLAY + FILTERS/",
+      "sheet_uuid_path": "/0f1a3f2e-badc-4e00-9a11-000000000001/ec1117e4-0d37-5ed0-bb46-3f0c76ea5361",
+      "violation": {
+        "description": "Global label only appears once in the schematic",
+        "items": [
+          {
+            "description": "Global Label 'EPD_SUPPLY'",
+            "pos": {
+              "x": 1.905,
+              "y": 0.6985
+            },
+            "uuid": "d1e49db5-d798-5ec9-8f49-38d6ad528d93"
+          }
+        ],
+        "severity": "warning",
+        "type": "single_global_label"
+      },
+      "fingerprint_sha256": "640c12ea304fceacb65ca26560b2933453892092059065c85725f5cb52bf44c0",
+      "net_name": "EPD_SUPPLY",
+      "reason": "Gated supply joins the power switch and both separate ferrite branches.",
+      "actual_netlist_nodes": [
+        {
+          "ref": "FB1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "FB2",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "Q20",
+          "pin": "3",
+          "pinfunction": "D_3",
+          "pintype": "passive"
+        }
+      ],
+      "finding_class": "Naming-only warning retained in the report; wired endpoints verified against design source"
+    }
+  ],
+  "gui_review": "Completed: all five native sheets opened in KiCad 10.0.6, functional blocks inspected at increased zoom. The SW_C label overlap was corrected; final boost sheet reopened and label/D6 separation visually verified. GUI closed without saving schematic or PCB."
+}

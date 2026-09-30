@@ -1,0 +1,137 @@
+{
+  "status": "REVIEW_REQUIRED_INTERNAL_ASSEMBLY",
+  "layer_stack_front_to_back": [
+    {
+      "layer": "front_bezel",
+      "z_mm": [
+        2.3,
+        3.5
+      ]
+    },
+    {
+      "layer": "front_PSA_local",
+      "z_mm": [
+        2.39,
+        2.45
+      ]
+    },
+    {
+      "layer": "front_foam_local",
+      "z_mm": [
+        1.89,
+        2.39
+      ]
+    },
+    {
+      "layer": "display_upper_max",
+      "z_mm": [
+        0.93,
+        1.78
+      ]
+    },
+    {
+      "layer": "display_local_bottom_max",
+      "z_mm": [
+        0.93,
+        2.13
+      ]
+    },
+    {
+      "layer": "screen_PSA_non_AA",
+      "z_mm": [
+        0.8,
+        0.93
+      ]
+    },
+    {
+      "layer": "finished_PCB_budget",
+      "z_mm": [
+        0,
+        0.8
+      ]
+    },
+    {
+      "layer": "KiCad_core_mapped",
+      "z_mm": [
+        0.045,
+        0.755
+      ]
+    },
+    {
+      "layer": "rear_foam",
+      "z_mm": [
+        -0.6,
+        0
+      ]
+    },
+    {
+      "layer": "rear_foam_PSA",
+      "z_mm": [
+        -0.65,
+        -0.6
+      ]
+    },
+    {
+      "layer": "rear_PET",
+      "z_mm": [
+        -0.8,
+        -0.65
+      ]
+    },
+    {
+      "layer": "rear_post_PSA",
+      "z_mm": [
+        -0.85,
+        -0.8
+      ]
+    },
+    {
+      "layer": "battery_envelope",
+      "z_mm": [
+        -5.7,
+        -0.1
+      ]
+    },
+    {
+      "layer": "rear_cavity",
+      "z_mm": [
+        -6.2,
+        0
+      ]
+    },
+    {
+      "layer": "rear_cover",
+      "z_mm": [
+        -7.6,
+        -6.2
+      ]
+    }
+  ],
+  "total_mm": 11.1,
+  "section": {
+    "plane_x_mm": 27.09,
+    "slab_thickness_mm": 0.3,
+    "z_display_scale": 5
+  },
+  "battery_actual_envelope_thickness_mm": 5.6,
+  "intentional_zero_distance_contacts": [
+    "Screen PSA0.8..0.93 bonds nominal PCB and display back",
+    "Rear two PSAs+PET+compressed foam end at nominal PCBback0",
+    "Shoulders are nominal axial stops; local mask/etched edge bearing height must be measured"
+  ],
+  "critical_open_items": [
+    "Manufacturing blocked until measured front gaps are positive and within0.10..0.25mm; nominal clearances are not a worst-case guarantee.",
+    "Measure local PCB bearing thickness and post/shoulder separation; select rear PET shims for20..30 percent foam compression.",
+    "Measure PCB lateral play and panel placement; nominal58.20 guide width is not a measured tolerance guarantee.",
+    "Screen glass/PS/FPL edge-pressure and adhesive compatibility are not approved by the panel manufacturer.",
+    "Inspect PCB flatness after reflow before bonding glass; never use case screws to force a warped PCB or glass flat.",
+    "UPDATE rest clearance does not prove operation: measure gap0.10..0.20, actual stroke/stop and safe overtravel; no preload or stuck wake.",
+    "FPC fold length/bend radius, original100..102mm leads/PH mating, exact USB cable, thermal, RF, impact and fatigue require first article.",
+    "No universal door-access compatibility or manufacturing-release claim."
+  ],
+  "design_revision": "P1.1-revisionB-C1",
+  "base_design_sha256": "246526bb521aa6fb61c5ce5a5d4cb6d1ee3e19fa65eb45b927a839afe90a92e1",
+  "c1_config_sha256": "433f15dac0475c9dc68186ad55fccac4f016285cd36053ff6cd484e28d314366",
+  "config_sha256": "ec550765e87552f12afebfcd135ec84486af411a60c300db437a49eab52747bd",
+  "board_sha256": "a6e52a432d860a8ce0d489fdaac9a9f9a56ae2c96e7ca05ce998e5b3b5a1cd40"
+}

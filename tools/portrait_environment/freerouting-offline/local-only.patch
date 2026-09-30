@@ -1,0 +1,792 @@
+--- a/LOCAL_ONLY_NOTICE.md
++++ b/LOCAL_ONLY_NOTICE.md
+@@ -0,0 +1,20 @@
++# Local-only review candidate
++
++This is a modified build of Freerouting v2.4.1, official source commit
++`ae3d377740b6ffa744bed1bab26625fe0278fa90`. It is not the official release.
++
++Local modifications remove analytics transports and credential refresh,
++remove version-check networking, disable REST/MCP factories, force headless
++CLI execution, and prevent CLI/environment/config from enabling those features.
++All autorouter, board, geometry, core, rules, IO, DRC and management files remain
++byte-identical to the pinned official source.
++
++Freerouting and this source patch retain the upstream GPL-3.0 license in LICENSE.
++The full source copy is available beside the local candidate; the exact patch
++and build/audit evidence are in the badge workspace's
++`tools/portrait_environment/freerouting-offline/` directory.
++
++The router has not been executed against a user PCB as part of this build.
++Static source checks are not a runtime network-isolation guarantee. The new
++artifact must be reviewed before any execution; original default-telemetry
++commands are not authorized by this notice.
+--- a/docs/architecture.md
++++ b/docs/architecture.md
+@@ -452,3 +452,11 @@
+ - Server and job execution usually starts in `api` and `management`.
+ - File parsing and export usually starts in `io`.
+ - When in doubt, follow the data model first, then the orchestration layer, then the UI.
++
++## Local-only review variant (2026-09-30)
++
++This copied source tree is patched for a local-only CLI candidate. The REST/MCP
++server factories return null, GUI and server modes cannot be enabled, all
++analytics sending backends are no-ops, and version checks are removed. The
++routing pipeline and board IO are unchanged. See `../LOCAL_ONLY_NOTICE.md`.
++This is not an upstream architecture change or an official release.
+--- a/src/main/java/app/freerouting/Freerouting.java
++++ b/src/main/java/app/freerouting/Freerouting.java
+@@ -1,11 +1,6 @@
+ package app.freerouting;
+ 
+ import app.freerouting.analytics.FRAnalytics;
+-import app.freerouting.analytics.NetworkProxyConfig;
+-import app.freerouting.api.AppContextListener;
+-import app.freerouting.api.mcp.McpApplication;
+-import app.freerouting.api.mcp.McpContextListener;
+-import app.freerouting.api.mcp.McpWebSocketEndpoint;
+ import app.freerouting.constants.Constants;
+ import app.freerouting.core.RoutingJob;
+ import app.freerouting.core.RoutingJobState;
+@@ -30,7 +25,6 @@
+ import app.freerouting.settings.sources.EnvironmentVariablesSource;
+ import app.freerouting.settings.sources.JsonFileSettings;
+ import app.freerouting.util.TextManager;
+-import app.freerouting.util.VersionChecker;
+ import java.awt.Dimension;
+ import java.awt.Toolkit;
+ import java.io.File;
+@@ -50,16 +44,8 @@
+ import javax.swing.UnsupportedLookAndFeelException;
+ import org.apache.logging.log4j.LogManager;
+ import org.apache.logging.log4j.core.LoggerContext;
+-import org.eclipse.jetty.ee10.servlet.ServletContextHandler;
+-import org.eclipse.jetty.ee10.servlet.ServletHolder;
+-import org.eclipse.jetty.ee10.websocket.jakarta.server.config.JakartaWebSocketServletContainerInitializer;
+-import org.eclipse.jetty.http.pathmap.ServletPathSpec;
+-import org.eclipse.jetty.server.Handler;
+ import org.eclipse.jetty.server.Server;
+ import org.eclipse.jetty.server.ServerConnector;
+-import org.eclipse.jetty.server.handler.CrossOriginHandler;
+-import org.eclipse.jetty.server.handler.PathMappingsHandler;
+-import org.glassfish.jersey.servlet.ServletContainer;
+ 
+ /** Entry point for the Freerouting application. */
+ public class Freerouting {
+@@ -413,136 +399,8 @@
+    */
+   @SuppressWarnings("checkstyle:AbbreviationAsWordInName")
+   public static Server initializeAPI(ApiServerSettings apiServerSettings) {
+-    // Check if there are any endpoints defined
+-    if (apiServerSettings.endpoints.length == 0) {
+-      FRLogger.warn(
+-          "Can't start API server, because no endpoints are defined in ApiServerSettings.");
+-      return null;
+-    }
+-
+-    // Start the Jetty server
+-    Server apiServer = new Server();
+-
+-    // Add all endpoints as connectors
+-    for (String endpointUrl : apiServerSettings.endpoints) {
+-      endpointUrl = endpointUrl.toLowerCase();
+-      String[] endpointParts = endpointUrl.split("://");
+-      String protocol = endpointParts[0];
+-
+-      // Check if the protocol is HTTP or HTTPS
+-      if (!"http".equals(protocol) && !"https".equals(protocol)) {
+-        FRLogger.warn(
+-            ("Can't use the endpoint '%s' for the API server, because its protocol is not HTTP "
+-                    + "or HTTPS.")
+-                .formatted(endpointUrl));
+-        continue;
+-      }
+-
+-      // Check if the http is allowed
+-      if (!apiServerSettings.isHttpAllowed && "http".equals(protocol)) {
+-        FRLogger.warn(
+-            "Can't use the endpoint '%s' for the API server, because HTTP is not allowed."
+-                .formatted(endpointUrl));
+-        continue;
+-      }
+-
+-      // Fail closed when HTTPS is requested, because TLS is not implemented yet
+-      if ("https".equals(protocol)) {
+-        FRLogger.warn(
+-            "HTTPS endpoint '%s' cannot be initialized because TLS is not implemented yet; rejecting plaintext fallback."
+-                .formatted(endpointUrl));
+-        continue;
+-      }
+-
+-      String hostAndPort = endpointParts[1];
+-      String[] hostAndPortParts = hostAndPort.split(":");
+-      String host = hostAndPortParts[0];
+-      int port = Integer.parseInt(hostAndPortParts[1]);
+-      ServerConnector connector = new ServerConnector(apiServer);
+-      connector.setHost(host);
+-      connector.setPort(port);
+-      apiServer.addConnector(connector);
+-    }
+-
+-    // Set up the Servlet Context Handler
+-    ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
+-    context.setContextPath("/");
+-
+-    Handler apiHandler = context;
+-
+-    // Configure CORS if origins are provided
+-    if (apiServerSettings.corsOrigins != null && !"".equals(apiServerSettings.corsOrigins)) {
+-      String allowedOrigins = apiServerSettings.corsOrigins;
+-      Set<String> originPatterns = splitCommaSeparated(allowedOrigins);
+-      boolean hasWildcard = originPatterns.contains("*");
+-      if (hasWildcard) {
+-        FRLogger.warn("CORS configured with wildcard origin; disabling allowCredentials.");
+-      }
+-
+-      CrossOriginHandler corsHandler = new CrossOriginHandler();
+-      corsHandler.setAllowCredentials(!hasWildcard);
+-      corsHandler.setAllowedOriginPatterns(originPatterns);
+-      corsHandler.setAllowedMethods(Set.of("HEAD", "GET", "POST", "PUT", "DELETE", "OPTIONS"));
+-      corsHandler.setAllowedHeaders(
+-          Set.of(
+-              "X-Requested-With",
+-              "Content-Type",
+-              "Accept",
+-              "Origin",
+-              "Authorization",
+-              "Freerouting-Profile-ID",
+-              "Freerouting-Profile-Email",
+-              "Freerouting-Environment-Host"));
+-      corsHandler.setHandler(context);
+-
+-      PathMappingsHandler pathMappingsHandler = new PathMappingsHandler();
+-      pathMappingsHandler.addMapping(new ServletPathSpec("/v1/*"), corsHandler);
+-      pathMappingsHandler.addMapping(new ServletPathSpec("/*"), context);
+-      apiHandler = pathMappingsHandler;
+-
+-      FRLogger.info("CORS configured for origins: " + allowedOrigins);
+-    }
+-
+-    apiServer.setHandler(apiHandler);
+-
+-    // Set up the Jersey Servlet that handles the API
+-    ServletHolder jerseyServlet = context.addServlet(ServletContainer.class, "/*");
+-    jerseyServlet.setInitOrder(0);
+-    jerseyServlet.setInitParameter(
+-        "jakarta.ws.rs.Application", "app.freerouting.api.FreeroutingApplication");
+-    jerseyServlet.setInitParameter("jersey.config.application.disableJsonBinding", "true");
+-
+-    // Add Listeners
+-    context.addEventListener(new AppContextListener());
+-
+-    try {
+-      apiServer.start();
+-    } catch (Exception e) {
+-      FRLogger.error("Error starting API server", e);
+-      if (globalSettings != null) {
+-        globalSettings.apiServerSettings.isRunning = false;
+-      }
+-      return null;
+-    }
+-
+-    // Keep the caller responsive after the server has bound its connectors.
+-    Thread apiJoinThread =
+-        new Thread(
+-            () -> {
+-              try {
+-                apiServer.join();
+-              } catch (Exception e) {
+-                FRLogger.error("Error joining API server", e);
+-                if (globalSettings != null) {
+-                  globalSettings.apiServerSettings.isRunning = false;
+-                }
+-              }
+-            },
+-            "api-server-join");
+-    apiJoinThread.setDaemon(true);
+-    apiJoinThread.start();
+-
+-    return apiServer;
++    // LOCAL-ONLY BUILD: REST/MCP servers and their outbound adapters are unavailable.
++    return null;
+   }
+ 
+   /** Stops the API server if it is currently running. */
+@@ -564,130 +422,8 @@
+    */
+   @SuppressWarnings("checkstyle:AbbreviationAsWordInName")
+   public static Server initializeMCP(McpServerSettings mcpServerSettings) {
+-    if (mcpServerSettings.endpoints.length == 0) {
+-      FRLogger.warn(
+-          "Can't start MCP server, because no endpoints are defined in McpServerSettings.");
+-      return null;
+-    }
+-
+-    Server mcpServer = new Server();
+-
+-    for (String endpointUrl : mcpServerSettings.endpoints) {
+-      endpointUrl = endpointUrl.toLowerCase();
+-      String[] endpointParts = endpointUrl.split("://");
+-      String protocol = endpointParts[0];
+-
+-      if (!"http".equals(protocol) && !"https".equals(protocol)) {
+-        FRLogger.warn(
+-            ("Can't use the endpoint '%s' for the MCP server, because its protocol is not HTTP "
+-                    + "or HTTPS.")
+-                .formatted(endpointUrl));
+-        continue;
+-      }
+-
+-      if (!mcpServerSettings.isHttpAllowed && "http".equals(protocol)) {
+-        FRLogger.warn(
+-            "Can't use the endpoint '%s' for the MCP server, because HTTP is not allowed."
+-                .formatted(endpointUrl));
+-        continue;
+-      }
+-
+-      // Fail closed when HTTPS is requested, because TLS is not implemented yet
+-      if ("https".equals(protocol)) {
+-        FRLogger.warn(
+-            "HTTPS endpoint '%s' cannot be initialized because TLS is not implemented yet; rejecting plaintext fallback."
+-                .formatted(endpointUrl));
+-        continue;
+-      }
+-
+-      String hostAndPort = endpointParts[1];
+-      String[] hostAndPortParts = hostAndPort.split(":");
+-      String host = hostAndPortParts[0];
+-      int port = Integer.parseInt(hostAndPortParts[1]);
+-      ServerConnector connector = new ServerConnector(mcpServer);
+-      connector.setHost(host);
+-      connector.setPort(port);
+-      mcpServer.addConnector(connector);
+-    }
+-
+-    ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
+-    context.setContextPath("/");
+-
+-    Handler mcpHandler = context;
+-
+-    if (mcpServerSettings.corsOrigins != null && !"".equals(mcpServerSettings.corsOrigins)) {
+-      String allowedOrigins = mcpServerSettings.corsOrigins;
+-      Set<String> originPatterns = splitCommaSeparated(allowedOrigins);
+-      boolean hasWildcard = originPatterns.contains("*");
+-      if (hasWildcard) {
+-        FRLogger.warn("MCP CORS configured with wildcard origin; disabling allowCredentials.");
+-      }
+-
+-      CrossOriginHandler corsHandler = new CrossOriginHandler();
+-      corsHandler.setAllowCredentials(!hasWildcard);
+-      corsHandler.setAllowedOriginPatterns(originPatterns);
+-      corsHandler.setAllowedMethods(Set.of("HEAD", "GET", "POST", "PUT", "DELETE", "OPTIONS"));
+-      corsHandler.setAllowedHeaders(
+-          Set.of(
+-              "X-Requested-With",
+-              "Content-Type",
+-              "Accept",
+-              "Origin",
+-              "Authorization",
+-              "Freerouting-Profile-ID",
+-              "Freerouting-Profile-Email",
+-              "Freerouting-Environment-Host"));
+-      corsHandler.setHandler(context);
+-
+-      PathMappingsHandler pathMappingsHandler = new PathMappingsHandler();
+-      pathMappingsHandler.addMapping(new ServletPathSpec("/v1/mcp/*"), corsHandler);
+-      pathMappingsHandler.addMapping(new ServletPathSpec("/*"), context);
+-      mcpHandler = pathMappingsHandler;
+-
+-      FRLogger.info("MCP CORS configured for origins: " + allowedOrigins);
+-    }
+-
+-    mcpServer.setHandler(mcpHandler);
+-
+-    ServletHolder jerseyServlet = context.addServlet(ServletContainer.class, "/*");
+-    jerseyServlet.setInitOrder(0);
+-    jerseyServlet.setInitParameter("jakarta.ws.rs.Application", McpApplication.class.getName());
+-    jerseyServlet.setInitParameter("jersey.config.application.disableJsonBinding", "true");
+-
+-    context.addEventListener(new McpContextListener());
+-
+-    JakartaWebSocketServletContainerInitializer.configure(
+-        context,
+-        (servletContext, wsContainer) -> wsContainer.addEndpoint(McpWebSocketEndpoint.class));
+-
+-    try {
+-      mcpServer.start();
+-    } catch (Exception e) {
+-      FRLogger.error("Error starting MCP server", e);
+-      if (globalSettings != null) {
+-        globalSettings.mcpServerSettings.isRunning = false;
+-      }
+-      return null;
+-    }
+-
+-    // Keep the caller responsive after the server has bound its connectors.
+-    Thread mcpJoinThread =
+-        new Thread(
+-            () -> {
+-              try {
+-                mcpServer.join();
+-              } catch (Exception e) {
+-                FRLogger.error("Error joining MCP server", e);
+-                if (globalSettings != null) {
+-                  globalSettings.mcpServerSettings.isRunning = false;
+-                }
+-              }
+-            },
+-            "mcp-server-join");
+-    mcpJoinThread.setDaemon(true);
+-    mcpJoinThread.start();
+-
+-    return mcpServer;
++    // LOCAL-ONLY BUILD: REST/MCP servers and their outbound adapters are unavailable.
++    return null;
+   }
+ 
+   /**
+@@ -1142,7 +878,7 @@
+     }
+ 
+     // Log system information
+-    FRLogger.info("Freerouting " + VERSION_NUMBER_STRING);
++    FRLogger.info("Freerouting " + VERSION_NUMBER_STRING + " [LOCAL-ONLY PATCHED BUILD]");
+     FRLogger.debug(
+         "[startup] user-data path : "
+             + GlobalSettings.getUserDataPath()
+@@ -1318,6 +1054,15 @@
+     // parse the command line arguments (for the non-router settings)
+     globalSettings.applyCommandLineArguments(args);
+ 
++    // LOCAL-ONLY BUILD: immutable execution policy, overriding CLI/env/config.
++    // No server, GUI/browser callback, or telemetry can be re-enabled by options.
++    globalSettings.guiSettings.isEnabled = false;
++    globalSettings.apiServerSettings.isEnabled = false;
++    globalSettings.mcpServerSettings.isEnabled = false;
++    globalSettings.mcpServerSettings.isStdioMode = false;
++    globalSettings.usageAndDiagnosticData.disableAnalytics = true;
++    globalSettings.userProfileSettings.isTelemetryAllowed = false;
++
+     if (globalSettings.compareFile1 != null && globalSettings.compareFile2 != null) {
+       boolean success = compareBoardFiles(globalSettings.compareFile1, globalSettings.compareFile2);
+       System.exit(success ? 0 : 1);
+@@ -1355,7 +1100,7 @@
+     boolean allowAnalytics = false;
+ 
+     // configure corporate proxy and truststores
+-    NetworkProxyConfig.configure(globalSettings.networkSettings);
++    // LOCAL-ONLY BUILD: no proxy/truststore initialization is needed.
+ 
+     // initialize analytics
+     FRAnalytics.setAccessKey(
+@@ -1414,10 +1159,7 @@
+         dpi);
+ 
+     // check for new version
+-    VersionChecker checker = new VersionChecker(Constants.FREEROUTING_VERSION);
+-    Thread versionThread = new Thread(checker, "version-checker");
+-    versionThread.setDaemon(true);
+-    versionThread.start();
++    // LOCAL-ONLY BUILD: version-checker thread intentionally not created.
+ 
+     // Check if the user requested help
+     if (globalSettings.showHelpOption) {
+--- a/src/main/java/app/freerouting/analytics/BigQueryClient.java
++++ b/src/main/java/app/freerouting/analytics/BigQueryClient.java
+@@ -7,24 +7,13 @@
+ import app.freerouting.analytics.dto.Traits;
+ import app.freerouting.logger.FRLogger;
+ import app.freerouting.util.TextManager;
+-import com.google.api.gax.retrying.RetrySettings;
+-import com.google.auth.oauth2.GoogleCredentials;
+-import com.google.auth.oauth2.ServiceAccountCredentials;
+ import com.google.cloud.bigquery.BigQuery;
+-import com.google.cloud.bigquery.BigQueryOptions;
+-import com.google.cloud.bigquery.InsertAllRequest;
+-import com.google.cloud.bigquery.InsertAllResponse;
+-import com.google.cloud.bigquery.TableId;
+-import com.google.cloud.http.HttpTransportOptions;
+-import java.io.ByteArrayInputStream;
+ import java.io.IOException;
+-import java.io.InputStream;
+ import java.net.ConnectException;
+ import java.net.NoRouteToHostException;
+ import java.net.SocketException;
+ import java.net.SocketTimeoutException;
+ import java.net.UnknownHostException;
+-import java.time.Duration;
+ import java.time.Instant;
+ import java.util.HashMap;
+ import java.util.Map;
+@@ -154,40 +143,8 @@
+   // -------------------------------------------------------------------------
+ 
+   private static BigQuery createBigQueryService(byte[] serviceAccountKeyBytes) {
+-    try {
+-      InputStream keyStream = new ByteArrayInputStream(serviceAccountKeyBytes);
+-      GoogleCredentials credentials =
+-          ServiceAccountCredentials.fromStream(keyStream)
+-              .createScoped("https://www.googleapis.com/auth/bigquery");
+-      credentials.refreshIfExpired();
+-
+-      HttpTransportOptions transportOptions =
+-          HttpTransportOptions.newBuilder()
+-              .setConnectTimeout(20_000)
+-              .setReadTimeout(30_000)
+-              .build();
+-
+-      RetrySettings retrySettings =
+-          RetrySettings.newBuilder()
+-              .setMaxAttempts(3)
+-              .setInitialRetryDelayDuration(Duration.ofMillis(1_000))
+-              .setRetryDelayMultiplier(2.0)
+-              .setMaxRetryDelayDuration(Duration.ofMillis(5_000))
+-              .setInitialRpcTimeoutDuration(Duration.ofMillis(20_000))
+-              .setRpcTimeoutMultiplier(1.5)
+-              .setMaxRpcTimeoutDuration(Duration.ofMillis(30_000))
+-              .setTotalTimeoutDuration(Duration.ofMillis(60_000))
+-              .build();
+-
+-      return BigQueryOptions.newBuilder()
+-          .setCredentials(credentials)
+-          .setTransportOptions(transportOptions)
+-          .setRetrySettings(retrySettings)
+-          .build()
+-          .getService();
+-    } catch (IOException e) {
+-      throw new RuntimeException("Failed to create BigQuery client", e);
+-    }
++    // LOCAL-ONLY BUILD: no credentials parsing, token refresh or BigQuery service.
++    return null;
+   }
+ 
+   // -------------------------------------------------------------------------
+@@ -270,66 +227,7 @@
+   }
+ 
+   private void sendPayloadAsync(Payload payload) {
+-    if (!enabled || executor.isShutdown()) {
+-      return;
+-    }
+-
+-    // Snapshot the fields on the calling thread so the background thread doesn't race
+-    // on mutable payload state.
+-    Map<String, String> fields = generateFieldsFromPayload(payload);
+-
+-    inFlightCount.incrementAndGet();
+-    executor.submit(
+-        () -> {
+-          try {
+-            // Table name is the event name with some formatting.
+-            String tableName = payload.event.toLowerCase().replace(" ", "_").replace("-", "_");
+-
+-            // Trait-only tables (identifies, user_snapshots) follow the Segment identifies
+-            // schema:
+-            // flattened traits + standard metadata, but no event / event_text columns.
+-            if (!isTraitOnlyTable(tableName)) {
+-              fields.put("event_text", fields.get("event"));
+-              fields.remove("event");
+-              fields.put("event", tableName);
+-            } else {
+-              fields.remove("event");
+-            }
+-
+-            TableId tableId = TableId.of(BIGQUERY_PROJECT_ID, BIGQUERY_DATASET_ID, tableName);
+-            InsertAllRequest request =
+-                InsertAllRequest.newBuilder(tableId)
+-                    .setIgnoreUnknownValues(true)
+-                    .addRow(InsertAllRequest.RowToInsert.of(fields))
+-                    .build();
+-
+-            InsertAllResponse response = bigQuery.insertAll(request);
+-            if (response.hasErrors()) {
+-              response
+-                  .getInsertErrors()
+-                  .forEach(
+-                      (_, errors) ->
+-                          FRLogger.error(
+-                              "Error in BigQueryClient.sendPayloadAsync: ("
+-                                  + tableName
+-                                  + ") "
+-                                  + errors,
+-                              null));
+-            }
+-          } catch (Exception e) {
+-            if (isTransientNetworkError(e)) {
+-              FRLogger.warn(
+-                  "Transient network issue in BigQueryClient.sendPayloadAsync: " + e.getMessage());
+-            } else {
+-              FRLogger.error("Exception in BigQueryClient.sendPayloadAsync: " + e.getMessage(), e);
+-            }
+-          } finally {
+-            inFlightCount.decrementAndGet();
+-            synchronized (flushLock) {
+-              flushLock.notifyAll();
+-            }
+-          }
+-        });
++    // LOCAL-ONLY BUILD: deliberate no-op; no BigQuery insertion.
+   }
+ 
+   static boolean isTransientNetworkError(Throwable throwable) {
+--- a/src/main/java/app/freerouting/analytics/FRAnalytics.java
++++ b/src/main/java/app/freerouting/analytics/FRAnalytics.java
+@@ -173,9 +173,8 @@
+    * @param key the analytics access key
+    */
+   public static void setAccessKey(String libraryVersion, String key) {
+-    // analytics = new SegmentClient(libraryVersion, key);
+-    // analytics = new BigQueryClient(libraryVersion, key);
+-    analytics = new FreeroutingAnalyticsClient(libraryVersion, key);
++    // LOCAL-ONLY BUILD: never construct an analytics transport.
++    analytics = null;
+   }
+ 
+   /**
+--- a/src/main/java/app/freerouting/analytics/FreeroutingAnalyticsClient.java
++++ b/src/main/java/app/freerouting/analytics/FreeroutingAnalyticsClient.java
+@@ -1,22 +1,15 @@
+ package app.freerouting.analytics;
+ 
+-import app.freerouting.Freerouting;
+ import app.freerouting.analytics.dto.Context;
+ import app.freerouting.analytics.dto.Library;
+ import app.freerouting.analytics.dto.Payload;
+ import app.freerouting.analytics.dto.Properties;
+ import app.freerouting.analytics.dto.Traits;
+-import app.freerouting.util.gson.GsonProvider;
+ import java.io.BufferedReader;
+ import java.io.IOException;
+ import java.io.InputStreamReader;
+-import java.io.OutputStream;
+ import java.net.HttpURLConnection;
+-import java.net.URI;
+ import java.nio.charset.StandardCharsets;
+-import java.util.Base64;
+-import javax.net.ssl.HttpsURLConnection;
+-import javax.net.ssl.SSLSocketFactory;
+ 
+ /** Sends analytics payloads to Freerouting's HTTP API. */
+ public class FreeroutingAnalyticsClient implements AnalyticsClient {
+@@ -73,86 +66,7 @@
+   }
+ 
+   private void sendPayloadAsync(String endpoint, Payload payload) throws IOException {
+-    if (!enabled || executor.isShutdown()) {
+-      return;
+-    }
+-
+-    inFlightCount.incrementAndGet();
+-    executor.submit(
+-        () -> {
+-          HttpURLConnection connection = null;
+-
+-          try {
+-            var uri = new URI(endpoint);
+-
+-            // Create and configure HTTP connection
+-            connection = (HttpURLConnection) uri.toURL().openConnection();
+-            connection.setConnectTimeout(5000);
+-            connection.setReadTimeout(10000);
+-            if (connection instanceof HttpsURLConnection httpsConn) {
+-              SSLSocketFactory ssf =
+-                  NetworkProxyConfig.getCompositeSslSocketFactory(
+-                      Freerouting.globalSettings != null
+-                          ? Freerouting.globalSettings.networkSettings
+-                          : null);
+-              if (ssf != null) {
+-                httpsConn.setSSLSocketFactory(ssf);
+-              }
+-            }
+-            connection.setRequestMethod("POST");
+-            connection.setRequestProperty("Host", uri.getHost());
+-            connection.setRequestProperty("Content-Type", "application/json");
+-            connection.setRequestProperty(
+-                "Authorization",
+-                "Basic " + Base64.getEncoder().encodeToString((writeKey + ":").getBytes()));
+-            connection.setDoOutput(true);
+-
+-            // Write JSON payload to request
+-            String jsonPayload = GsonProvider.GSON.toJson(payload);
+-            try (OutputStream os = connection.getOutputStream()) {
+-              byte[] input = jsonPayload.getBytes(StandardCharsets.UTF_8);
+-              os.write(input, 0, input.length);
+-            }
+-
+-            // Check the HTTP response code *before* touching getInputStream() so that we can
+-            // read the error-stream body on HTTP 4xx/5xx — getInputStream() would throw and
+-            // swallow that body.
+-            int responseCode = connection.getResponseCode();
+-            if (responseCode >= 400) {
+-              // Read the server's error body for diagnostic context and forward it to the
+-              // aggregator so it can surface it in the hourly summary log.
+-              String errorBody = readErrorBody(connection);
+-              AnalyticsErrorAggregator.recordFailure(
+-                  endpoint,
+-                  new IOException(
+-                      "Server returned HTTP response code: "
+-                          + responseCode
+-                          + " for URL: "
+-                          + endpoint),
+-                  errorBody);
+-            } else {
+-              // Consume the success body (currently unused but keeps the connection clean).
+-              try (BufferedReader br =
+-                  new BufferedReader(
+-                      new InputStreamReader(connection.getInputStream(), StandardCharsets.UTF_8))) {
+-                while (br.readLine() != null) {
+-                  /* discard */
+-                }
+-              }
+-            }
+-          } catch (Exception e) {
+-            // Do not log here directly — connection may be null if the exception was thrown
+-            // before openConnection() succeeded, and a per-failure log line would flood the
+-            // output when the analytics endpoint is down.  Delegate to the aggregator, which
+-            // logs the first failure immediately and then emits a single hourly summary.
+-            AnalyticsErrorAggregator.recordFailure(endpoint, e);
+-          } finally {
+-            inFlightCount.decrementAndGet();
+-            synchronized (flushLock) {
+-              flushLock.notifyAll();
+-            }
+-          }
+-        });
++    // LOCAL-ONLY BUILD: deliberate no-op, no executor, socket or payload transmission.
+   }
+ 
+   @Override
+--- a/src/main/java/app/freerouting/analytics/SegmentClient.java
++++ b/src/main/java/app/freerouting/analytics/SegmentClient.java
+@@ -5,16 +5,7 @@
+ import app.freerouting.analytics.dto.Payload;
+ import app.freerouting.analytics.dto.Properties;
+ import app.freerouting.analytics.dto.Traits;
+-import app.freerouting.util.gson.GsonProvider;
+-import java.io.BufferedReader;
+ import java.io.IOException;
+-import java.io.InputStreamReader;
+-import java.io.OutputStream;
+-import java.net.HttpURLConnection;
+-import java.net.URI;
+-import java.net.URL;
+-import java.nio.charset.StandardCharsets;
+-import java.util.Base64;
+ 
+ /** Sends analytics payloads to Segment's HTTP API. */
+ public class SegmentClient implements AnalyticsClient {
+@@ -37,52 +28,7 @@
+   }
+ 
+   private void sendPayloadAsync(String endpoint, Payload payload) throws IOException {
+-    if (!enabled) {
+-      return;
+-    }
+-
+-    Thread senderThread =
+-        new Thread(
+-            () -> {
+-              try {
+-                // Create and configure HTTP connection
+-                URL url = new URI(endpoint).toURL();
+-
+-                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+-                connection.setRequestMethod("POST");
+-                connection.setRequestProperty("Content-Type", "application/json; utf-8");
+-                connection.setRequestProperty(
+-                    "Authorization",
+-                    "Basic " + Base64.getEncoder().encodeToString((writeKey + ":").getBytes()));
+-                connection.setDoOutput(true);
+-
+-                // Write JSON payload to request
+-                String jsonPayload = GsonProvider.GSON.toJson(payload);
+-                try (OutputStream os = connection.getOutputStream()) {
+-                  byte[] input = jsonPayload.getBytes(StandardCharsets.UTF_8);
+-                  os.write(input, 0, input.length);
+-                }
+-
+-                // Read the response
+-                try (BufferedReader br =
+-                    new BufferedReader(
+-                        new InputStreamReader(
+-                            connection.getInputStream(), StandardCharsets.UTF_8))) {
+-                  StringBuilder response = new StringBuilder();
+-                  String responseLine;
+-                  while ((responseLine = br.readLine()) != null) {
+-                    response.append(responseLine.trim());
+-                  }
+-                  // return response.toString();
+-                }
+-              } catch (Exception _) {
+-                // FRLogger.error("Exception in SegmentClient.send_payload_async: " +
+-                // e.getMessage(), e);
+-              }
+-            },
+-            "analytics-segment-sender");
+-    senderThread.setDaemon(true);
+-    senderThread.start();
++    // LOCAL-ONLY BUILD: deliberate no-op, no executor, socket or payload transmission.
+   }
+ 
+   @Override
+--- a/src/main/java/app/freerouting/util/VersionChecker.java
++++ b/src/main/java/app/freerouting/util/VersionChecker.java
+@@ -3,11 +3,7 @@
+ import app.freerouting.logger.FRLogger;
+ import com.google.gson.JsonObject;
+ import com.google.gson.JsonParser;
+-import java.net.URI;
+ import java.net.http.HttpClient;
+-import java.net.http.HttpRequest;
+-import java.net.http.HttpResponse;
+-import java.time.Duration;
+ 
+ /**
+  * VersionChecker retrieves the latest release information from GitHub in the background and logs a
+@@ -48,12 +44,8 @@
+   }
+ 
+   private static HttpClient createDefaultHttpClient() {
+-    try {
+-      return HttpClient.newHttpClient();
+-    } catch (Throwable t) {
+-      FRLogger.warn("Could not create HttpClient for VersionChecker: " + t.getMessage());
+-      return null;
+-    }
++    // LOCAL-ONLY BUILD: do not even construct an HTTP client.
++    return null;
+   }
+ 
+   /**
+@@ -67,29 +59,7 @@
+ 
+   @Override
+   public void run() {
+-    if (httpClient == null) {
+-      return;
+-    }
+-    try {
+-      HttpRequest request =
+-          HttpRequest.newBuilder()
+-              .uri(URI.create(GITHUB_RELEASES_URL))
+-              .header("User-Agent", "Freerouting-Version-Checker")
+-              .timeout(Duration.ofSeconds(5))
+-              .build();
+-
+-      httpClient
+-          .sendAsync(request, HttpResponse.BodyHandlers.ofString())
+-          .thenApply(HttpResponse::body)
+-          .thenAccept(this::processResponse)
+-          .exceptionally(
+-              e -> {
+-                FRLogger.debug("Version check skipped or timed out: " + e.getMessage());
+-                return null;
+-              });
+-    } catch (Exception e) {
+-      FRLogger.debug("Failed to initiate version check: " + e.getMessage());
+-    }
++    // LOCAL-ONLY BUILD: release lookup is disabled, including help invocations.
+   }
+ 
+   /**

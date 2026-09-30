@@ -1,0 +1,35 @@
+{
+  "status": "PASS_NOMINAL_RESERVED_ACCESS_NOT_REAL_CABLE_FIT",
+  "usb_gauge_mm": [
+    15.0,
+    6.5
+  ],
+  "usb_swept_intersections_mm3": {
+    "front_frame": 0.0,
+    "back_cover": 0.0
+  },
+  "usb_nominal_gauge_wall_clearance_mm": 0,
+  "usb_front_roof_min_mm": 0.8300000000000001,
+  "usb_rear_wall_min_mm": 3.7699999999999996,
+  "battery_and_connector_reserved_checks": {
+    "wire_keepout": {
+      "front_frame": 0.0,
+      "back_cover": 0.0
+    },
+    "ph_plug_keepout": {
+      "front_frame": 0.0,
+      "back_cover": 0.0
+    }
+  },
+  "internal": {
+    "battery_to_ph_plug_gap_mm": 0.5,
+    "battery_vs_ph_plug_overlap_mm3": 0.0,
+    "battery_vs_wire_bay_overlap_mm3": 0.0
+  },
+  "requirements": [
+    "15x6.5 is the allocatedclearance envelope. A physicalovermold must be smaller, with manufacturing and alignment margin.",
+    "No universalUSBcable compatibility. The gauge only proves there is no solids blocking the nominal approach path.",
+    "OriginalAdafruit leadlength100-102mm and PH plug require physical loosebend/strainrelief checks. A clear bayvolume is not a routed wire.",
+    "0.5mm battery-to-PH reservedgap does not prove the leadexit bend fits."
+  ]
+}

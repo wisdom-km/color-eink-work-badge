@@ -1,0 +1,8 @@
+{
+  "Freerouting.java": "34300502b86eaa71c8bade77e0aa5b1c4f40e110c8cf153ce1bd9c427d4de5a6",
+  "analytics/FRAnalytics.java": "75156cb19f4e162016556b47d3ddb4f7b177a7e5e3b94fe7fb6cecab1f03e422",
+  "analytics/FreeroutingAnalyticsClient.java": "1fef2a3796e683481991e59ac675eca796a8c47fcee697b615a80cd3c08a7efc",
+  "analytics/SegmentClient.java": "e1046aacca367695a932d5969b7f6984c9458b79c54726243d09371b5adf0226",
+  "analytics/BigQueryClient.java": "573741caac2b7e72285f08fd2b0363c64c07ceec8138ef20bb223caddb32c094",
+  "util/VersionChecker.java": "7c2aa441572f7f36fa726a3d86613d469cb31c55982bc12736c17dea087031c5"
+}

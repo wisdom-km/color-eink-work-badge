@@ -1,0 +1,50 @@
+{
+  "status": "REVIEW_WARNINGS",
+  "board_before": "a6e52a432d860a8ce0d489fdaac9a9f9a56ae2c96e7ca05ce998e5b3b5a1cd40",
+  "board_after": "a6e52a432d860a8ce0d489fdaac9a9f9a56ae2c96e7ca05ce998e5b3b5a1cd40",
+  "only_board_change": "none during audit; prior controlled paths and 3 switch descriptions",
+  "board_counts": {
+    "footprint": 81,
+    "segment": 968,
+    "via": 115,
+    "zone": 10
+  },
+  "net_parity": "81/259/28 exact",
+  "erc": {
+    "types": [
+      "single_global_label",
+      "single_global_label",
+      "single_global_label",
+      "single_global_label",
+      "single_global_label",
+      "single_global_label",
+      "single_global_label",
+      "single_global_label",
+      "single_global_label"
+    ],
+    "errors": 0,
+    "warnings": 9,
+    "ignored_tail": "- None"
+  },
+  "drc": {
+    "types": [],
+    "errors": 0,
+    "warnings": 0,
+    "ignored_tail": ""
+  },
+  "backup": "/workspace/scratch/200245c5fbc3/chroma-badge/verification/visible-final/backup-20260930T134232_054995Z",
+  "source_after": {
+    "hardware/portrait/pcb/badge.kicad_pcb": "a6e52a432d860a8ce0d489fdaac9a9f9a56ae2c96e7ca05ce998e5b3b5a1cd40",
+    "hardware/portrait/pcb/badge.kicad_pro": "7a32a0e0fa6d0f360f7af51f9302a81547078255a3fb6c2164bc7d026933d97d",
+    "hardware/portrait/pcb/badge.kicad_sch": "99cff0273740ef559d74f7ef4073d0f0346185b78421e7b01c4632f2779a4eb2",
+    "hardware/portrait/pcb/boost.kicad_sch": "8d34b29e7ba6c8eab8027a3180486c4cef9e7aaac65860e9c95aef8f88a64be3",
+    "hardware/portrait/pcb/display.kicad_sch": "7d14625abcae8a1435d9cdd38250103055bd2908469f4a376913e8bbbc488456",
+    "hardware/portrait/pcb/lib/pinned-symbols/Connector.kicad_sym": "5eec61e611e0e9222171eb82ef2b136f8603610d5700bb68846a4fc50de76494",
+    "hardware/portrait/pcb/lib/pinned-symbols/Connector_Generic.kicad_sym": "e853c80c52b0e09194805a231ea8bae3cce8cbcb137927d0c4ca835b988044e6",
+    "hardware/portrait/pcb/power.kicad_sch": "6dc464440820b13b0444afea3471e9bf7fcdaf9e35937f1a1a6a7552a10052fb",
+    "hardware/portrait/pcb/scripts/design.py": "ee3bd453b69537f16e81ff6b6a36e5c6ded0155e1cb8af6e30a4e2963952039d",
+    "hardware/portrait/pcb/scripts/generate.py": "0305dc7647850e1b3187004e4f3455a0e41d39a1f591aca717260e0041ff2d54",
+    "hardware/portrait/pcb/scripts/readable_schematic.py": "e0d16e8dcf3c0c494291c71cbe316f308b1d8666edc20ddcf07901dd6968cdfb",
+    "hardware/portrait/pcb/usb_mcu.kicad_sch": "4be3489d2238eaadf112fb32818ffcb7c537d85f4dcd13f025da4d90c0855c6e"
+  }
+}

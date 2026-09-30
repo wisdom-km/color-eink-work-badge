@@ -1,0 +1,31 @@
+{
+  "test_frame": {
+    "passed": true,
+    "pixel_checks": 48611672,
+    "rotation_cases": 141060,
+    "depths": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "hardware_validated": false
+  },
+  "test_transaction": {
+    "passed": true,
+    "interruption_boundaries": 470,
+    "all_byte_palette_cases": 256,
+    "single_bit_corruption_cases": 56,
+    "crc_known_vector": "cbf43926",
+    "flash_persistence_tested": false,
+    "physical_display_commit_tested": false
+  },
+  "toolchain": "g++ (Debian 14.2.0-19) 14.2.0",
+  "sanitizers": {
+    "address": true,
+    "undefined_behavior": true,
+    "leak": false,
+    "leak_limit": "LeakSanitizer is incompatible with ptrace in this environment"
+  },
+  "production_hardware_pass": false
+}

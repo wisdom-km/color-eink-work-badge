@@ -1,0 +1,26 @@
+{"passed":true,"incomplete_receive_boundaries":469,"malformed_fuzz_bytes":100000,"native_frame_bytes":120000,"driver_spi_equals_uploaded_frame":true,"hardware_tested":false,"source_isolation":true,"physical_local_frame_api":true,"flash_persistence":false}
+{"passed":true,"incomplete_receive_boundaries":469,"malformed_fuzz_bytes":100000,"native_frame_bytes":120000,"driver_spi_equals_uploaded_frame":true,"hardware_tested":false,"source_isolation":true,"physical_local_frame_api":true,"flash_persistence":false}
+test_bad_responses (test_sender.SenderTests.test_bad_responses) ... ok
+test_display_failure_is_unknown (test_sender.SenderTests.test_display_failure_is_unknown) ... ok
+test_file_validation (test_sender.SenderTests.test_file_validation) ... ok
+test_invalid_memory_frame (test_sender.SenderTests.test_invalid_memory_frame) ... ok
+test_missing_display_ack_is_unknown (test_sender.SenderTests.test_missing_display_ack_is_unknown) ... ok
+test_no_device_response (test_sender.SenderTests.test_no_device_response) ... ok
+test_power_guard_never_started (test_sender.SenderTests.test_power_guard_never_started) ... ok
+test_rejection_never_sends_show (test_sender.SenderTests.test_rejection_never_sends_show) ... ok
+test_success_and_partial_writes (test_sender.SenderTests.test_success_and_partial_writes) ... ok
+test_wrong_frame_ack_never_sends_show (test_sender.SenderTests.test_wrong_frame_ack_never_sends_show) ... ok
+test_zero_write (test_sender.SenderTests.test_zero_write) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.146s
+
+OK
+{
+  "bytes": 120000,
+  "crc32_ieee": "d16b5951",
+  "sha256": "63f8866496807a8ac2bfb17c85b1eccc89a09060e00ff8270de44f4bb1e01ce9",
+  "dry_run": true,
+  "flash_persistence": false,
+  "physical_image_inspected": false
+}
