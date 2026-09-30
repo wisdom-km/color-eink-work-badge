@@ -1,3 +1,4 @@
-# KiCad editor locks and generated footprint cache
+# KiCad editor locks, footprint cache, and automatic project backups
 ~*.lck
 fp-info-cache
+*-backups/
